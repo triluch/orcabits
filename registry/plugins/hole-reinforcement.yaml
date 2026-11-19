@@ -1,0 +1,29 @@
+name: Hole Reinforcement
+summary: Makes internal infill solid around supported small holes during slicing.
+description: >-
+  Detects supported small holes and solidifies the surrounding internal infill
+  without increasing infill across the entire object. It handles certain
+  circular and regular-polygon hole shapes during GUI slicing. Tapered,
+  threaded, stepped, and countersunk holes are outside the documented support
+  range. The author reports testing on Apple Silicon macOS with a specific
+  OrcaSlicer 2.5.0 alpha build.
+repository: https://github.com/furutsubaki/orcaslicer-hole-reinforcement-plugin
+categories:
+  - toolpaths-and-gcode
+status: experimental
+status_note: Tested only on Apple Silicon macOS with a specific 2.5.0 alpha build; supported hole geometries are limited.
+installation:
+  method: wheel
+  url: https://github.com/furutsubaki/orcaslicer-hole-reinforcement-plugin#installation
+  notes: Build the documented wheel and install it through OrcaSlicer's local-plugin dialog.
+compatibility:
+  orca_slicer: Specific OrcaSlicer 2.5.0 alpha build with the Python plugin API.
+  platforms:
+    - macos
+  requires_custom_build: false
+  notes: Tested on Apple Silicon macOS; other platforms and host builds are not verified.
+evidence:
+  - label: README
+    url: https://github.com/furutsubaki/orcaslicer-hole-reinforcement-plugin/blob/HEAD/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

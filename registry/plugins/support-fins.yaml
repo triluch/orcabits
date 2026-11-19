@@ -1,0 +1,30 @@
+name: Support Fins
+summary: Adds breakaway fins to sliced layer polygons through OrcaSlicer's slicing-pipeline API.
+description: >-
+  Runs the printfins.com geometry engine on the model being sliced and merges
+  generated fin cross-sections into OrcaSlicer's layer polygons. Fins follow
+  model transforms when resliced, and the plugin can skip objects that already
+  have OrcaSlicer supports enabled. The README documents building a single-file
+  Python plugin and installing it in OrcaSlicer's plugin directory or through
+  the Plugins window. A real Windows nightly test compared the resulting
+  toolpaths with a separately finned model; auto brim behavior can differ.
+repository: https://github.com/gittrahan/support-fins
+categories:
+  - toolpaths-and-gcode
+status: available
+status_note: README documents an installable Orca plugin and reports real Windows nightly slicing tests; use requires enabling it in each process preset.
+installation:
+  method: source
+  url: https://github.com/gittrahan/support-fins/blob/main/plugins/orca/README.md
+  notes: Build the single-file Orca plugin with plugins/orca/build.py, install it, then enable it in the process slicing-pipeline settings.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5 nightly with Python plugins and the slicing-pipeline API.
+  platforms:
+    - windows
+  requires_custom_build: false
+  notes: A real OrcaSlicer 2.5 development nightly was tested on Windows; Orca's bundled uv installs declared Python dependencies.
+evidence:
+  - label: Orca plugin README
+    url: https://github.com/gittrahan/support-fins/blob/main/plugins/orca/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

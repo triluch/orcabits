@@ -1,0 +1,28 @@
+name: Flow Line Art
+summary: Converts an image into a continuous line-art path by varying extrusion flow.
+description: >-
+  Builds a printable disc whose image is represented by changes in line width
+  along a continuous path. The plugin offers spiral, zigzag, and Hilbert
+  layouts and replaces the designated upper layers of its generated base.
+  Physical prints are documented on a Bambu Lab X1 Carbon, while Klipper G-code
+  has been sliced but not printed. Preview on non-Bambu printers shows the plain
+  base, and automatic base insertion is documented as Windows-only.
+repository: https://github.com/barismert98/orcaslicer-flow-line-art
+categories:
+  - toolpaths-and-gcode
+status: available
+status_note: README documents a complete workflow and real Bambu Lab X1 Carbon prints; other output paths have stated limitations.
+installation:
+  method: native
+  url: https://github.com/barismert98/orcaslicer-flow-line-art#installation
+  notes: Available through OrcaCloud; enable its slicing-pipeline step in the process preset.
+compatibility:
+  orca_slicer: OrcaSlicer with Pages and Slicing Pipeline plugin APIs.
+  platforms: []
+  requires_custom_build: false
+  notes: Automatic insertion of the generated base is Windows-only; operating-system support for the plugin itself is not stated.
+evidence:
+  - label: README
+    url: https://github.com/barismert98/orcaslicer-flow-line-art/blob/HEAD/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

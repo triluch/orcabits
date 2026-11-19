@@ -1,0 +1,30 @@
+name: Compact G-code Tools
+summary: Renumbers used filament tools consecutively from T0 in outgoing G-code.
+description: >-
+  Compacts the tool numbers used in an OrcaSlicer G-code file into ascending
+  consecutive numbers starting at T0. It updates supported tool references and
+  filament metadata without changing tool-change order. The transformation
+  affects exported or uploaded plain G-code, not the original Slice preview.
+  The README warns against Bambu AMS mappings and recommends running this
+  before AFC tool remapping.
+repository: https://github.com/suchmememanyskill/orcaslicer-compact-tools
+categories:
+  - toolpaths-and-gcode
+status: available
+status_note: The repository contains an implemented OrcaSlicer plugin with documented behavior; no explicit preview/deprecation status was found.
+installation:
+  method: python
+  url: https://github.com/suchmememanyskill/orcaslicer-compact-tools#installation
+  notes: Install the released Python plugin through OrcaSlicer's plugin manager.
+compatibility:
+  orca_slicer: OrcaSlicer with the Python plugin system.
+  platforms: []
+  requires_custom_build: false
+  notes: Bambu AMS mappings are rejected; operating-system support is not specified.
+evidence:
+  - label: README
+    url: https://github.com/suchmememanyskill/orcaslicer-compact-tools/blob/HEAD/README.md
+  - label: Implementation
+    url: https://github.com/suchmememanyskill/orcaslicer-compact-tools/blob/HEAD/plugin/compact_tools.py
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

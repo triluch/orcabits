@@ -1,0 +1,31 @@
+name: Kobra X LAN Plugin
+summary: Adds local-network printing and device controls for the Anycubic Kobra X.
+description: >-
+  The plugin connects to a Kobra X in LAN mode and supports upload, print
+  control, and filament-slot mapping. OrcaSlicer's Device tab shows status,
+  temperatures, fans, camera, and printer files, with a separate Kobra X page
+  for job details. It uses an undocumented, reverse-engineered printer protocol
+  and does not support ACE Pro operations. The README reports testing on Linux
+  Flatpak OrcaSlicer 2.5.1 with Kobra X firmware 2.0.2.2.
+repository: https://github.com/NokoLiko/kobrax_plugin
+categories:
+  - printer-connectivity
+status: experimental
+status_note: The plugin uses a reverse-engineered protocol and is documented as tested on one Kobra X firmware and Linux Flatpak setup.
+installation:
+  method: wheel
+  url: https://github.com/NokoLiko/kobrax_plugin#instalaci%C3%B3n
+  notes: Install the release wheel locally or build it from source with uv.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5 or newer with Python plugin support.
+  platforms:
+    - linux
+  requires_custom_build: false
+  notes: The tested setup is Linux Flatpak; broader platform support is not stated.
+evidence:
+  - label: README
+    url: https://github.com/NokoLiko/kobrax_plugin/blob/main/README.md
+  - label: Testing notes
+    url: https://github.com/NokoLiko/kobrax_plugin/blob/main/TESTING.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

@@ -1,0 +1,30 @@
+name: Aircraft Structures
+summary: Adds internal reinforcement webs to vase-mode aircraft wing toolpaths during slicing.
+description: >-
+  Cuts narrow, boundary-connected slots into sliced wing cross-sections so a
+  continuous vase-mode perimeter forms internal webs beside the skin. The
+  plugin operates on a solid wing model and does not require modeling the webs
+  in CAD. The project describes itself as experimental research software,
+  tested with one specific Windows x64 nightly and a small number of wings.
+  Physical structural strength has not been measured, and arbitrary wing shapes
+  are not established as supported.
+repository: https://github.com/kxkeller/orca-aircraft-structures
+categories:
+  - toolpaths-and-gcode
+status: experimental
+status_note: Explicit research software; one specific Windows nightly was tested and there are no structural measurements.
+installation:
+  method: source
+  url: https://github.com/kxkeller/orca-aircraft-structures#install
+  notes: Build the single-file plugin from the repository sources, then install the generated Python file.
+compatibility:
+  orca_slicer: One specific OrcaSlicer Windows x64 nightly build with the plugin system.
+  platforms:
+    - windows
+  requires_custom_build: false
+  notes: Tested host is a Windows portable nightly; the rolling build tag may no longer provide that exact build.
+evidence:
+  - label: README
+    url: https://github.com/kxkeller/orca-aircraft-structures/blob/7178013d5207142e92c32db43bb58276f5d98c53/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

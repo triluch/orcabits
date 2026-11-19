@@ -1,0 +1,29 @@
+name: Profiles Git
+summary: Reviews and manages Git changes to OrcaSlicer profile files from an in-application tab.
+description: >-
+  Shows changes to profiles setting by setting and offers commit, discard,
+  pull, push, and recent-history actions. It works with the Git repository
+  containing the user's OrcaSlicer profiles and requires Git to be available
+  on the system path. Pulled or discarded profiles require restarting
+  OrcaSlicer to avoid overwriting the changed files from its in-memory state.
+  The README documents a usable plugin workflow but requires a plugin-enabled
+  OrcaSlicer build.
+repository: https://github.com/Ruivalim/orca-profiles-git
+categories:
+  - profiles-and-calibration
+status: available
+status_note: README documents implemented Git actions, installation, and real-repository tests.
+installation:
+  method: python
+  url: https://github.com/Ruivalim/orca-profiles-git#install
+  notes: Install the documented Python plugin through an OrcaSlicer build with the plugin system.
+compatibility:
+  orca_slicer: Plugin-enabled OrcaSlicer 2.5.0 alpha or a nightly build.
+  platforms: []
+  requires_custom_build: false
+  notes: Requires Git on PATH; no operating-system support matrix is stated.
+evidence:
+  - label: README
+    url: https://github.com/Ruivalim/orca-profiles-git/blob/6b06889078d3f2858dc7c076822af386969dcf82/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

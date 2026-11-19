@@ -1,0 +1,28 @@
+name: GCode-FEA
+summary: Exports sliced extrusion geometry and metadata for downstream finite-element analysis.
+description: >-
+  GCode-FEA captures the slicer's extrusion structure and reconstructs it as bead-level geometry.
+  It can export STEP geometry, JSON metadata, reports, optional surface meshes, and volume meshes.
+  The output is intended for downstream simulation software rather than direct strength predictions.
+  The project labels the plugin beta and says its core geometry and workflow have been tested.
+  Its plugin API is version-specific and the README currently verifies Linux only.
+repository: https://github.com/nicholasgower/gcode-fea
+categories:
+  - analysis-and-costing
+status: experimental
+status_note: The README labels the plugin beta and ties compatibility to a version-specific experimental API.
+installation:
+  method: wheel
+  url: https://github.com/nicholasgower/gcode-fea#quick-start-orcaslicer-plugin
+  notes: Build the plugin wheel with Python 3.12 or later using the documented command, then install it locally.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5.0-beta build 345efec6.
+  platforms:
+    - linux
+  requires_custom_build: false
+  notes: Linux is the currently verified platform; the plugin API is experimental and version-specific.
+evidence:
+  - label: README
+    url: https://github.com/nicholasgower/gcode-fea/blob/959ae82e1320a78e1552d1041435a7ba6bd6a7b4/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

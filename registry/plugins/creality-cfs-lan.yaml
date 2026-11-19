@@ -1,0 +1,32 @@
+name: Creality CFS Sync — K-Series LAN Agent
+summary: Reads and writes Creality CFS slot data for OrcaSlicer on supported K-series printers.
+description: >-
+  The LAN agent reads CFS slot materials, colors, remaining amounts, and
+  temperature settings over Creality's local printer protocol. It exposes
+  slots as AMS trays so OrcaSlicer's filament synchronization can import
+  them. Users can write project or printer-library materials to slots, and
+  optional automatic synchronization mirrors sidebar changes to the CFS.
+  Live hardware verification is reported on a K1 Max with a CFS upgrade;
+  other K-series compatibility is based on the shared protocol and is not
+  hardware-verified.
+repository: https://github.com/heydemoura/creality-orca-integration
+categories:
+  - filament-and-spool-management
+status: experimental
+status_note: Reading was verified on a K1 Max with CFS; live writes were not verified on hardware.
+installation:
+  method: python
+  url: https://github.com/heydemoura/creality-orca-integration/blob/main/plugin/creality_cfs.py
+  notes: Install the Python file locally, then enable both the Creality CFS (LAN) agent and Creality CFS Manager capabilities.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5.0-dev nightly with the Python plugin system; framework is not in 2.4.x.
+  platforms: []
+  requires_custom_build: false
+  notes: Upstream does not specify desktop platforms. Hardware-verified on a K1 Max with CFS; other K-series devices are protocol-based expectations.
+evidence:
+  - label: README and installation
+    url: https://github.com/heydemoura/creality-orca-integration/blob/main/README.md
+  - label: Protocol and verification
+    url: https://github.com/heydemoura/creality-orca-integration/blob/main/docs/protocol.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

@@ -1,0 +1,51 @@
+---
+import Layout from "../layouts/Layout.astro";
+import {
+  plugins,
+  categoryNames,
+  statusNames,
+  pluginStatus,
+  statistics,
+  href,
+} from "../lib/site";
+---
+
+<Layout title="All plugins — OrcaBits">
+  <section class="intro">
+    <h1>All plugins</h1>
+    <p>
+      {plugins.length} entries, alphabetically. <a href={href()}
+        >Search and filter the catalogue</a
+      >.
+    </p>
+  </section>
+  <ul class="static-grid">
+    {
+      plugins.map(({ id, data }) => (
+        <li class="plugin-card">
+          <div class="card-top">
+            <>
+              <span class={`status ${pluginStatus(data)}`}>
+                {statusNames[pluginStatus(data)]}
+              </span>
+              <span class="stars">
+                ★{" "}
+                {statistics(data.repository)?.stars.toLocaleString("en") ?? "—"}
+              </span>
+            </>
+          </div>
+          <h2>
+            <a href={href(`plugins/${id}/`)}>{data.name}</a>
+          </h2>
+          <p>{data.summary}</p>
+          <p class="card-category">
+            {data.categories.map((id: string) => categoryNames[id]).join(" · ")}
+          </p>
+          {data.compatibility.requires_custom_build && (
+            <p class="requirement">Custom Orca build required</p>
+          )}
+        </li>
+      ))
+    }
+  </ul>
+</Layout>

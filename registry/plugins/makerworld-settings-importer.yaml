@@ -1,0 +1,28 @@
+name: MakerWorld Settings Importer
+summary: Converts a downloaded MakerWorld 3MF to the active printer while retaining compatible creator process settings.
+description: >-
+  Converts a local MakerWorld 3MF project for the currently active printer by
+  applying compatible creator process settings to the existing setup. It avoids
+  overwriting the target printer, build plate, or filament profiles. The plugin
+  writes a converted project and a categorized report of changes and
+  incompatibilities. Its documented workflow accepts downloaded files rather
+  than MakerWorld URLs.
+repository: https://github.com/FleeceFlames/Orca_makerworld_importer
+categories:
+  - profiles-and-calibration
+status: available
+status_note: README documents OrcaSlicer 2.5+ local installation and the 3MF conversion workflow.
+installation:
+  method: python
+  url: https://github.com/FleeceFlames/Orca_makerworld_importer#installation
+  notes: Install makerworld_importer.py as a local plugin.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5.0 or newer.
+  platforms: []
+  requires_custom_build: false
+  notes: Operating-system support is not specified.
+evidence:
+  - label: README
+    url: https://github.com/FleeceFlames/Orca_makerworld_importer/blob/HEAD/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

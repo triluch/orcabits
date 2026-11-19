@@ -1,0 +1,28 @@
+name: Edit in Blender
+summary: Sends plate objects to Blender and loads the edited meshes back into OrcaSlicer.
+description: >-
+  Edit in Blender adds a docked panel that lists plate objects and exports selected objects as STL files.
+  Saving edits in Blender writes the meshes for the plugin to load back into OrcaSlicer.
+  Returned meshes are added as new objects rather than replacing the originals.
+  The plugin does not restore object placement or instance transforms, so users must position returned meshes.
+  Its README documents Orca Cloud and local-file installation.
+repository: https://github.com/zed-0xff/orca-edit-in-blender
+categories:
+  - modeling-and-textures
+status: experimental
+status_note: The README documents the workflow but says loading edited meshes through the operating system was tested only on macOS.
+installation:
+  method: python
+  url: https://github.com/zed-0xff/orca-edit-in-blender#install
+  notes: Install edit_in_blender_any.py locally or subscribe through Orca Cloud.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5.0 or later.
+  platforms:
+    - macos
+  requires_custom_build: false
+  notes: The README reports the Load edits handoff tested on macOS; Windows and Linux use the default STL handler.
+evidence:
+  - label: README
+    url: https://github.com/zed-0xff/orca-edit-in-blender/blob/65d5fed6fdc0a205234f5f596a485238cab95245/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

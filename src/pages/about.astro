@@ -1,0 +1,89 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { issuesUrl, statusNames } from "../lib/site";
+---
+
+<Layout title="About & safety — OrcaBits">
+  <article class="prose">
+    <h1>About & safety</h1>
+    <h2>A public place to discover plugins</h2>
+    <p>
+      This is a best-effort catalogue of OrcaSlicer plugins found on GitHub,
+      maintained by an individual. It brings links together on an open website
+      because Orca Cloud requires an account even to browse plugins. Browsing
+      here needs no account; installation still uses the author's download or an
+      Orca Cloud account.
+    </p>
+    <p>
+      This project is not affiliated with or endorsed by OrcaSlicer, its
+      development team, or Orca Cloud.
+    </p>
+    <h2>Listed does not mean tested or safe</h2>
+    <p>
+      Plugins are not tested, audited, or certified by this catalogue.
+      Descriptions, status, and compatibility are based on their authors'
+      declarations and public documentation. Information may be incomplete,
+      incorrect, or out of date, and GitHub stars are not a safety rating.
+    </p>
+    <p>
+      Plugins are code you run on your machine. Depending on their permissions,
+      they may access files, credentials, networks, or printers. Review the
+      source and requested permissions, keep backups, and inspect generated
+      G-code before using it. Installation and use are at your own risk; this
+      catalogue provides no warranty and accepts no responsibility for damage,
+      data loss, or other consequences.
+    </p>
+    {
+      issuesUrl && (
+        <>
+          <h2>Report suspicious or malicious plugins</h2>
+          <p>
+            If you find a suspected malicious plugin in this catalogue,{" "}
+            <a href={issuesUrl}>open an issue in the catalogue repository</a>.
+            Include the plugin link and supporting evidence, without sharing
+            credentials or other private data.
+          </p>
+          <p>Do not run a plugin to prove that it is malicious.</p>
+          <h2>Suggest a plugin</h2>
+          <p>
+            Know an OrcaSlicer plugin that is missing here?{" "}
+            <a href={issuesUrl}>Open an issue to suggest it</a> and include a
+            link to its repository.
+          </p>
+          <h2>Request removal</h2>
+          <p>
+            If you are a plugin author and do not want your plugin listed here,{" "}
+            <a href={issuesUrl}>open an issue to request removal</a>.
+          </p>
+        </>
+      )
+    }
+    <h2>How to read status</h2>
+    <dl>
+      <dt>{statusNames.available}</dt><dd>
+        The author documents a usable installation and workflow; this does not
+        guarantee stability or active maintenance.
+      </dd>
+      <dt>{statusNames.experimental}</dt><dd>
+        A preview, proof of concept, or installable plugin with material
+        compatibility or testing uncertainty.
+      </dd>
+      <dt>{statusNames.deprecated}</dt><dd>
+        The author explicitly discourages further use or identifies a
+        replacement.
+      </dd>
+      <dt>{statusNames.archived}</dt><dd>
+        The repository is archived; review whether it still works with your
+        setup.
+      </dd>
+    </dl>
+    <h2>Dates and GitHub statistics</h2>
+    <p>
+      “Data updated” shows when catalogue information or GitHub statistics last
+      changed. Stars are snapshots, not live counters; an em dash means the
+      count is unknown. Plugins sharing a repository also share its star count.
+    </p>
+    <h2>Is this page made with AI?</h2>
+    <p>Yes.</p>
+  </article>
+</Layout>

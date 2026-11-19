@@ -1,0 +1,31 @@
+name: Snapmaker U1 Agent
+summary: Adds LAN printing and Snapmaker U1 status and controls to OrcaSlicer.
+description: >-
+  The printer-agent plugin connects to a Snapmaker U1 over Moonraker on the
+  local network. It handles print options, tool mapping, filament-preset
+  matching, status, and camera snapshots. A dedicated U1 tab displays all four
+  toolheads because OrcaSlicer's standard Device tab displays fewer. The README
+  documents OrcaSlicer 2.5.0 and reports testing on macOS Apple Silicon with
+  U1 firmware 2.0.0.
+repository: https://github.com/dr-apple/orca-snapmaker-u1-agent
+categories:
+  - printer-connectivity
+status: experimental
+status_note: The README describes API and build limitations and a limited tested setup.
+installation:
+  method: python
+  url: https://github.com/dr-apple/orca-snapmaker-u1-agent#install
+  notes: Install u1_moonraker_agent.py locally or subscribe through the documented Orca Cloud listing.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5.0; the Python plugin system and printer-agent support are required.
+  platforms:
+    - macos
+  requires_custom_build: false
+  notes: Tested with OrcaSlicer beta/RC on macOS Apple Silicon; other platforms are not specified.
+evidence:
+  - label: README
+    url: https://github.com/dr-apple/orca-snapmaker-u1-agent/blob/main/README.md
+  - label: Orca Cloud listing
+    url: https://cloud.orcaslicer.com/app/plugins/plugin-hub/3234badf-d674-4a39-b19b-55d5ec4a949b
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

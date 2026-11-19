@@ -1,0 +1,49 @@
+---
+import "../styles/global.css";
+import { href, displayDate, updatedAt, repositoryUrl } from "../lib/site";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+const {
+  title = "OrcaBits — OrcaSlicer plugins",
+  description = "An independent, best-effort public catalogue of OrcaSlicer plugins found on GitHub.",
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <meta name="color-scheme" content="light dark" />
+    <title>{title}</title>
+    <link rel="icon" href={href("favicon.svg")} type="image/svg+xml" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="brand" href={href()}
+        >OrcaBits<span>Unofficial OrcaSlicer plugin directory</span></a
+      >
+      <nav aria-label="Main navigation">
+        <a href={href("all/")}>All plugins</a>
+        <a href={href("about/")}>About & safety</a>
+        {repositoryUrl && <a href={repositoryUrl}>Source</a>}
+      </nav>
+    </header>
+    <main id="main"><slot /></main>
+    <footer class="site-footer">
+      <p>
+        Data updated <time datetime={updatedAt}>{displayDate(updatedAt!)}</time>
+      </p>
+      <p>
+        Independent and unaffiliated with OrcaSlicer, its developers, or Orca
+        Cloud. Plugins are not tested by this catalogue.{" "}
+        <a href={href("about/")}>Safety notice</a>
+      </p>
+    </footer>
+  </body>
+</html>

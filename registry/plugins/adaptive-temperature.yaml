@@ -1,0 +1,31 @@
+name: Adaptive Temperature
+summary: Schedules nozzle temperature changes around predicted extrusion-flow demand.
+description: >-
+  Uses filament flow curves and measured hotend response to schedule tool
+  temperature commands before changes in extrusion demand. The plugin supports
+  up to four tools and includes a live calibration workflow. That calibration
+  requires Windows with Moonraker/Klipper, while the documented Orca host
+  requirement is a 2.5 nightly with Pages and Slicing Pipeline APIs. The author
+  labels the integration experimental and asks users to verify exported output
+  and print quality.
+repository: https://github.com/cheeky-bastard/Adaptive_Temperature-OrcaSlicer_Plugin
+categories:
+  - toolpaths-and-gcode
+status: experimental
+status_note: README calls the integration experimental and requires users to verify output and print quality; the older repository location is a relocated duplicate.
+installation:
+  method: wheel
+  url: https://github.com/cheeky-bastard/Adaptive_Temperature-OrcaSlicer_Plugin#install-and-start
+  notes: Install the wheel from the release bundle through OrcaSlicer's plugin manager.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5 nightly with Pages and Slicing Pipeline plugin APIs.
+  platforms: []
+  requires_custom_build: false
+  notes: Live calibration requires Windows with Moonraker/Klipper; broader host platform support is not specified.
+evidence:
+  - label: README
+    url: https://github.com/cheeky-bastard/Adaptive_Temperature-OrcaSlicer_Plugin/blob/HEAD/README.md
+  - label: Changelog
+    url: https://github.com/cheeky-bastard/Adaptive_Temperature-OrcaSlicer_Plugin/blob/HEAD/CHANGELOG.txt
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

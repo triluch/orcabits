@@ -1,0 +1,27 @@
+name: Paraspool
+summary: Generates parametric spool-rim adapters from brand presets or measured spool diameters.
+description: >-
+  Paraspool creates spool-rim adapters from brand presets or a user-supplied spool diameter.
+  The OrcaSlicer tab provides a preview and transfers the generated model to the build plate.
+  Users can add stencil labels to adapters when the required font is available.
+  The plugin bundles its model generator and presets and is built as a single-file package for Orca Cloud.
+  Adapter fit still depends on spool measurements and printer dimensional accuracy.
+repository: https://github.com/bmelton/paraspool
+categories:
+  - modeling-and-textures
+status: available
+status_note: The README documents the plugin, its build/package workflow, and physically tested adapter presets.
+installation:
+  method: python
+  url: https://github.com/bmelton/paraspool#orca-slicer-plugin
+  notes: Install the built paraspool_v<version>_any.py file through Orca Cloud or the local plugin flow.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5 or later.
+  platforms: []
+  requires_custom_build: false
+  notes: OpenSCAD is not required by the bundled Python model generator.
+evidence:
+  - label: README
+    url: https://github.com/bmelton/paraspool/blob/main/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

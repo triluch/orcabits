@@ -1,0 +1,28 @@
+name: Prusa Binary G-code
+summary: Converts outgoing G-code to Prusa binary G-code for export and PrusaLink or Connect uploads.
+description: >-
+  Converts OrcaSlicer's outgoing text G-code to Prusa .bgcode, reducing file
+  size for saved files and printer uploads. It supports PrusaLink and Prusa
+  Connect workflows. A per-process toggle controls conversion and the filename
+  extension together. The README requires OrcaSlicer 2.5.0 release candidate
+  or newer, and warns to disable the toggle before uninstalling to avoid
+  incorrectly named text G-code.
+repository: https://github.com/hyiger/orcaslicer-bgcode-plugin
+categories:
+  - toolpaths-and-gcode
+status: available
+status_note: README documents installation and file/upload workflows; the plugin requires OrcaSlicer 2.5.0-rc or newer.
+installation:
+  method: python
+  url: https://github.com/hyiger/orcaslicer-bgcode-plugin#installation
+  notes: Install the Python plugin using OrcaSlicer's plugin manager.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5.0 release candidate or newer.
+  platforms: []
+  requires_custom_build: false
+  notes: Orca installs gcode-lib and heatshrink2 dependencies on first load; operating-system support is unspecified.
+evidence:
+  - label: README
+    url: https://github.com/hyiger/orcaslicer-bgcode-plugin/blob/HEAD/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

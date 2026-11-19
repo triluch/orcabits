@@ -1,0 +1,28 @@
+name: Web Tabs
+summary: Adds user-configured websites as tabs in OrcaSlicer's main window.
+description: >-
+  The plugin registers each configured website as a page tab in the main
+  OrcaSlicer window. A management script action edits the list, which is stored
+  in a tabs.json file. Each tab navigates directly to its configured HTTP or
+  HTTPS URL rather than embedding the site in an iframe. Changes to the tab
+  list take effect after reloading the plugin or restarting OrcaSlicer. The
+  source declares OrcaSlicer plugin metadata and Python 3.12 or newer.
+repository: https://github.com/bertenvdb/webtabs-orcaslicer-plugin
+categories:
+  - workflow-and-integrations
+status: experimental
+status_note: Version 0.1.0 source documents an installable plugin, but the project provides minimal compatibility and testing information.
+installation:
+  method: python
+  url: https://github.com/bertenvdb/webtabs-orcaslicer-plugin/blob/master/web_tabs_plugin_any.py
+  notes: Install the plugin source file locally through OrcaSlicer's Plugins dialog.
+compatibility:
+  orca_slicer: Python 3.12 or newer and OrcaSlicer plugin/page capability support are required; minimum OrcaSlicer version is not stated.
+  platforms: []
+  requires_custom_build: false
+  notes: Tested platform support is not stated.
+evidence:
+  - label: Plugin source and metadata
+    url: https://github.com/bertenvdb/webtabs-orcaslicer-plugin/blob/master/web_tabs_plugin_any.py
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

@@ -1,0 +1,28 @@
+name: MedusaHC
+summary: Reorders post-tool-change travel and can convert later temperature waits to nonblocking commands.
+description: >-
+  Moves XY travel before a leading Z hop after a tool change and applies the
+  hop's feedrate to that travel. It can also convert later M109 temperature
+  waits to M104 temperature commands. On non-Bambu printers the rewrite occurs
+  in exported or sent G-code, so the original Slice preview is unchanged. The
+  repository documents installation as a local Python plugin and selection in
+  OrcaSlicer's slicing-pipeline picker.
+repository: https://github.com/topi314/MedusaHC-Orcaslicer-Plugin
+categories:
+  - toolpaths-and-gcode
+status: available
+status_note: README documents local installation, pipeline selection, and the plugin's G-code rewriting behavior.
+installation:
+  method: python
+  url: https://github.com/topi314/MedusaHC-Orcaslicer-Plugin#install
+  notes: Install medusahc.py through OrcaSlicer's local-plugin dialog.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5 with the slicing-pipeline plugin API.
+  platforms: []
+  requires_custom_build: false
+  notes: Operating-system support is not specified.
+evidence:
+  - label: README
+    url: https://github.com/topi314/MedusaHC-Orcaslicer-Plugin/blob/HEAD/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

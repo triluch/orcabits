@@ -1,0 +1,28 @@
+name: Layer & Fan Event Injector
+summary: Inserts configured G-code at the second layer and first nonzero part-cooling fan activation.
+description: >-
+  Detects the beginning of the second layer and the first nonzero part-cooling
+  fan activation in outgoing G-code. It inserts user-defined commands before
+  or after each of those events. The README describes the plugin as an
+  OrcaSlicer post-processing plugin and documents placing its Python file in
+  OrcaSlicer's plugin directory. It requires Python 3.12 or newer through
+  OrcaSlicer's native Python bindings.
+repository: https://github.com/schirrel/orcaslicer-plugin-custom-gcode
+categories:
+  - toolpaths-and-gcode
+status: available
+status_note: README documents the native plugin file, installation location, event behavior, and OrcaSlicer API requirement.
+installation:
+  method: python
+  url: https://github.com/schirrel/orcaslicer-plugin-custom-gcode#installation
+  notes: Place layer_fan_event_injector.py in OrcaSlicer's plugin directory as documented.
+compatibility:
+  orca_slicer: OrcaSlicer providing native Python API bindings; plugin requires Python 3.12 or newer.
+  platforms: []
+  requires_custom_build: false
+  notes: No operating-system support matrix is stated.
+evidence:
+  - label: README
+    url: https://github.com/schirrel/orcaslicer-plugin-custom-gcode/blob/HEAD/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

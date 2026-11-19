@@ -1,0 +1,28 @@
+name: MakerWorld C5
+summary: Rebuilds MakerWorld projects for the currently selected FlashForge Creator 5 printer.
+description: >-
+  Converts a local 3MF project or a MakerWorld project link into a project
+  prepared for the selected Creator 5 printer. It retains creator process
+  settings while adapting the project to the target machine. A MakerWorld link
+  requires a BambuCloud token, while local files can be opened directly. This
+  page plugin is independently installed from the repository's Creator 5
+  printer-agent plugin.
+repository: https://github.com/ben0551/orca-flashforge-c5
+categories:
+  - profiles-and-calibration
+status: available
+status_note: README documents this plugin as independently installable and provides its conversion workflow.
+installation:
+  method: python
+  url: https://github.com/ben0551/orca-flashforge-c5#install
+  notes: Install the separate makerworld-c5 plugin file; it does not require the Creator 5 printer agent.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5.0 or newer.
+  platforms: []
+  requires_custom_build: false
+  notes: Requires a FlashForge Creator 5/5 Pro target profile; operating-system support is not specified.
+evidence:
+  - label: README
+    url: https://github.com/ben0551/orca-flashforge-c5/blob/main/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

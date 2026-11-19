@@ -1,0 +1,27 @@
+name: Preset Groups
+summary: Organizes user printer, filament, and process presets into searchable groups.
+description: >-
+  Groups user presets by name and color, with manual organization and
+  rule-based grouping. It can find duplicate or similar presets, compare
+  selected profiles, and store favorites and notes. Groups are managed by the
+  plugin rather than changing OrcaSlicer's built-in preset lists. Selected
+  filament presets can be loaded into filament slots.
+repository: https://github.com/GNUGiminot/preset-groups-orcaslicer
+categories:
+  - profiles-and-calibration
+status: available
+status_note: README provides a released wheel, OrcaSlicer plugin-manager installation, and a complete usage workflow.
+installation:
+  method: wheel
+  url: https://github.com/GNUGiminot/preset-groups-orcaslicer/releases
+  notes: Install the presetgroups wheel from Releases through OrcaSlicer's plugin manager.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5.
+  platforms: []
+  requires_custom_build: false
+  notes: Operating-system support is not specified.
+evidence:
+  - label: README
+    url: https://github.com/GNUGiminot/preset-groups-orcaslicer/blob/main/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

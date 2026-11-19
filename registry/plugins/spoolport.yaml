@@ -1,0 +1,29 @@
+name: SpoolPort
+summary: Sets OrcaSlicer filament slots from Happy Hare gates or the active Spoolman spool exposed through Moonraker.
+description: >-
+  SpoolPort reads filament metadata from Happy Hare gates or, without an MMU,
+  the active Spoolman spool reported by Moonraker. It chooses the closest
+  compatible OrcaSlicer profile by vendor, material, and color, with an
+  optional Spoolman field for exact profile overrides. A summary reports
+  changed and unmatched slots after each run. Synchronization is manual
+  because the plugin API only allows these preset changes from a script run;
+  AFC support is planned but not implemented.
+repository: https://github.com/BrandonDoster/SpoolPort
+categories:
+  - filament-and-spool-management
+status: available
+status_note: The README documents a usable manual synchronization workflow; AFC support is only planned.
+installation:
+  method: python
+  url: https://github.com/BrandonDoster/SpoolPort/blob/main/spoolport.py
+  notes: Install spoolport.py from the Plugins dialog and activate it.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5.0 or newer with Python plugin support.
+  platforms: []
+  requires_custom_build: false
+  notes: Desktop platforms are not specified. Requires Klipper and Moonraker with Happy Hare or an active Spoolman spool.
+evidence:
+  - label: README and installation
+    url: https://github.com/BrandonDoster/SpoolPort/blob/main/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

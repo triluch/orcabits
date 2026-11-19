@@ -1,0 +1,28 @@
+name: Multicolor Batching
+summary: Reorders color and layer units to reduce filament changes on supported single-nozzle printers.
+description: >-
+  Batches several layers of a color together where its modeled clearance and
+  support checks allow. The project targets Bambu A1 and A1 mini printers with
+  AMS Lite, with the prime tower disabled. On Bambu printers OrcaSlicer can
+  re-read the rewritten file for the preview, but its statistics panel retains
+  the original change count, flush, and time values. The collision model is not
+  a safety guarantee and machine validation is limited.
+repository: https://github.com/ShiratsuYudachi/multicolor-batching
+categories:
+  - toolpaths-and-gcode
+status: experimental
+status_note: Limited machine validation and unmeasured clearance assumptions; the README identifies target printers and stale native statistics.
+installation:
+  method: python
+  url: https://github.com/ShiratsuYudachi/multicolor-batching#installation
+  notes: Install the OrcaSlicer plugin using the documented repository workflow; the optional CLI is not required.
+compatibility:
+  orca_slicer: OrcaSlicer with the Python plugin and slicing-pipeline APIs.
+  platforms: []
+  requires_custom_build: false
+  notes: Targets Bambu A1/A1 mini with AMS Lite and prime tower off; host operating-system support is unspecified.
+evidence:
+  - label: README
+    url: https://github.com/ShiratsuYudachi/multicolor-batching/blob/HEAD/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

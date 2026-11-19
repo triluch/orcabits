@@ -1,0 +1,33 @@
+name: U1 Control
+summary: Adds a Snapmaker U1 control tab and print setup workflow to OrcaSlicer.
+description: >-
+  The plugin adds a printer tab with camera, four toolheads, RFID tags,
+  Spoolman data, file management, and firmware settings. Its print workflow
+  matches project filaments to toolheads and adjusts U1 G-code before sending
+  jobs over the local network. It supports stock firmware and U1 Extended
+  Firmware and has an Orca Cloud listing and downloadable wheel. The project
+  says automated tests use a fake printer, so they do not establish hardware
+  behavior.
+repository: https://github.com/bloodf/u1control
+categories:
+  - printer-connectivity
+status: available
+status_note: The README documents downloadable releases and Orca Cloud installation; automated tests use a fake printer.
+installation:
+  method: wheel
+  url: https://github.com/bloodf/u1control#-install
+  notes: Download u1control_any.whl from Releases or install through Orca Cloud.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5 or newer.
+  platforms: []
+  requires_custom_build: false
+  notes: Platform support is not specified.
+evidence:
+  - label: README
+    url: https://github.com/bloodf/u1control/blob/main/README.md
+  - label: Orca Cloud listing
+    url: https://cloud.orcaslicer.com/p/55b8c347d443
+  - label: Releases
+    url: https://github.com/bloodf/u1control/releases
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

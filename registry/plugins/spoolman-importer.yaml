@@ -1,0 +1,31 @@
+name: SpoolMan Importer
+summary: Browses SpoolMan inventory and preview-imports mapped filament presets into OrcaSlicer.
+description: >-
+  The plugin lets users browse, search, and filter SpoolMan inventory before
+  previewing generated filament presets. It can track linked preset files,
+  preview managed-field updates, and back up presets before changes. Field
+  mappings support built-in and custom SpoolMan values, with recovery and
+  diagnostic tools also documented. It is a development prerelease tested on
+  OrcaSlicer 2.6.0-dev, and general two-way synchronization is not provided.
+repository: https://github.com/StodgyWaif/orcaslicer-spoolman-plugin
+categories:
+  - filament-and-spool-management
+status: experimental
+status_note: The project labels itself a development prerelease and says compatibility beyond its tested environment is not fully verified.
+installation:
+  method: python
+  url: https://github.com/StodgyWaif/orcaslicer-spoolman-plugin/releases
+  notes: The release page provides spoolman_plugin_win_x86_64.py; README also recommends Orca Cloud installation.
+compatibility:
+  orca_slicer: The project reports testing in OrcaSlicer 2.6.0-dev; other compatibility is not fully verified.
+  platforms:
+    - windows
+  requires_custom_build: false
+  notes: The documented manual release artifact is Windows x86-64 only; a compatible plugin-enabled build is required.
+evidence:
+  - label: README and installation
+    url: https://github.com/StodgyWaif/orcaslicer-spoolman-plugin/blob/main/README.md
+  - label: Installation guide
+    url: https://github.com/StodgyWaif/orcaslicer-spoolman-plugin/blob/main/INSTALLATION.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

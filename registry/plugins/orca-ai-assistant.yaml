@@ -1,0 +1,30 @@
+name: Orca AI Assistant
+summary: Adds AI chat, model analysis, defect-photo diagnosis, and preset-setting suggestions to OrcaSlicer.
+description: >-
+  The plugin combines chat with current preset context, 3D geometry and
+  overhang analysis, defect-photo diagnosis, and G-code auditing. It supports
+  cloud providers and local model endpoints, with no fixed model vendor. Users
+  can selectively apply suggested settings to slicer presets. It requires an
+  AI provider and OrcaSlicer 2.5 or newer; it does not certify that a print
+  will succeed.
+repository: https://github.com/Belik1982/orca-ai-assistant
+categories:
+  - ai-and-automation
+status: available
+status_note: The README documents Cloud and local installation and selective application of suggested settings.
+installation:
+  method: python
+  url: https://github.com/Belik1982/orca-ai-assistant#-installation
+  notes: Install orca_ai_assistant_any.py from a GitHub release or the Orca Cloud listing.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5 or newer.
+  platforms: []
+  requires_custom_build: false
+  notes: Tested platform coverage is not specified.
+evidence:
+  - label: README
+    url: https://github.com/Belik1982/orca-ai-assistant/blob/9ad06a9d019f3403b289463e083494ec286f16a7/README.md
+  - label: Releases
+    url: https://github.com/Belik1982/orca-ai-assistant/releases
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

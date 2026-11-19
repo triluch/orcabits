@@ -1,0 +1,29 @@
+name: Print Farm — cross-vendor dashboard
+summary: Displays network printer status and print progress in OrcaSlicer with protocol-specific upload and control options.
+description: >-
+  The Print Farm plugin shows supported network printers as dashboard tiles
+  with status, temperatures, and progress, and can open their web interfaces
+  inside OrcaSlicer. Moonraker, OctoPrint, Bambu LAN, Duet/RepRapFirmware,
+  Creality, FlashForge, and Repetier-Server paths are implemented with
+  different capabilities. Several drivers are read-only or have upload and
+  control disabled until verified on real hardware. The project is alpha and
+  its active testing uses specific OrcaSlicer pull-request builds.
+repository: https://github.com/WeLizard/orca-plugins
+categories:
+  - monitoring-and-print-farms
+status: experimental
+status_note: The project labels the plugin alpha and says active testing uses exact OrcaSlicer PR artifacts.
+installation:
+  method: source
+  url: https://github.com/WeLizard/orca-plugins/tree/main/plugins/print-farm
+  notes: Install the Print Farm plugin from its plugin directory using the repository's documented source/package workflow.
+compatibility:
+  orca_slicer: Plugin-enabled OrcaSlicer with the Python Pages API; older builds use a host-managed Script window fallback.
+  platforms: []
+  requires_custom_build: false
+  notes: Desktop platform support is not specified; plugin API and supported printer actions vary by integration.
+evidence:
+  - label: Print Farm README
+    url: https://github.com/WeLizard/orca-plugins/blob/main/plugins/print-farm/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

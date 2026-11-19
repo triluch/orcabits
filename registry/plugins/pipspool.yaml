@@ -1,0 +1,32 @@
+name: PipSpool
+summary: Synchronizes Spoolman spools with individual OrcaSlicer filament profiles.
+description: >-
+  PipSpool creates one OrcaSlicer filament profile per active Spoolman spool
+  and matches updates by stable spool ID. Its dashboard supports configurable
+  synchronization of selected profile settings and lets users preview
+  conflicts before applying changes. It can add a configurable spool-selection
+  command to filament start G-code, while filament consumption remains the
+  responsibility of a printer-side integration. The README documents an
+  experimental Bambu Studio export option separately from the core workflow.
+repository: https://github.com/Gadonk/pipspool-orcaslicer
+categories:
+  - filament-and-spool-management
+status: available
+status_note: The README documents a current release and installation; Bambu Studio export is explicitly experimental.
+installation:
+  method: wheel
+  url: https://github.com/Gadonk/pipspool-orcaslicer/releases/latest
+  notes: Download the PipSpool wheel and install it directly through OrcaSlicer; do not unpack or run pip.
+compatibility:
+  orca_slicer: OrcaSlicer with wheel-capable Python plugin support; minimum version not specified in the install section.
+  platforms:
+    - windows
+    - macos
+    - linux
+  requires_custom_build: false
+  notes: The same release wheel is documented for Windows x86-64, Linux x86-64/ARM64, and macOS Intel/Apple Silicon.
+evidence:
+  - label: README and installation
+    url: https://github.com/Gadonk/pipspool-orcaslicer/blob/main/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

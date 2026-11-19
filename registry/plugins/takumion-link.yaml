@@ -1,0 +1,28 @@
+name: Takumion Link
+summary: Receives bodies from Takumion CAD and keeps linked files available for reloading in OrcaSlicer.
+description: >-
+  Takumion Link adds a tab for pairing the CAD application with OrcaSlicer over a loopback protocol.
+  It can send linked bodies or timestamped independent copies to the build plate.
+  Later updates overwrite linked files, which users reload from disk to keep the object's placement.
+  The plugin does not contain Takumion code and requires the separate Takumion application for CAD handoff.
+  Its README reports the Linux handoff checked while Windows and macOS handoff remain unverified.
+repository: https://github.com/Takumion/orcaslicer-plugin
+categories:
+  - modeling-and-textures
+status: experimental
+status_note: The README reports Linux handoff checked; the documented Windows and macOS paths have not been checked.
+installation:
+  method: wheel
+  url: https://github.com/Takumion/orcaslicer-plugin/releases/latest
+  notes: Install the released wheel through OrcaSlicer's plugin dialog; the repository also documents a single-file build.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5 or later.
+  platforms:
+    - linux
+  requires_custom_build: false
+  notes: Windows and macOS handoff are documented but unverified by the author.
+evidence:
+  - label: README
+    url: https://github.com/Takumion/orcaslicer-plugin/blob/ecc1965da5de760f89dd2ef78ca4b487ab829572/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

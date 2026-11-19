@@ -1,0 +1,140 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { catalog, href, plugins, statusNames } from "../lib/site";
+
+const filters = [
+  {
+    key: "category",
+    label: "Category",
+    values: catalog.categories.map((category) => category.name),
+  },
+  { key: "status", label: "Status", values: Object.values(statusNames) },
+];
+
+const cardTemplate = `
+<li class="plugin-card">
+  <div class="card-top"><span class="status">{{ meta.status }}</span><span class="stars" aria-label="GitHub stars">★ {{ meta.stars }}</span></div>
+  <h2><a href="{{ url | safeUrl }}">{{ meta.title }}</a></h2>
+  <p>{{ meta.summary }}</p>
+  <p class="card-category">{{ meta.categories }}</p>
+  {{#if eq(meta.custom_build, "true")}}<p class="requirement">Custom Orca build required</p>{{/if}}
+</li>`;
+---
+
+<Layout>
+  <section class="intro">
+    <h1>Find OrcaSlicer plugins.</h1>
+    <p>
+      A best-effort catalogue of plugins found on GitHub, collected in one
+      public place. Unlike Orca Cloud's sign-in-only browsing, you can explore
+      this catalogue without an account. Install through an author's download or
+      your Orca Cloud account.
+    </p>
+    <p class="muted">
+      {plugins.length} plugins · Author-declared features and compatibility · <a
+        href={href("about/")}>Read the safety notice</a
+      >
+    </p>
+  </section>
+  <section class="catalogue" aria-label="Find plugins">
+    <link rel="stylesheet" href={href("pagefind/pagefind-component-ui.css")} />
+    <script
+      is:inline
+      type="module"
+      src={href("pagefind/pagefind-component-ui.js")}></script>
+    <pagefind-config
+      faceted
+      preload
+      sort="stars:asc"
+      base-url={href()}
+      bundle-path={href("pagefind/")}></pagefind-config>
+    <div class="search-controls">
+      <pagefind-input placeholder="Search plugins…" aria-label="Search plugins"
+      ></pagefind-input>
+      {
+        filters.map(({ key, label, values }) => (
+          <div class="filter-control">
+            <details
+              class="filter-dropdown"
+              data-filter={key}
+              name="catalogue-filters"
+            >
+              <summary>
+                {label}
+                <span data-filter-count />
+                <svg
+                  aria-hidden="true"
+                  viewBox="0 0 16 16"
+                  width="16"
+                  height="16"
+                >
+                  <path
+                    d="m4 6 4 4 4-4"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </summary>
+              <div class="filter-options">
+                <fieldset aria-label={label} disabled>
+                  {values
+                    .sort((a, b) => a.localeCompare(b, "en"))
+                    .map((value) => (
+                      <label>
+                        <input type="checkbox" name={key} value={value} />
+                        {value}
+                      </label>
+                    ))}
+                </fieldset>
+              </div>
+            </details>
+            <button
+              type="button"
+              class="clear-filter"
+              data-filter={key}
+              title={`Clear ${key}`}
+              aria-label={`Clear ${key}`}
+              disabled
+            >
+              <svg
+                aria-hidden="true"
+                viewBox="0 0 16 16"
+                width="16"
+                height="16"
+              >
+                <path
+                  d="m4 4 8 8m0-8-8 8"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.75"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+          </div>
+        ))
+      }
+      <div class="sort-control">
+        <label for="sort-order">Sort by</label>
+        <select id="sort-order" disabled>
+          <option value="stars" selected>Stars</option>
+          <option value="name">Name</option>
+          <option value="category">Category</option>
+          <option value="status">Status</option>
+        </select>
+      </div>
+    </div>
+    <pagefind-summary></pagefind-summary>
+    <pagefind-results hide-sub-results>
+      <script is:inline type="text/pagefind-template" set:html={cardTemplate} />
+    </pagefind-results>
+    <p class="browse-fallback">
+      <a href={href("all/")}>Browse the complete list</a> · Works without JavaScript
+    </p>
+  </section>
+  <script>
+    import "../scripts/catalogue.mjs";
+  </script>
+</Layout>

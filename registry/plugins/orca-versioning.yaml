@@ -1,0 +1,30 @@
+name: Orca Versioning
+summary: Saves Git-backed snapshots of OrcaSlicer projects when exporting G-code or sending prints.
+description: >-
+  The plugin creates project snapshots on G-code export or printer send and
+  keeps a separate history for each plate. Its Versions tab shows settings and
+  object changes, compares revisions, and extracts an older project copy.
+  File-export capture requires adding the plugin to a user process preset;
+  printer sends are captured without that step. OrcaSlicer 2.5.0 has a known
+  export-hook issue with a documented workaround.
+repository: https://github.com/trane77/orca-versioning-plugin
+categories:
+  - workflow-and-integrations
+status: available
+status_note: The README documents installation and workflows, with a known OrcaSlicer 2.5.0 export-hook issue and workaround.
+installation:
+  method: python
+  url: https://github.com/trane77/orca-versioning-plugin#installation
+  notes: Copy orca_versioning.py into OrcaSlicer's plugin folder and enable the plugin.
+compatibility:
+  orca_slicer: Python plugin support is required; version 2.5.0 has a documented export-hook issue.
+  platforms: []
+  requires_custom_build: false
+  notes: Supported operating systems are not specified.
+evidence:
+  - label: README
+    url: https://github.com/trane77/orca-versioning-plugin/blob/327a9edc165cf51dfe541efc4c2c831ca4a80f99/README.md
+  - label: OrcaSlicer export-hook fix
+    url: https://github.com/SoftFever/OrcaSlicer/pull/16884
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

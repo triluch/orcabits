@@ -1,0 +1,165 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import {
+  plugins,
+  categoryNames,
+  statistics,
+  statusNames,
+  pluginStatus,
+  pluginSortRanks,
+  displayDate,
+  github,
+  href,
+} from "../../lib/site";
+
+export function getStaticPaths() {
+  return plugins.map((plugin) => ({
+    params: { id: plugin.id },
+    props: { plugin },
+  }));
+}
+const { plugin } = Astro.props;
+const data = plugin.data;
+const stats = statistics(data.repository);
+const status = pluginStatus(data);
+const platformNames = { windows: "Windows", macos: "macOS", linux: "Linux" };
+---
+
+<Layout title={`${data.name} — OrcaBits`} description={data.summary}>
+  <article class="plugin-detail" data-pagefind-body>
+    <a class="back-link" href={href()}>← Catalogue</a>
+    <div class="detail-heading">
+      <div>
+        <p class="eyebrow">OrcaSlicer plugin</p>
+        <h1 data-pagefind-meta="title">{data.name}</h1>
+      </div>
+      <a class="repo-button" href={data.repository}
+        >GitHub repository <span aria-label="stars"
+          >★ {stats?.stars.toLocaleString("en") ?? "—"}</span
+        ></a
+      >
+    </div>
+    <p class="lead" data-pagefind-meta="summary">{data.summary}</p>
+    <div class="badges">
+      <span
+        class={`status ${status}`}
+        data-pagefind-filter="status"
+        data-pagefind-meta="status">{statusNames[status]}</span
+      >
+      {
+        data.categories.map((category: string) => (
+          <span class="category" data-pagefind-filter="category">
+            {categoryNames[category]}
+          </span>
+        ))
+      }
+    </div>
+    <meta
+      data-pagefind-meta="categories[content]"
+      content={data.categories
+        .map((id: string) => categoryNames[id])
+        .join(" · ")}
+    />
+    <meta
+      data-pagefind-meta="stars[content]"
+      content={stats?.stars.toLocaleString("en") ?? "—"}
+    />
+    <meta
+      data-pagefind-meta="custom_build[content]"
+      content={String(data.compatibility.requires_custom_build)}
+    />
+    {
+      ["name", "category", "status", "stars"].map((mode) => (
+        <meta
+          data-pagefind-sort={`${mode}[content]`}
+          content={String(pluginSortRanks[plugin.id][mode])}
+        />
+      ))
+    }
+    <section class="description">
+      <h2>What it does</h2>
+      <p>{data.description}</p>
+    </section>
+    <div class="detail-grid">
+      <section class="detail-panel">
+        <h2>Status & compatibility</h2>
+        <p>{data.status_note}</p>
+        {
+          stats?.archived && (
+            <p class="requirement">GitHub marks this repository as archived.</p>
+          )
+        }
+        <dl>
+          <dt>OrcaSlicer</dt><dd>{data.compatibility.orca_slicer}</dd>
+          <dt>Platforms</dt><dd>
+            {
+              data.compatibility.platforms.length
+                ? data.compatibility.platforms
+                    .map((p: keyof typeof platformNames) => platformNames[p])
+                    .join(", ")
+                : "Not specified by the author"
+            }
+          </dd>
+        </dl>
+        {
+          data.compatibility.requires_custom_build && (
+            <p class="requirement">
+              Requires a custom OrcaSlicer build; not a stock release/nightly
+              installation.
+            </p>
+          )
+        }
+        {data.compatibility.notes && <p>{data.compatibility.notes}</p>}
+      </section>
+      <section class="detail-panel">
+        <h2>Installation</h2>
+        <p>
+          <a href={data.installation.url}
+            >Author's installation instructions or download ↗</a
+          >
+        </p>
+        {data.installation.notes && <p>{data.installation.notes}</p>}
+        <p class="muted">
+          This catalogue does not install or distribute plugins. <a
+            href={href("about/")}>Read the safety notice before installing.</a
+          >
+        </p>
+      </section>
+    </div>
+    <section class="evidence" data-pagefind-ignore>
+      <h2>Sources</h2>
+      <ul>
+        {
+          data.evidence.map((source: { label: string; url: string }) => (
+            <li>
+              <a href={source.url}>{source.label}</a>
+            </li>
+          ))
+        }
+      </ul>
+      <p class="muted">
+        Information updated <time datetime={data.updated_at}
+          >{displayDate(data.updated_at)}</time
+        >; sources reviewed <time datetime={data.reviewed_at}
+          >{displayDate(data.reviewed_at)}</time
+        >.
+        {
+          github.checked_at && (
+            <>
+              {" "}
+              Repository statistics checked{" "}
+              <time datetime={github.checked_at}>
+                {displayDate(github.checked_at)}
+              </time>
+              .
+            </>
+          )
+        }
+      </p>
+      <p class="muted">
+        Features and compatibility are based on the author's declarations, not
+        testing by this catalogue.
+      </p>
+    </section>
+  </article>
+</Layout>

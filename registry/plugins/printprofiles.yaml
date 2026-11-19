@@ -1,0 +1,28 @@
+name: PrintProfiles
+summary: Searches a public filament-profile catalog and imports a selected profile into OrcaSlicer.
+description: >-
+  Searches the repository's public catalog of filament profiles and writes a
+  selected entry into the user's OrcaSlicer filament presets. Imported profiles
+  inherit from an installed base preset and appear after OrcaSlicer restarts.
+  The catalog is currently stored in this repository and served as a static
+  JSON file, rather than fetched from a PrintProfiles.Org API. The project
+  describes its current plugin release as early.
+repository: https://github.com/tommasobbianchi/printprofiles-orca-plugin
+categories:
+  - profiles-and-calibration
+status: experimental
+status_note: README marks v0.1.0 as early; the documented source installation is available.
+installation:
+  method: source
+  url: https://github.com/tommasobbianchi/printprofiles-orca-plugin#install
+  notes: Copy the plugin into OrcaSlicer's plugin data directory and create the documented install record.
+compatibility:
+  orca_slicer: OrcaSlicer with the Python plugin system.
+  platforms: []
+  requires_custom_build: false
+  notes: README gives data-directory paths for Linux, Windows, and macOS but does not state a tested support matrix.
+evidence:
+  - label: README
+    url: https://github.com/tommasobbianchi/printprofiles-orca-plugin/blob/main/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

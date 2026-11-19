@@ -1,0 +1,32 @@
+name: Bambuddy for OrcaSlicer — nobodyguy
+summary: Sends sliced plates to Bambuddy and displays printer status, AMS slots, and cameras in OrcaSlicer.
+description: >-
+  The plugin routes OrcaSlicer's Print and Send actions to a self-hosted
+  Bambuddy server for immediate printing, queueing, or library storage. It
+  displays Bambuddy printers with live state, temperatures, progress, AMS
+  slots, and camera views. A Bambuddy tab also shows printer summaries and
+  session sends, with notifications for job events. The native Print/Send
+  integration uses OrcaSlicer's experimental printer-agent API, and Device
+  tab controls such as pause, resume, and stop are not implemented.
+repository: https://github.com/nobodyguy/orca-bambuddy
+categories:
+  - monitoring-and-print-farms
+status: experimental
+status_note: Native Print/Send integration is described as using experimental OrcaSlicer printer-agent features.
+installation:
+  method: wheel
+  url: https://github.com/nobodyguy/orca-bambuddy/releases/latest
+  notes: Install orca_bambuddy_any.whl from the releases page through OrcaSlicer's local-plugin installer.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5.0 alpha, beta, or rc with Python plugins and experimental printer agents.
+  platforms:
+    - windows
+    - macos
+    - linux
+  requires_custom_build: false
+  notes: README lists Windows, macOS, and Linux; requires Bambuddy 1.2.5.7 or later and an API key.
+evidence:
+  - label: README and installation
+    url: https://github.com/nobodyguy/orca-bambuddy/blob/main/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

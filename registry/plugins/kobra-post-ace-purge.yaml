@@ -1,0 +1,28 @@
+name: Kobra 3 V2 — Purge After ACE Load
+summary: Adds nozzle heating, wiping, and a purge line after ACE filament loading.
+description: >-
+  Adds nozzle heating, wiping, and a purge line after ACE filament loading
+  instead of relying on an earlier pre-load purge. It is a separate Python
+  plugin in a repository with three independently installed Kobra 3 V2
+  plugins. The documented target is the Kobra 3 V2 with ACE Pro and Rinkhals
+  firmware. The repository labels the project beta and says the split plugins
+  have not yet been proven in OrcaSlicer.
+repository: https://github.com/okamisolutions/kobra3v2-orca-plugin
+categories:
+  - toolpaths-and-gcode
+status: experimental
+status_note: Repository labels this separate plugin beta and says the split plugins have not yet been proven in OrcaSlicer.
+installation:
+  method: python
+  url: https://github.com/okamisolutions/kobra3v2-orca-plugin#readme
+  notes: Install kobra3v2_purga_pos_ace.py independently from the repository's other plugins.
+compatibility:
+  orca_slicer: OrcaSlicer with the Python plugin system.
+  platforms: []
+  requires_custom_build: false
+  notes: Targets Kobra 3 V2/ACE Pro with Rinkhals firmware; operating-system support is not specified.
+evidence:
+  - label: README
+    url: https://github.com/okamisolutions/kobra3v2-orca-plugin/blob/HEAD/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

@@ -1,0 +1,31 @@
+name: Spooler
+summary: Displays Spoolman inventory in OrcaSlicer and creates printer-specific profiles from stocked filament.
+description: >-
+  Spooler lists Spoolman spools with material, color, location, and remaining
+  weight inside OrcaSlicer. It creates filament profiles from stocked
+  Spoolman filament and shows which spools are loaded in printer lanes or
+  toolheads. After slicing, it compares the plate's filament needs with
+  available spool weight. Bambu Cloud inventory is read-only and explicitly
+  experimental; Spoolman is the documented primary source.
+repository: https://github.com/bloodf/spooler
+categories:
+  - filament-and-spool-management
+status: available
+status_note: The README documents a downloadable plugin file and Orca Cloud installation.
+installation:
+  method: python
+  url: https://github.com/bloodf/spooler/releases/latest
+  notes: Download spooler_any.py and install it in its own folder in OrcaSlicer's plugin directory, or subscribe through Orca Cloud.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5.0 or later with plugin preset APIs.
+  platforms:
+    - windows
+    - macos
+    - linux
+  requires_custom_build: false
+  notes: README explicitly lists Windows, macOS, and Linux.
+evidence:
+  - label: README and installation
+    url: https://github.com/bloodf/spooler/blob/main/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

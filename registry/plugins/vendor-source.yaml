@@ -1,0 +1,28 @@
+name: Vendor Source
+summary: Fetches printer and process definitions from a Git source into OrcaSlicer's local system-profile directory.
+description: >-
+  Downloads machine and related vendor profiles from a configured Git
+  repository or branch and merges them into OrcaSlicer's local system-profile
+  directory. The plugin offers both a wheel and a single-file Python package;
+  the README says they provide the same capability and warns not to install
+  both. New profiles become visible after restarting OrcaSlicer. Syncing an
+  entire upstream tree replaces all vendor profiles included in that tree.
+repository: https://github.com/zFDT/orca-vendor-source-plugin
+categories:
+  - profiles-and-calibration
+status: available
+status_note: README provides installable wheel and single-file forms, with a worked configuration and usage instructions.
+installation:
+  method: wheel
+  url: https://github.com/zFDT/orca-vendor-source-plugin#3-install-the-plugin
+  notes: Install either the documented wheel or the single-file Python plugin, not both.
+compatibility:
+  orca_slicer: OrcaSlicer with the Python plugin system.
+  platforms: []
+  requires_custom_build: false
+  notes: Operating-system support is not specified.
+evidence:
+  - label: README
+    url: https://github.com/zFDT/orca-vendor-source-plugin/blob/main/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

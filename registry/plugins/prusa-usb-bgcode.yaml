@@ -1,0 +1,31 @@
+name: Prusa Binary G-code and USB
+summary: Converts output to Prusa binary G-code and sends jobs to USB or PrusaLink.
+description: >-
+  The plugin converts sliced G-code to Prusa binary G-code and writes it to a
+  USB drive or forwards it to PrusaLink. A companion Windows helper can add
+  camera viewing and a local printer page. The README documents installation
+  from the plugin's Python file and requires Python 3, with ffmpeg needed only
+  for camera use. Enabling local-network sharing exposes printer controls
+  without a password.
+repository: https://github.com/yahya-tamur/orca_slicer_to_prusa_usb
+categories:
+  - printer-connectivity
+status: available
+status_note: The README documents installation and the USB and PrusaLink delivery workflows.
+installation:
+  method: python
+  url: https://github.com/yahya-tamur/orca_slicer_to_prusa_usb#installing
+  notes: Install orca_plugin/usb_bgcode_export.py from OrcaSlicer's Plugins dialog.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5 or newer.
+  platforms:
+    - windows
+  requires_custom_build: false
+  notes: The documented plugin and helper workflow is for Windows.
+evidence:
+  - label: README
+    url: https://github.com/yahya-tamur/orca_slicer_to_prusa_usb/blob/main/README.md
+  - label: Plugin source
+    url: https://github.com/yahya-tamur/orca_slicer_to_prusa_usb/tree/main/orca_plugin
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

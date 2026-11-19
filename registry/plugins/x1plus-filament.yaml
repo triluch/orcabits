@@ -1,0 +1,28 @@
+name: X1Plus Orca Filament Plugin
+summary: Pushes custom filament definitions from OrcaSlicer to the manual AMS picker on X1Plus-jailbroken Bambu X1 printers.
+description: >-
+  The plugin sends a custom filament definition over SSH and adds it to the
+  X1Plus manual filament picker on a Bambu X1 or X1C. Users can enter a root
+  password for one-time access or choose to install a persistent SSH key for
+  later pushes. The plugin edits the printer's user-filament JSON and restarts
+  the touchscreen service after a push. Root access is required, and the
+  author warns not to push while printing because that behavior is untested.
+repository: https://github.com/broncosis/orca_x1plus_plugin
+categories:
+  - filament-and-spool-management
+status: experimental
+status_note: The documented workflow was verified on hardware, but the plugin requires root access and mid-print behavior is untested.
+installation:
+  method: python
+  url: https://github.com/broncosis/orca_x1plus_plugin/blob/main/orca_plugin_x1plus.py
+  notes: Install the plugin file locally; Orca installs its declared Paramiko dependency on first load.
+compatibility:
+  orca_slicer: A Python-plugin-enabled OrcaSlicer build; upstream reports testing on a feature-branch PR-1 AppImage, not a stable release.
+  platforms: []
+  requires_custom_build: false
+  notes: Desktop platform support is not specified. Requires a Bambu X1 or X1C running X1Plus with root SSH access.
+evidence:
+  - label: README, requirements, and installation
+    url: https://github.com/broncosis/orca_x1plus_plugin/blob/main/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

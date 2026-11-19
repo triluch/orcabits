@@ -1,0 +1,32 @@
+name: AMS Custom Profiles
+summary: Applies remembered custom filament profiles to RFID-tagged Bambu AMS slots by color.
+description: >-
+  After an AMS synchronization, the plugin reads Bambu spool tags and asks
+  which custom OrcaSlicer profile to use for each previously unseen color.
+  It remembers color-to-profile choices and applies them to tagged slots.
+  Untagged third-party spools keep the profile already selected for their
+  slots. The author tested it only with one AMS on a Bambu P2S, and support
+  for multiple AMS units, AMS HT, external spools, and dual-nozzle printers is
+  not verified or supported.
+repository: https://github.com/fraqtl/orca-ams-custom-profiles
+categories:
+  - filament-and-spool-management
+status: experimental
+status_note: The author provides the plugin as-is and reports testing only on a P2S with one AMS.
+installation:
+  method: source
+  url: https://github.com/fraqtl/orca-ams-custom-profiles#install
+  notes: Copy the ams_custom_profiles folder into OrcaSlicer's plugin directory and restart; installation requires a build with the newer plugin API.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5.0 nightly with the plugin API from PR #16518; not compatible with 2.5.0-alpha.
+  platforms:
+    - windows
+    - macos
+    - linux
+  requires_custom_build: false
+  notes: The README documents plugin-folder paths for Windows, macOS, and Linux, but reports hardware testing only on a P2S with one AMS.
+evidence:
+  - label: README and installation
+    url: https://github.com/fraqtl/orca-ams-custom-profiles/blob/main/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

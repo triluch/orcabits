@@ -1,0 +1,30 @@
+name: Anycubic Kobra LAN
+summary: Adds direct LAN printing and printer controls for supported Anycubic Kobra printers.
+description: >-
+  The plugin discovers supported printers on the local network and connects
+  without Anycubic Cloud. It uploads G-code, starts or controls prints, and
+  synchronizes ACE Pro filament slots with OrcaSlicer. The README reports
+  verification on Kobra S1 and Kobra 3 with ACE Pro. It requires LAN mode and
+  an OrcaSlicer build that includes embedded Python plugin support.
+repository: https://github.com/ianloic/anycubic-orca-plugin
+categories:
+  - printer-connectivity
+status: available
+status_note: The README documents installation and reports testing on Kobra S1 and Kobra 3 with ACE Pro.
+installation:
+  method: python
+  url: https://github.com/ianloic/anycubic-orca-plugin#installation
+  notes: Install the documented plugin Python file manually or use the repository's mise install task.
+compatibility:
+  orca_slicer: Embedded Python plugin support is required; stable releases through 2.2.0 do not include it.
+  platforms:
+    - linux
+  requires_custom_build: false
+  notes: The README documents native Linux and Flatpak install paths; it does not state other platform support.
+evidence:
+  - label: README
+    url: https://github.com/ianloic/anycubic-orca-plugin/blob/main/README.md
+  - label: Plugin source
+    url: https://github.com/ianloic/anycubic-orca-plugin/tree/main/anycubic_orca_plugin
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

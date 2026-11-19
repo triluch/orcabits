@@ -1,0 +1,28 @@
+name: Kobra 3 V2 — First-Layer Bed Wait
+summary: Adds a wait for the requested first-layer bed temperature after Kobra 3 V2 leveling.
+description: >-
+  Inserts a wait for the requested first-layer bed temperature immediately
+  after the Kobra leveling command. It addresses the printer remaining at its
+  leveling temperature until a later layer. This is a separate Python plugin
+  in a repository with three independently installed Kobra 3 V2 plugins. The
+  repository labels the project beta and says the split plugins have not yet
+  been proven in OrcaSlicer.
+repository: https://github.com/okamisolutions/kobra3v2-orca-plugin
+categories:
+  - toolpaths-and-gcode
+status: experimental
+status_note: Repository labels this separate plugin beta and says the split plugins have not yet been proven in OrcaSlicer.
+installation:
+  method: python
+  url: https://github.com/okamisolutions/kobra3v2-orca-plugin#readme
+  notes: Install kobra3v2_mesa_1a_camada.py independently from the repository's other plugins.
+compatibility:
+  orca_slicer: OrcaSlicer with the Python plugin system.
+  platforms: []
+  requires_custom_build: false
+  notes: Targets Anycubic Kobra 3 V2; operating-system support is not specified.
+evidence:
+  - label: README
+    url: https://github.com/okamisolutions/kobra3v2-orca-plugin/blob/HEAD/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

@@ -1,0 +1,28 @@
+name: FHSL — Nature & Organics
+summary: Adds 38 grayscale height-map textures to OrcaSlicer's texture-library selector.
+description: >-
+  This standalone FilamentHub Surface Library pack installs 38 seamless grayscale height maps.
+  The maps are selected through OrcaSlicer's texture-library interface.
+  The repository documents a source build that produces a wheel for this pack.
+  The current package is a candidate that has not yet been accepted in the target OrcaSlicer build.
+repository: https://github.com/WeLizard/orca-plugins
+categories:
+  - modeling-and-textures
+status: experimental
+status_note: The source package has a documented wheel build, but its README says the candidate has not been accepted in the target host build.
+installation:
+  method: source
+  url: https://github.com/WeLizard/orca-plugins/blob/main/plugins/fhsl-nature-organics/PUBLISHING.md
+  notes: Build the pack with Python 3.12+ and Pillow using the documented repository command; no wheel is checked into the repository.
+compatibility:
+  orca_slicer: A build that supports texture-library plugins; the candidate's acceptance is unverified.
+  platforms: []
+  requires_custom_build: false
+  notes: The required host capability and candidate acceptance are not tied to a specific OrcaSlicer version.
+evidence:
+  - label: Plugin README
+    url: https://github.com/WeLizard/orca-plugins/blob/main/plugins/fhsl-nature-organics/README.md
+  - label: Build and publishing instructions
+    url: https://github.com/WeLizard/orca-plugins/blob/main/plugins/fhsl-nature-organics/PUBLISHING.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

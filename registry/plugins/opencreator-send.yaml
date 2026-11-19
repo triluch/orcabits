@@ -1,0 +1,30 @@
+name: OpenCreator Send
+summary: Adds per-print lane mapping and Creator 5 print options before OrcaSlicer uploads G-code.
+description: >-
+  The plugin opens a setup window when sending a sliced plate to a Creator 5 or
+  Creator 5 Pro running OpenCreator firmware. It maps print tools to AFC lanes
+  and can set per-print calibration, purge, leveling, pressure-advance, and
+  timelapse options. It then lets OrcaSlicer's normal G-code upload continue.
+  It requires OrcaSlicer 2.5 or newer, plain G-code uploads, and printer-agent
+  and 3MF options configured as documented.
+repository: https://github.com/FlashForge-C5-Modding-Group/opencreator-send
+categories:
+  - printer-connectivity
+status: available
+status_note: The README documents installation and the send workflow on Creator 5 and Creator 5 Pro with OpenCreator firmware.
+installation:
+  method: python
+  url: https://github.com/FlashForge-C5-Modding-Group/opencreator-send#install
+  notes: Copy opencreator_send_any.py into the OrcaSlicer plugin folder and configure the slicing pipeline.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5 or newer with plugin support.
+  platforms: []
+  requires_custom_build: false
+  notes: The plugin is pure Python; tested platform coverage is not stated.
+evidence:
+  - label: README
+    url: https://github.com/FlashForge-C5-Modding-Group/opencreator-send/blob/main/README.md
+  - label: Plugin source
+    url: https://github.com/FlashForge-C5-Modding-Group/opencreator-send/blob/main/opencreator_send_any.py
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

@@ -1,0 +1,29 @@
+name: Preset Profiler
+summary: Audits OrcaSlicer and Bambu Studio user presets and exports reports and filament sheets.
+description: >-
+  Surveys user printer, filament, and process presets from OrcaSlicer and
+  optionally Bambu Studio. It checks preset bindings and tracks differences
+  against an accepted baseline. The plugin can export filament sheets and
+  CSV/HTML reports without editing the underlying presets. The README labels
+  the release beta and reports testing on macOS while seeking Windows and Linux
+  testers.
+repository: https://github.com/rubi3dp/preset-profiler
+categories:
+  - profiles-and-calibration
+status: experimental
+status_note: Explicitly labeled beta; tested on macOS, with Windows and Linux testers being sought.
+installation:
+  method: python
+  url: https://github.com/rubi3dp/preset-profiler/releases/latest
+  notes: Download preset_profiler.py from Releases and install it as a local plugin, or subscribe through OrcaCloud.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5 or newer.
+  platforms:
+    - macos
+  requires_custom_build: false
+  notes: macOS is tested; Windows and Linux are not yet verified.
+evidence:
+  - label: README
+    url: https://github.com/rubi3dp/preset-profiler/blob/722728448e6e1ca22f1c783a1973fca5e44fcdf8/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

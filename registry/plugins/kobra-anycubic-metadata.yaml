@@ -1,0 +1,29 @@
+name: Kobra 3 V2 — Anycubic Metadata
+summary: Adds Anycubic metadata and marker commands to G-code for Kobra 3 V2 compatibility.
+description: >-
+  Adds Anycubic-style metadata, thumbnail markers, and print-start markers to
+  improve compatibility with the Kobra 3 V2 touchscreen workflow. It is a
+  separate Python plugin in a repository that contains three independently
+  installable Kobra 3 V2 plugins. This entry is installed as
+  kobra3v2_metadados_anycubic.py. Touchscreen filament selection still depends
+  on retaining OrcaSlicer's final G-code configuration block. The repository
+  labels the plugins beta and says they are not yet proven.
+repository: https://github.com/okamisolutions/kobra3v2-orca-plugin
+categories:
+  - toolpaths-and-gcode
+status: experimental
+status_note: Repository labels this separate plugin beta and says the plugins have not yet been proven.
+installation:
+  method: python
+  url: https://github.com/okamisolutions/kobra3v2-orca-plugin#readme
+  notes: Install kobra3v2_metadados_anycubic.py independently from the repository's other plugins.
+compatibility:
+  orca_slicer: OrcaSlicer with the Python plugin system.
+  platforms: []
+  requires_custom_build: false
+  notes: Targets Anycubic Kobra 3 V2; operating-system support is not specified.
+evidence:
+  - label: README
+    url: https://github.com/okamisolutions/kobra3v2-orca-plugin/blob/HEAD/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

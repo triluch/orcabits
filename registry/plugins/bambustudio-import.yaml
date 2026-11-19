@@ -1,0 +1,29 @@
+name: BambuStudio Import
+summary: Imports selected BambuStudio printer, process, and filament profiles into OrcaSlicer.
+description: >-
+  Reads user profiles from BambuStudio and BambuStudio Beta directories, or from
+  exported configuration files. It checks profile compatibility, reports
+  unsupported settings, and flattens BambuStudio user-profile inheritance.
+  Imports can go into a removable local bundle or ordinary OrcaSlicer user
+  presets, and previously imported profiles can be updated or removed. Windows
+  and Linux are covered by code and tests but have not been verified in OrcaSlicer.
+repository: https://github.com/Flexicano/orcaslicer-bambustudio-import
+categories:
+  - profiles-and-calibration
+status: experimental
+status_note: Tested in OrcaSlicer on macOS; Windows and Linux have code/test coverage but no real-host verification.
+installation:
+  method: source
+  url: https://github.com/Flexicano/orcaslicer-bambustudio-import#install
+  notes: Run the repository installer or install the documented plugin Python file manually.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5 nightly builds with Python plugins.
+  platforms:
+    - macos
+  requires_custom_build: false
+  notes: macOS is tested; Windows and Linux support is code/test coverage only, and Flatpak may need access to BambuStudio files.
+evidence:
+  - label: README
+    url: https://github.com/Flexicano/orcaslicer-bambustudio-import/blob/main/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

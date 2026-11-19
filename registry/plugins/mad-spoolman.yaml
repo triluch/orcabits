@@ -1,0 +1,29 @@
+name: MAD-Spoolman
+summary: Links OrcaSlicer filament presets to Spoolman spools and can add active-spool commands to G-code.
+description: >-
+  The Spoolman tab binds filament presets to physical spools without changing
+  the presets themselves. It can match existing presets to unbound inventory
+  and create a preset when no match exists. An optional slicing-pipeline
+  capability inserts a configured spool command when a filament starts,
+  including on tool changes in multi-material prints. That G-code step must
+  be enabled in each process preset and requires printer firmware with a
+  compatible macro.
+repository: https://github.com/DMarkovIT/MAD-Spoolman
+categories:
+  - filament-and-spool-management
+status: available
+status_note: The README documents the installable plugin and its separately enabled G-code capability.
+installation:
+  method: python
+  url: https://github.com/DMarkovIT/MAD-Spoolman/releases/latest
+  notes: Install mad_spoolman_any.py from a release using OrcaSlicer's local-plugin installer.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5.0 or newer with Python plugin support.
+  platforms: []
+  requires_custom_build: false
+  notes: Desktop platforms are not specified; requires a reachable Spoolman instance.
+evidence:
+  - label: README and installation
+    url: https://github.com/DMarkovIT/MAD-Spoolman/blob/main/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

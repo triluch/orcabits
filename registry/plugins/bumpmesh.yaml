@@ -1,0 +1,28 @@
+name: BumpMesh for OrcaSlicer
+summary: Embeds BumpMesh in OrcaSlicer to apply displacement textures to model geometry.
+description: >-
+  BumpMesh embeds its web application in an OrcaSlicer plugin page and sends selected object geometry to it.
+  Users apply and preview displacement textures, then can return the result as a new STL object on Windows.
+  On other platforms, the STL or 3MF must be exported and imported manually.
+  The plugin preserves the original object but does not carry over paint, modifiers, settings, or placement.
+  Negative-volume geometry also requires manual export because the host API does not expose its resolved boolean result.
+repository: https://github.com/WeLizard/orca-plugins
+categories:
+  - modeling-and-textures
+status: experimental
+status_note: The README labels the plugin experimental; its documented in-host round trip was tested on a Windows development build.
+installation:
+  method: wheel
+  url: https://github.com/WeLizard/orca-plugins/blob/main/plugins/bumpmesh/README.md#current-workflow
+  notes: Build instructions produce a wheel; install the released bumpmesh wheel through OrcaSlicer's plugin installer.
+compatibility:
+  orca_slicer: Plugin Pages-capable OrcaSlicer build; README records testing on 2.5.0-dev.
+  platforms:
+    - windows
+  requires_custom_build: false
+  notes: Other platforms use manual file export/import; the README also documents an older window fallback.
+evidence:
+  - label: Plugin README
+    url: https://github.com/WeLizard/orca-plugins/blob/main/plugins/bumpmesh/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

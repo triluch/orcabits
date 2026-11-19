@@ -1,0 +1,28 @@
+name: Orca Spoolman Presets
+summary: Selects matching filament profiles for Moonraker lanes and creates profiles for unmatched Spoolman filaments.
+description: >-
+  The plugin reads Moonraker lane data with spool IDs and chooses a profile
+  using Spoolman spool and filament metadata rather than material alone.
+  Users can define an exact profile override through a Spoolman extra field.
+  It can also find unmatched filaments and create presets with temperatures,
+  density, and diameter from Spoolman. Spoolman access is through Moonraker's
+  proxy, and the printer must publish lane_data with spool IDs.
+repository: https://github.com/DIEHARDave/orca_spoolman_presets
+categories:
+  - filament-and-spool-management
+status: available
+status_note: The README documents installation, slot synchronization, and creation of missing presets.
+installation:
+  method: python
+  url: https://github.com/DIEHARDave/orca_spoolman_presets/blob/main/orca_spoolman_presets.py
+  notes: Install the Python file through Plugins, then set the printer's Moonraker URL.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5 alpha or later with Python plugin support.
+  platforms: []
+  requires_custom_build: false
+  notes: Desktop platform support is not specified. Requires Moonraker lane_data with spool IDs and a configured Spoolman proxy.
+evidence:
+  - label: README and installation
+    url: https://github.com/DIEHARDave/orca_spoolman_presets/blob/main/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

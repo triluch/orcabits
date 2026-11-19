@@ -1,0 +1,28 @@
+name: Line Art Studio
+summary: Converts a photo into a continuous, constant-width line printed over a generated base.
+description: >-
+  Converts a photo into one continuous, non-self-crossing line, varying the
+  spacing to represent image darkness. During slicing it replaces designated
+  upper layers of its generated base with the artwork. The README shows a
+  physical print on a Bambu Lab X1 Carbon. On non-Bambu printers the preview
+  shows the plain base and users must inspect the exported G-code; automatic
+  base insertion is available only on Windows.
+repository: https://github.com/barismert98/orcaslicer-line-art-studio
+categories:
+  - toolpaths-and-gcode
+status: available
+status_note: README documents the complete workflow and shows a physical print; other-host preview and insertion limits are stated.
+installation:
+  method: native
+  url: https://github.com/barismert98/orcaslicer-line-art-studio#installation
+  notes: Available through OrcaCloud; enable its slicing-pipeline step in the process preset.
+compatibility:
+  orca_slicer: OrcaSlicer with Pages and Slicing Pipeline plugin APIs.
+  platforms: []
+  requires_custom_build: false
+  notes: Automatic base insertion is Windows-only; operating-system support for the plugin itself is not specified.
+evidence:
+  - label: README
+    url: https://github.com/barismert98/orcaslicer-line-art-studio/blob/HEAD/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

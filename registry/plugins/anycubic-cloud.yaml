@@ -1,0 +1,31 @@
+name: Anycubic Cloud Plugin
+summary: Connects OrcaSlicer to Anycubic printers through Anycubic Cloud.
+description: >-
+  The native printer agent uploads jobs through Anycubic Cloud and reports print
+  status, temperatures, and ACE Pro slot telemetry. It supports cloud printing
+  without switching the printer out of its normal online mode. Installation uses
+  the repository's PowerShell installer, which copies the plugin and enables
+  printer agents. Setup requires an Anycubic session token, and the documented
+  installer workflow is Windows-oriented.
+repository: https://github.com/murillo-romeu/orca-cubic
+categories:
+  - printer-connectivity
+status: experimental
+status_note: The README documents installation and cloud workflows but gives no hardware-test matrix.
+installation:
+  method: python
+  url: https://github.com/murillo-romeu/orca-cubic#como-instalar-e-usar-passo-a-passo
+  notes: Run install_plugin.ps1, obtain an Anycubic session token, and configure the printer agent.
+compatibility:
+  orca_slicer: Python printer-agent plugin support is required; a minimum version is not stated.
+  platforms:
+    - windows
+  requires_custom_build: false
+  notes: The documented PowerShell installation workflow is Windows-oriented.
+evidence:
+  - label: README and installation
+    url: https://github.com/murillo-romeu/orca-cubic/blob/main/README.md
+  - label: Plugin entry point
+    url: https://github.com/murillo-romeu/orca-cubic/tree/main/src/anycubic_cloud
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

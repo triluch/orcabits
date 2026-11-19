@@ -1,0 +1,30 @@
+name: OpenClaw Assistant
+summary: Connects an OrcaSlicer panel to an OpenClaw gateway for chat and selected preset updates.
+description: >-
+  The docked panel sends chat messages and selected printer, filament, and
+  process presets to an OpenClaw gateway. It applies returned setting changes
+  to the active preset through OrcaSlicer's plugin API. The plugin is an
+  operator client, not an OpenClaw node, and does not grant the gateway access
+  to the slicer's shell or camera. It requires a separately configured gateway
+  and OpenSSL 3 for device identity signing.
+repository: https://github.com/ericderace/orca-openclaw-plugin
+categories:
+  - ai-and-automation
+status: available
+status_note: The README documents local installation, gateway pairing, and an implemented preset-write workflow.
+installation:
+  method: python
+  url: https://github.com/ericderace/orca-openclaw-plugin#install
+  notes: Install openclaw_assistant.py locally, then configure and pair an OpenClaw gateway.
+compatibility:
+  orca_slicer: Python plugin support is required; a minimum OrcaSlicer version is not stated.
+  platforms: []
+  requires_custom_build: false
+  notes: OpenSSL 3 is required; tested operating systems are not specified.
+evidence:
+  - label: README
+    url: https://github.com/ericderace/orca-openclaw-plugin/blob/90f141b91df093e8d2b45ea492a8efe85d84bc69/README.md
+  - label: Plugin source
+    url: https://github.com/ericderace/orca-openclaw-plugin/tree/main
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

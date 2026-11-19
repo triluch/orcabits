@@ -1,0 +1,29 @@
+name: Spoolman Filaments
+summary: Maintains one OrcaSlicer filament profile per Spoolman filament with optional two-way settings sync.
+description: >-
+  The plugin creates one profile per Spoolman filament, using the closest
+  OrcaSlicer system preset as its starting point. Spoolman supplies material,
+  color, temperatures, and other profile fields, while saved supported edits
+  are written back to Spoolman. When Moonraker lanes publish Spoolman spool
+  IDs, compatible profiles can be selected automatically by OrcaSlicer.
+  Automatic lane matching requires a host build that implements Spoolman lane
+  matching; otherwise users select profiles manually.
+repository: https://github.com/TheOlympusCloud/orcaslicer-spoolman-filaments
+categories:
+  - filament-and-spool-management
+status: available
+status_note: The README documents installation and two-way profile synchronization; lane matching has a separate host requirement.
+installation:
+  method: python
+  url: https://github.com/TheOlympusCloud/orcaslicer-spoolman-filaments/blob/main/spoolman_filaments.py
+  notes: Install spoolman_filaments.py from the Plugins window, configure Spoolman, and allow network access.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5 or newer with Python plugin support.
+  platforms: []
+  requires_custom_build: false
+  notes: Desktop platform support is not specified. Spoolman lane matching additionally requires a host build that provides that feature.
+evidence:
+  - label: README and installation
+    url: https://github.com/TheOlympusCloud/orcaslicer-spoolman-filaments/blob/main/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

@@ -1,0 +1,28 @@
+name: Easy Speed Slider
+summary: Adjusts outer-wall speed and related feature speeds through a single OrcaSlicer page.
+description: >-
+  Sets outer-wall speed with a slider and derives other feature speeds from
+  ratios or fixed values. It checks configured resonance-avoidance ranges and
+  estimated volumetric-flow limits and reports when values exceed them. Its
+  preset editing depends on the host's preset-writing API. The README requires
+  OrcaSlicer 2.5.0 beta, release candidate, or a suitable nightly, but not 2.5.0
+  alpha or 2.4.x.
+repository: https://github.com/tarknap/easy-speed-slider
+categories:
+  - profiles-and-calibration
+status: available
+status_note: README documents installation and preset updates for OrcaSlicer 2.5 beta/RC or a suitable nightly.
+installation:
+  method: python
+  url: https://github.com/tarknap/easy-speed-slider#installation
+  notes: Install the plugin through OrcaSlicer's plugin manager using the documented local-plugin workflow.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5.0 beta/RC or a nightly with the preset editing API; not 2.5.0 alpha or 2.4.x.
+  platforms: []
+  requires_custom_build: false
+  notes: No operating-system support or test matrix is stated.
+evidence:
+  - label: README
+    url: https://github.com/tarknap/easy-speed-slider/blob/HEAD/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

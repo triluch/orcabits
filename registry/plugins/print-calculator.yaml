@@ -1,0 +1,26 @@
+name: Print Calculator
+summary: Calculates per-plate print costs and suggested prices from material, energy, labour, and sales expenses.
+description: >-
+  Print Calculator prices each sliced build plate using filament use, printer energy, and machine wear.
+  Users can add labour, shipping, tax, fees, and markup to calculate profit, margin, and break-even.
+  Filament prices can come from read-only Spoolman lookups or OrcaSlicer presets.
+  Quotes can be saved or exported.
+repository: https://github.com/bloodf/orca_print_calculator
+categories:
+  - analysis-and-costing
+status: experimental
+status_note: Orca Cloud and a downloadable wheel are documented, but the README says the native workflow has not been verified in OrcaSlicer.
+installation:
+  method: wheel
+  url: https://github.com/bloodf/orca_print_calculator#install
+  notes: Subscribe through Orca Cloud or download orca_print_calculator_any.whl from the latest release.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5 or later.
+  platforms: []
+  requires_custom_build: false
+  notes: The supported host workflow and platform compatibility are not independently verified in the README.
+evidence:
+  - label: README
+    url: https://github.com/bloodf/orca_print_calculator/blob/71449051d56c50b20fe57e54a67c73ae22dfae4f/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

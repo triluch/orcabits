@@ -1,0 +1,28 @@
+name: 3D Model Search Engine
+summary: Searches Printables from OrcaSlicer and imports a selected model onto the plate.
+description: >-
+  The plugin searches Printables and shows each result's license before enabling import.
+  It downloads a selected model and hands the file to the running OrcaSlicer instance.
+  Only Printables is currently offered because the other documented services require authenticated downloads.
+  The plugin does not cache, re-host, or redistribute model files.
+  Its README reports that only the Linux import path has been run on hardware.
+repository: https://github.com/tommasobbianchi/OrcaSlicer-Model-Search-Plugin
+categories:
+  - modeling-and-textures
+status: experimental
+status_note: The README describes an early release and says only Linux import has been exercised on hardware.
+installation:
+  method: python
+  url: https://github.com/tommasobbianchi/OrcaSlicer-Model-Search-Plugin#install
+  notes: Copy search_engine.py into the OrcaSlicer plugin directory and create its install-state record as documented.
+compatibility:
+  orca_slicer: Plugin-enabled OrcaSlicer.
+  platforms:
+    - linux
+  requires_custom_build: false
+  notes: The README documents paths for Linux, Windows, and macOS but reports hardware testing only on Linux.
+evidence:
+  - label: README
+    url: https://github.com/tommasobbianchi/OrcaSlicer-Model-Search-Plugin/blob/main/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

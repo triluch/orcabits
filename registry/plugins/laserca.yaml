@@ -1,0 +1,33 @@
+name: Laserca
+summary: Adds a laser workspace for vector editing, G-code generation, preview, and job sending.
+description: >-
+  Laserca adds vector editing, DXF import, text outlines, cut and engrave
+  layers, and G-code generation with speed and power preview. Jobs can be sent
+  over serial or supported printer APIs. The project provides a platform-
+  independent wheel and documents installation on Windows, Linux, and macOS.
+  It requires compatible laser hardware and appropriate eye protection,
+  enclosure, and ventilation.
+repository: https://github.com/CICHR/Laserca-OrcaSlicer_Plugin
+categories:
+  - workflow-and-integrations
+status: available
+status_note: The README documents a versioned wheel and install procedure for Windows, Linux, and macOS.
+installation:
+  method: wheel
+  url: https://github.com/CICHR/Laserca-OrcaSlicer_Plugin#installation
+  notes: Install the release wheel or build a platform-independent wheel with Python 3.12 or newer.
+compatibility:
+  orca_slicer: Python plugin support is required; a minimum OrcaSlicer version is not stated.
+  platforms:
+    - windows
+    - linux
+    - macos
+  requires_custom_build: false
+  notes: The README documents installation for all three platforms.
+evidence:
+  - label: README
+    url: https://github.com/CICHR/Laserca-OrcaSlicer_Plugin/blob/main/README.md
+  - label: Build instructions
+    url: https://github.com/CICHR/Laserca-OrcaSlicer_Plugin/blob/main/docs/INSTALL.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

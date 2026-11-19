@@ -1,0 +1,31 @@
+name: Orca Git Sync
+summary: Synchronizes OrcaSlicer user presets through a Git repository.
+description: >-
+  Synchronizes printer, filament, and process presets when OrcaSlicer starts,
+  when presets are saved, at shutdown, or on manual request. It can commit,
+  pull, and push changes to a configured repository. When both copies of a
+  preset have changed, it preserves a separately named conflict copy rather
+  than silently replacing either version. The README states support for
+  OrcaSlicer 2.5 or later on macOS, Windows, and Linux.
+repository: https://github.com/dhumpf/orca-git-sync
+categories:
+  - profiles-and-calibration
+status: available
+status_note: The README documents a released plugin, install workflow, synchronization triggers, and conflict handling.
+installation:
+  method: python
+  url: https://github.com/dhumpf/orca-git-sync/releases/latest/download/orca_git_sync.py
+  notes: Install the downloaded Python plugin locally through OrcaSlicer's Plugins menu.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5 or later; the plugin API is experimental.
+  platforms:
+    - macos
+    - windows
+    - linux
+  requires_custom_build: false
+  notes: These operating systems are explicitly listed as supported by the README.
+evidence:
+  - label: README
+    url: https://github.com/dhumpf/orca-git-sync/blob/main/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

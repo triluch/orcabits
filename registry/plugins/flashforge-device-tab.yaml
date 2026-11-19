@@ -1,0 +1,31 @@
+name: FlashForge Device Tab
+summary: Adds monitoring, file browsing, history, and job controls for FlashForge printers.
+description: >-
+  The plugin adds a Device-tab panel with job progress, temperatures, a
+  30-minute temperature chart, and an optional camera stream. It can browse
+  printer files and previews and keeps print history across OrcaSlicer restarts.
+  Pause, resume, and cancel controls are available, but the plugin does not
+  upload files or start prints. The documented release installation targets
+  OrcaSlicer 2.5.0 or newer on Windows x64.
+repository: https://github.com/UshMask/flashforge-device-tab
+categories:
+  - printer-connectivity
+status: available
+status_note: The README documents a downloadable release and use with supported FlashForge printers; Creator support is simulator-tested only.
+installation:
+  method: python
+  url: https://github.com/UshMask/flashforge-device-tab#install
+  notes: Download flashforge_device_tab.py from a release and install it from OrcaSlicer's Plugins dialog.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5.0 or newer.
+  platforms:
+    - windows
+  requires_custom_build: false
+  notes: Windows x64 is the documented supported platform.
+evidence:
+  - label: README
+    url: https://github.com/UshMask/flashforge-device-tab/blob/main/README.md
+  - label: Releases
+    url: https://github.com/UshMask/flashforge-device-tab/releases
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

@@ -1,0 +1,29 @@
+name: Print Memory
+summary: Uses Moonraker print history to refine estimates and summarize previous print outcomes for Klipper printers.
+description: >-
+  Print Memory compares OrcaSlicer's estimate with completed-print history
+  and adds heating and homing time to its forecast. It reports completion
+  rates by material, print length, and model, and compares a new slice's
+  settings with the last successful print of the same model. It also
+  summarizes recent stopped jobs and Moonraker console errors when available.
+  Results depend on retained Moonraker history, and its supported workflow
+  targets Klipper printers.
+repository: https://github.com/ahmedbebars/print-memory
+categories:
+  - monitoring-and-print-farms
+status: available
+status_note: The README documents installation and use with Moonraker print history.
+installation:
+  method: python
+  url: https://github.com/ahmedbebars/print-memory/blob/main/print_memory.py
+  notes: Install print_memory.py through OrcaSlicer's Plugins window and grant access to the temporary G-code folder and printer host.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5 or newer with Python plugin support.
+  platforms: []
+  requires_custom_build: false
+  notes: Desktop platform support is not specified. Requires a Klipper printer with Moonraker history enabled.
+evidence:
+  - label: README and installation
+    url: https://github.com/ahmedbebars/print-memory/blob/main/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

@@ -1,0 +1,28 @@
+name: Snapmaker U1 Camera
+summary: Adds a Snapmaker U1 tab with camera playback, printer telemetry, finish estimates, and a chamber-light control.
+description: >-
+  The plugin adds a dedicated U1 page with camera playback and printer status.
+  It displays toolhead and bed information, preparation progress, and
+  approximate finish estimates when the printer reports enough data. Users
+  can toggle the chamber light while playback is active or stopped. The stock
+  camera stream runs at roughly four to five frames per second and uses
+  unencrypted HTTP, so upstream recommends a trusted local network.
+repository: https://github.com/lanwen/orca-snapmaker-u1-camera-plugin
+categories:
+  - monitoring-and-print-farms
+status: available
+status_note: The README documents a downloadable release plugin and playback workflow.
+installation:
+  method: python
+  url: https://github.com/lanwen/orca-snapmaker-u1-camera-plugin/releases/latest
+  notes: Install orca-snapmaker-u1-camera-plugin_any.py from Releases using OrcaSlicer's local-plugin installer.
+compatibility:
+  orca_slicer: OrcaSlicer nightly with the Python Pages plugin API.
+  platforms: []
+  requires_custom_build: false
+  notes: Desktop platform support is not specified. Requires a Snapmaker U1 reachable on the local network; the stock HTTP connection is unencrypted.
+evidence:
+  - label: README and installation
+    url: https://github.com/lanwen/orca-snapmaker-u1-camera-plugin/blob/main/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

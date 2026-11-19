@@ -1,0 +1,26 @@
+name: Paramability
+summary: Adds Paramability model editing and export tools to an OrcaSlicer tab.
+description: >-
+  Paramability makes STL, 3MF, OBJ, and STEP models adjustable through parameter forms.
+  Its tools can split models with connectors, tune fits, add decals, and pose figurines.
+  It can also convert meshes to STEP, with organic shapes remaining mostly triangulated.
+  Users export results to a local folder and import them into OrcaSlicer manually.
+  The plugin requires OrcaSlicer 2.5 or newer.
+repository: https://github.com/GoMorko/paramability-orca-plugin
+categories:
+  - modeling-and-textures
+status: available
+status_note: The README documents plugin installation and the export/import workflow.
+installation:
+  method: python
+  url: https://github.com/GoMorko/paramability-orca-plugin#install
+  notes: Follow the repository installation instructions to add the plugin to OrcaSlicer.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5 or newer.
+  platforms: []
+  requires_custom_build: false
+evidence:
+  - label: README
+    url: https://github.com/GoMorko/paramability-orca-plugin/blob/40f4ffeba3fe1392f2f2598a128e685b4f88b59c/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

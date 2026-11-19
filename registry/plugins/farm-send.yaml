@@ -1,0 +1,30 @@
+name: Farm Send
+summary: Slices for multiple printer types and uploads or starts matching jobs from one OrcaSlicer panel.
+description: >-
+  Farm Send keeps a sliced plate for each printer type and shows live status
+  for configured printers in a docked panel. Users can upload or start
+  matching plates on individual printers or all available printers together.
+  It also supports saved plates and production orders with part counts.
+  Hardware testing is documented for the Elegoo Centauri Carbon 2 and
+  Snapmaker U1 on Linux; Windows, macOS, broader Moonraker support, and
+  multicolor Centauri jobs are untested.
+repository: https://github.com/mlugo-apx/orca-farm-send
+categories:
+  - monitoring-and-print-farms
+status: experimental
+status_note: The README calls this an early release and identifies untested operating systems and printer combinations.
+installation:
+  method: python
+  url: https://github.com/mlugo-apx/orca-farm-send/blob/main/dist/farm_send/farm_send.py
+  notes: Install dist/farm_send/farm_send.py through OrcaSlicer's local-plugin installer.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5.1 or newer with Python plugin support.
+  platforms:
+    - linux
+  requires_custom_build: false
+  notes: Developed and tested on Linux with OrcaSlicer 2.5.1; Windows and macOS are not tested.
+evidence:
+  - label: README and installation
+    url: https://github.com/mlugo-apx/orca-farm-send/blob/main/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

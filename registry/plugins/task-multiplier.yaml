@@ -1,0 +1,29 @@
+name: Task Multiplier
+summary: Repeats a print body in one G-code file while running machine start and end code only once.
+description: >-
+  Repeats the print body with configurable ejection, parking, purge movements,
+  signals, and pauses between copies. Machine start and end G-code run only
+  once for the whole task. Optional Klipper or Marlin loops can avoid
+  duplicating the print body in the file. The project targets Windows and
+  OrcaSlicer 2.5.0 release candidate or newer, and warns that it does not check
+  movement limits or printer-specific ejection safety.
+repository: https://github.com/adilo-maker/task-multiplier
+categories:
+  - toolpaths-and-gcode
+status: available
+status_note: README documents versioned installation and repetition workflows for Windows and OrcaSlicer 2.5.0-rc or newer.
+installation:
+  method: python
+  url: https://github.com/adilo-maker/task-multiplier#installation
+  notes: Install the released Python plugin through OrcaSlicer's plugin manager.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5.0 release candidate or newer with native Python plugins.
+  platforms:
+    - windows
+  requires_custom_build: false
+  notes: Windows is the platform stated by the project; looping modes depend on printer firmware and setup.
+evidence:
+  - label: README
+    url: https://github.com/adilo-maker/task-multiplier/blob/HEAD/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

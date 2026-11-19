@@ -1,0 +1,29 @@
+name: Filament Saver
+summary: Suggests material-aware process setting changes to reduce filament use.
+description: >-
+  Takes the part's purpose and user preferences for strength, finish, and
+  reliability as inputs to its process-setting recommendations. Users can
+  review and apply individual suggestions, then restore the previous settings.
+  It compares later slice estimates but does not establish that a lighter
+  configuration preserves part strength or decide whether supports are needed.
+  The README reports testing on macOS with OrcaSlicer 2.5.0 beta.
+repository: https://github.com/Bounthi/filament-saver
+categories:
+  - profiles-and-calibration
+status: experimental
+status_note: Experimental plugin; the README reports testing on macOS with OrcaSlicer 2.5.0 beta.
+installation:
+  method: python
+  url: https://github.com/Bounthi/filament-saver#install
+  notes: Download filament_saver.py from a release and install it as a local plugin.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5 or later with Python plugins.
+  platforms:
+    - macos
+  requires_custom_build: false
+  notes: Testing is reported only on macOS.
+evidence:
+  - label: README
+    url: https://github.com/Bounthi/filament-saver/blob/669e79b2a57e49a6bd3579862c7527467d48cdce/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

@@ -1,0 +1,29 @@
+name: Filament Lab
+summary: Runs filament calibration workflows and stores measured results in per-spool presets.
+description: >-
+  Provides calibration plates and measurement entry for temperature, flow,
+  shrinkage, pressure advance, maximum volumetric flow, and optional retraction.
+  It keeps a preset for each spool and updates it from entered measurements.
+  The current release has no prebuilt 2.x archive and must be built from source
+  into a plugin file. The author reports daily use on Windows 10/11 with an
+  Elegoo Centauri Carbon; macOS and Linux are unsupported by the plate loader.
+repository: https://github.com/ValenokMC/OrcaSlicer-Calibration-Plugin
+categories:
+  - profiles-and-calibration
+status: experimental
+status_note: Preview release; verified end to end on Windows with one printer, and no 2.x release archive is published.
+installation:
+  method: source
+  url: https://github.com/ValenokMC/OrcaSlicer-Calibration-Plugin#install
+  notes: Build the single plugin file from source; there is no 2.x release archive.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5; older versions lack the required plugin API.
+  platforms:
+    - windows
+  requires_custom_build: false
+  notes: Windows 10/11 is used daily; macOS and Linux are unsupported by the current plate loader.
+evidence:
+  - label: README
+    url: https://github.com/ValenokMC/OrcaSlicer-Calibration-Plugin/blob/main/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

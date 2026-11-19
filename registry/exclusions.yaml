@@ -1,0 +1,158 @@
+updated_at: "2026-11-19"
+exclusions:
+  - repository: https://github.com/zaosoula/orcaslicer-plugin-spoolman
+    scope: repository
+    reason: not-installable
+    note: README requires a built wheel, but no release/artifact or documented build command is published. Source and setuptools packaging exist; reconsider when an actual documented installation path is available.
+    evidence:
+      - label: README installation section
+        url: https://github.com/zaosoula/orcaslicer-plugin-spoolman/blob/main/README.md#installation
+      - label: Releases
+        url: https://github.com/zaosoula/orcaslicer-plugin-spoolman/releases
+      - label: Packaging configuration
+        url: https://github.com/zaosoula/orcaslicer-plugin-spoolman/blob/main/pyproject.toml
+    reviewed_at: "2026-11-19"
+  - repository: https://github.com/HoffmanEngineering/3d-print-log-orca-plugin
+    scope: repository
+    reason: not-installable
+    note: Repository contains only README, license, and ignore file; no plugin source or installable artifact.
+    evidence:
+      - label: Repository contents and README
+        url: https://github.com/HoffmanEngineering/3d-print-log-orca-plugin
+    reviewed_at: "2026-11-19"
+  - repository: https://github.com/GeekDetour/BrickLayers
+    scope: repository
+    reason: out-of-scope
+    note: Standalone post-processing script, not installed as an OrcaSlicer plugin.
+    evidence:
+      - label: README
+        url: https://github.com/GeekDetour/BrickLayers/blob/HEAD/README.md
+    reviewed_at: "2026-11-19"
+  - repository: https://github.com/TengerTechnologies/Bricklayers
+    scope: repository
+    reason: out-of-scope
+    note: Standalone post-processing script; native wrappers elsewhere are separate candidates.
+    evidence:
+      - label: README
+        url: https://github.com/TengerTechnologies/Bricklayers/blob/HEAD/README.md
+    reviewed_at: "2026-11-19"
+  - repository: https://github.com/erkexzcx/corbel
+    scope: repository
+    reason: out-of-scope
+    note: External command-line postprocessor rather than an OrcaSlicer plugin.
+    evidence:
+      - label: README
+        url: https://github.com/erkexzcx/corbel/blob/HEAD/README.md
+    reviewed_at: "2026-11-19"
+  - repository: https://github.com/TengerTechnologies/FeatureBasedGcodeSettings
+    scope: repository
+    reason: out-of-scope
+    note: External post-processing script, not a native plugin.
+    evidence:
+      - label: README
+        url: https://github.com/TengerTechnologies/FeatureBasedGcodeSettings/blob/HEAD/README.md
+    reviewed_at: "2026-11-19"
+  - repository: https://github.com/sb53systems/G-Code-Flow-Temperature-Controller
+    scope: repository
+    reason: out-of-scope
+    note: External Windows postprocessor and GUI; no native Orca plugin is documented.
+    evidence:
+      - label: README
+        url: https://github.com/sb53systems/G-Code-Flow-Temperature-Controller/blob/HEAD/README.md
+    reviewed_at: "2026-11-19"
+  - repository: https://github.com/TengerTechnologies/Fuzzyficator
+    scope: repository
+    reason: out-of-scope
+    note: External script variants rather than a native Orca plugin.
+    evidence:
+      - label: README
+        url: https://github.com/TengerTechnologies/Fuzzyficator/blob/HEAD/README.md
+    reviewed_at: "2026-11-19"
+  - repository: https://github.com/Theaninova/GCodeZAA
+    scope: repository
+    reason: out-of-scope
+    note: Standalone Python postprocessor, not installed into OrcaSlicer.
+    evidence:
+      - label: README
+        url: https://github.com/Theaninova/GCodeZAA/blob/HEAD/README.md
+    reviewed_at: "2026-11-19"
+  - repository: https://github.com/Annex-Engineering/klipper_estimator
+    scope: repository
+    reason: out-of-scope
+    note: External estimator executable; archival is not the reason for excluding it.
+    evidence:
+      - label: Repository and documentation
+        url: https://github.com/Annex-Engineering/klipper_estimator
+    reviewed_at: "2026-11-19"
+  - repository: https://github.com/Yury-MonZon/MZ_Flow_Temp_processor
+    scope: repository
+    reason: out-of-scope
+    note: External Python post-processing script without a native plugin.
+    evidence:
+      - label: README
+        url: https://github.com/Yury-MonZon/MZ_Flow_Temp_processor/blob/HEAD/README.md
+    reviewed_at: "2026-11-19"
+  - repository: https://github.com/TengerTechnologies/Smoothificator
+    scope: repository
+    reason: out-of-scope
+    note: External G-code postprocessor, not a native plugin.
+    evidence:
+      - label: README
+        url: https://github.com/TengerTechnologies/Smoothificator/blob/HEAD/README.md
+    reviewed_at: "2026-11-19"
+  - repository: https://github.com/WatchingWatches/Post_processing_gcode
+    scope: repository
+    reason: out-of-scope
+    note: Collection of external post-processing scripts.
+    evidence:
+      - label: README
+        url: https://github.com/WatchingWatches/Post_processing_gcode/blob/HEAD/README.md
+    reviewed_at: "2026-11-19"
+  - repository: https://github.com/mazzanfar/hermes-orcaslicer
+    scope: repository
+    reason: out-of-scope
+    note: Installs into Hermes Agent, not OrcaSlicer's native plugin system.
+    evidence:
+      - label: README
+        url: https://github.com/mazzanfar/hermes-orcaslicer/blob/HEAD/README.md
+    reviewed_at: "2026-11-19"
+  - repository: https://github.com/Glenno-H/orcaslicer-streamdeck
+    scope: repository
+    reason: out-of-scope
+    note: Installs into Stream Deck, not OrcaSlicer.
+    evidence:
+      - label: README
+        url: https://github.com/Glenno-H/orcaslicer-streamdeck/blob/HEAD/README.md
+    reviewed_at: "2026-11-19"
+  - repository: https://github.com/Nexus-PLM/Nexus.PLM.OrcaSlicer.Addins
+    scope: repository
+    reason: not-installable
+    note: Native Orca integration is a scaffold; shipped server-side translators are not an installable Orca plugin.
+    evidence:
+      - label: README
+        url: https://github.com/Nexus-PLM/Nexus.PLM.OrcaSlicer.Addins/blob/HEAD/README.md
+    reviewed_at: "2026-11-19"
+  - repository: https://github.com/kainpl/orca-bamdude
+    scope: repository
+    reason: not-installable
+    note: No installable wheel or implemented Orca-facing agent/tab yet; host-independent core alone is insufficient.
+    evidence:
+      - label: README
+        url: https://github.com/kainpl/orca-bamdude/blob/HEAD/README.md
+    reviewed_at: "2026-11-19"
+  - repository: https://github.com/upy77/orcaslicer_plugin_spoolman
+    scope: repository
+    reason: not-installable
+    note: Inspected entry point only queries a hard-coded Spoolman server; no usable Orca registration or documented installation.
+    evidence:
+      - label: Package entry point
+        url: https://github.com/upy77/orcaslicer_plugin_spoolman/blob/main/orcaslicer_plugin_spoolman/__init__.py
+    reviewed_at: "2026-11-19"
+  - repository: https://github.com/J0eB0l/Orca-AFC-Plugin
+    scope: repository
+    reason: not-installable
+    note: Copied slicer README does not establish a separate native plugin or installation path.
+    evidence:
+      - label: README
+        url: https://github.com/J0eB0l/Orca-AFC-Plugin/blob/HEAD/README.md
+    reviewed_at: "2026-11-19"

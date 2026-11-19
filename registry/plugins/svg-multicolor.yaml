@@ -1,0 +1,26 @@
+name: SVG Multicolor
+summary: Converts multicolor SVG artwork into filament-assigned printable parts or artwork on saved projects.
+description: >-
+  SVG Multicolor converts SVG colors into aligned printable parts with filament assignments and an optional base.
+  It can also apply raised or inlaid artwork to a selected surface in a saved project.
+  The converter handles common SVG shapes, transforms, strokes, fill rules, and physical units.
+  Text must be converted to paths, while bitmap images, masks, and clipping paths are unsupported.
+  Applying artwork updates or copies a saved project rather than changing an unsaved plate directly.
+repository: https://github.com/opoeta/orca-svg-multicor
+categories:
+  - modeling-and-textures
+status: available
+status_note: The README documents wheel/Plugin Hub installation and the conversion workflows.
+installation:
+  method: wheel
+  url: https://github.com/opoeta/orca-svg-multicor/releases/latest
+  notes: Install the released wheel through OrcaSlicer's plugin installer.
+compatibility:
+  orca_slicer: Plugin-enabled OrcaSlicer.
+  platforms: []
+  requires_custom_build: false
+evidence:
+  - label: README
+    url: https://github.com/opoeta/orca-svg-multicor/blob/main/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

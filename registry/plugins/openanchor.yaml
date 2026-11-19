@@ -1,0 +1,29 @@
+name: OpenAnchor
+summary: Creates a sacrificial flange and a second-material mechanical anchor around a model.
+description: >-
+  OpenAnchor generates a flange and a separate anchor that contacts the bed and overlaps the flange.
+  An optional mode adds support beams through slots in the flange.
+  The original model mesh remains separate from the generated parts.
+  Stock compatible OrcaSlicer builds use an exported 3MF, while direct Apply, Update, and Restore need a custom build.
+  The project is a public beta and has no recorded physical validation of adhesion, removal, or warpage.
+repository: https://github.com/Nikotina0001/OpenAnchor
+categories:
+  - modeling-and-textures
+status: experimental
+status_note: The author labels it a public beta; geometry and offline slicing are checked, but physical print performance is not validated.
+installation:
+  method: python
+  url: https://github.com/Nikotina0001/OpenAnchor/blob/main/docs/INSTALLATION.md
+  notes: Follow the installation guide for the OrcaSlicer plugin; exported 3MF workflow works without the custom bridge.
+compatibility:
+  orca_slicer: Plugin-enabled OrcaSlicer; direct in-host editing requires the OpenAnchor-enabled custom build.
+  platforms: []
+  requires_custom_build: false
+  notes: The custom build is required only for direct Apply, Update, and Restore; stock builds can use exported 3MF.
+evidence:
+  - label: README
+    url: https://github.com/Nikotina0001/OpenAnchor/blob/main/README.md
+  - label: Installation guide
+    url: https://github.com/Nikotina0001/OpenAnchor/blob/main/docs/INSTALLATION.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

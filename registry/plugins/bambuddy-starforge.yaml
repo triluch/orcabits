@@ -1,0 +1,27 @@
+name: Bambuddy for OrcaSlicer — Starforge
+summary: Imports Bambuddy printer profiles and submits sliced jobs to selected printers or queues.
+description: >-
+  The plugin imports Bambuddy printer-model and nozzle combinations into
+  OrcaSlicer. After slicing, users can choose a destination printer or group,
+  map filaments, rename the job, and start it immediately or leave it queued.
+  It supports browser sign-in on Bambuddy 1.2.5.7.9 or later and API-key
+  sign-in on older versions. Dual-nozzle printer models are currently skipped.
+repository: https://github.com/starforgefoundry/bambuddy-orca-plugin
+categories:
+  - monitoring-and-print-farms
+status: available
+status_note: The README documents a buildable wheel and printer import and Print/Send workflows.
+installation:
+  method: source
+  url: https://github.com/starforgefoundry/bambuddy-orca-plugin#build
+  notes: Build the wheel with mise run build, then install the generated dist/Bambuddy-<version>-py3-none-any.whl locally.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5 with Python plugin support.
+  platforms: []
+  requires_custom_build: false
+  notes: Desktop platforms are not specified. Dual-nozzle models are skipped; browser sign-in requires Bambuddy 1.2.5.7.9 or newer.
+evidence:
+  - label: README and build instructions
+    url: https://github.com/starforgefoundry/bambuddy-orca-plugin/blob/main/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

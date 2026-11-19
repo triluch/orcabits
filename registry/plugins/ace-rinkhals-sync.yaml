@@ -1,0 +1,28 @@
+name: ACE Filament Sync for Rinkhals
+summary: Reads four Anycubic ACE slots on a Rinkhals Kobra S1 and can import missing spools into Spoolman.
+description: >-
+  The plugin reads materials and colors from all four ACE slots through the
+  selected printer's Moonraker connection. It displays slot colors and hex
+  values in a docked panel and can copy a color value. An optional Spoolman
+  action checks for missing inventory records and asks before importing them.
+  It does not change OrcaSlicer presets or filament slots, update spool
+  weights, or identify identical replacement spools.
+repository: https://github.com/harrybin/orcaSlicer-anycubicks1-aceSync-plugin
+categories:
+  - filament-and-spool-management
+status: available
+status_note: The README documents a usable plugin install and workflow for one ACE on a Rinkhals Kobra S1.
+installation:
+  method: python
+  url: https://github.com/harrybin/orcaSlicer-anycubicks1-aceSync-plugin/blob/main/ace_filament_sync.py
+  notes: Install the Python file from Plugins > Install local plugin; requires Moonraker enabled in Rinkhals.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5.0 or later with Python plugin support.
+  platforms: []
+  requires_custom_build: false
+  notes: Upstream does not specify desktop platforms. Hardware scope is one ACE Pro on an Anycubic Kobra S1 running Rinkhals.
+evidence:
+  - label: README and installation
+    url: https://github.com/harrybin/orcaSlicer-anycubicks1-aceSync-plugin/blob/main/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

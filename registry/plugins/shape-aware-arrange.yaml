@@ -1,0 +1,26 @@
+name: Organizer (Shape-Aware Arrange)
+summary: Arranges parts by their projected outlines and fills remaining plate space with copies.
+description: >-
+  Organizer arranges objects using their top-down outlines so concave shapes can interlock.
+  Its Fill operation adds copies of plate objects until no more fit.
+  The plugin saves the arrangement as a new project and opens it in OrcaSlicer.
+  Its footprint calculation does not account for brims, supports, skirts, or travel moves.
+  Users should inspect the sliced result before printing.
+repository: https://github.com/bloodf/orca_organizer
+categories:
+  - modeling-and-textures
+status: available
+status_note: The README documents Orca Cloud installation and functioning arrange and fill controls.
+installation:
+  method: python
+  url: https://github.com/bloodf/orca_organizer#install
+  notes: Subscribe through Orca Cloud or install the plugin using the repository instructions.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5 or later.
+  platforms: []
+  requires_custom_build: false
+evidence:
+  - label: README
+    url: https://github.com/bloodf/orca_organizer/blob/51348c6067f6c81e05a8060f238929ba0ca66a1c/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

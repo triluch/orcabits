@@ -1,0 +1,30 @@
+name: Blender Studio
+summary: Connects an OrcaSlicer tab to Blender for procedural modeling, diagnostics, and sending STLs to the build plate.
+description: >-
+  Blender Studio connects OrcaSlicer to a local or remote Blender instance through a TCP bridge.
+  Its tab supports procedural modeling with Python or bpy, diagnostic renders, and manifold audits.
+  It separates printable meshes from reference hardware mockups and displays their dimensions.
+  Users can send exported binary STLs directly to the active build plate.
+  The workflow requires Blender 4.2 or later and OrcaSlicer 2.5 or later with Pages plugin support.
+repository: https://github.com/GDME-LLC/BlenderStudio
+categories:
+  - modeling-and-textures
+status: available
+status_note: The README documents local plugin installation and the Blender workflow, including cross-platform handoff.
+installation:
+  method: python
+  url: https://github.com/GDME-LLC/BlenderStudio#60-second-installation
+  notes: Install blender_studio.py through OrcaSlicer's local plugin installer.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5.0 or later with Python Pages plugin support.
+  platforms:
+    - windows
+    - macos
+    - linux
+  requires_custom_build: false
+  notes: Blender 4.2 or later is also required.
+evidence:
+  - label: README
+    url: https://github.com/GDME-LLC/BlenderStudio/blob/215f5dfdd285cd2e9c0076dab04d36a8f2625d4e/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

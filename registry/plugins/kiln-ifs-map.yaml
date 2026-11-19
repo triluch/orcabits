@@ -1,0 +1,29 @@
+name: Kiln IFS Tool Map
+summary: Maps sliced tools to matching Flashforge AD5X IFS slots using Kiln OS printer data.
+description: >-
+  At export or upload, the plugin reads used tools, their material and color,
+  and the loaded IFS slots through Moonraker. It matches compatible materials
+  and nearest colors, then inserts print-specific IFS_MAP_TOOL commands into
+  the G-code. Users can configure whether unmatched tools stop export or keep
+  their default slot, and whether an offline printer is skipped or causes an
+  error. It requires Kiln OS 0.0.4 or later and changes only that print's
+  G-code mapping.
+repository: https://github.com/djvalic/kiln-orca
+categories:
+  - filament-and-spool-management
+status: available
+status_note: The README documents local-plugin installation and the export/upload workflow.
+installation:
+  method: python
+  url: https://github.com/djvalic/kiln-orca/blob/main/kiln_ifs_map.py
+  notes: Install the Python plugin, configure printer_url, and enable it in the slicing pipeline.
+compatibility:
+  orca_slicer: Nightly builds or OrcaSlicer releases after 2.4.2 with Python plugin support.
+  platforms: []
+  requires_custom_build: false
+  notes: Desktop platforms are not specified. Requires a Flashforge AD5X running Kiln OS 0.0.4 or later.
+evidence:
+  - label: README and installation
+    url: https://github.com/djvalic/kiln-orca/blob/main/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

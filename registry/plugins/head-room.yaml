@@ -1,0 +1,27 @@
+name: Head Room
+summary: Fits cosplay helmets to measured or scanned reference heads and exports the adjusted shell.
+description: >-
+  Head Room builds reference heads from measurements or imported scans and stores them in a local library.
+  Users align and scale a helmet while inspecting 3D and cross-section views.
+  Foam-padding previews and measurements help assess clearance at selected locations.
+  Saved fits retain the wearer, alignment, scale, and pad layout, and the fitted shell can be sent to OrcaSlicer.
+  A printed opening band checks only one section and does not prove that the helmet can pass over the full head.
+repository: https://github.com/ChrisRollz/head-room
+categories:
+  - modeling-and-textures
+status: available
+status_note: The README documents Orca Cloud subscription and local plugin installation, along with the fitting and export workflow.
+installation:
+  method: python
+  url: https://github.com/ChrisRollz/head-room#install
+  notes: Subscribe through Orca Cloud or install dist/cloud/head_room_any.py locally.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5.0 for local plugin installation.
+  platforms: []
+  requires_custom_build: false
+  notes: The README documents a browser fallback when WebGL is unavailable; supported desktop operating systems are not specified.
+evidence:
+  - label: README
+    url: https://github.com/ChrisRollz/head-room/blob/fab647ee317af665983bfe164fcf95bf507cac73/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

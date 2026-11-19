@@ -1,0 +1,29 @@
+name: Creality CFS Sync — Moonraker Bridge
+summary: Converts Creality Hi CFS slot data into Moonraker lane data for OrcaSlicer's filament sync.
+description: >-
+  The plugin reads the Creality CFS state from Moonraker's printer database
+  and writes loaded-slot material and color into the lane_data namespace.
+  OrcaSlicer's existing Moonraker filament-sync action then imports those
+  slots without a replacement sync interface. It refreshes every 15 seconds
+  while the printer is selected and removes entries for emptied slots. The
+  author tested a Creality Hi with one CFS; K2 Plus and K1-series support is
+  untested.
+repository: https://github.com/Ruivalim/orca-creality-cfs-sync
+categories:
+  - filament-and-spool-management
+status: experimental
+status_note: Hardware testing is reported on a Creality Hi with one CFS; other listed machines are untested.
+installation:
+  method: python
+  url: https://github.com/Ruivalim/orca-creality-cfs-sync/releases/latest
+  notes: Install creality_cfs_sync_any.py from a release using the OrcaSlicer local-plugin installer.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5.0 alpha or a nightly build with the plugin system.
+  platforms: []
+  requires_custom_build: false
+  notes: Desktop platforms are not specified; tested on a Creality Hi with one CFS.
+evidence:
+  - label: README and installation
+    url: https://github.com/Ruivalim/orca-creality-cfs-sync/blob/main/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

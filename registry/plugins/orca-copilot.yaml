@@ -1,0 +1,31 @@
+name: Orca Copilot
+summary: Adds Claude-powered chat, plate analysis, post-slice checks, and setting suggestions to OrcaSlicer.
+description: >-
+  The plugin provides Claude-powered chat with plate measurements,
+  post-slice checks, and suggested setting changes that require explicit
+  approval before application. The repository also includes a standalone MCP
+  server. Installing the released wheel alone is not sufficient: the
+  documented plugin needs the author's host-API branch of OrcaSlicer. The
+  author reports running the plugin only on macOS.
+repository: https://github.com/peterbedorjr/orca-copilot
+categories:
+  - ai-and-automation
+status: experimental
+status_note: The plugin has a released/buildable wheel, but requires an unreleased custom OrcaSlicer host branch and has only run on macOS.
+installation:
+  method: wheel
+  url: https://github.com/peterbedorjr/orca-copilot#install
+  notes: Install the release wheel or build it with uv build --wheel, then use the author's host-API branch of OrcaSlicer.
+compatibility:
+  orca_slicer: Requires the author's OrcaSlicer branch with plugin host API calls; stock tagged and nightly builds are insufficient.
+  platforms:
+    - macos
+  requires_custom_build: true
+  notes: Windows and Linux paths are described but only macOS has been run.
+evidence:
+  - label: README and installation
+    url: https://github.com/peterbedorjr/orca-copilot/blob/b38fc76c8bff3427546a0941eef72fb6b8187f08/README.md
+  - label: Releases
+    url: https://github.com/peterbedorjr/orca-copilot/releases
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

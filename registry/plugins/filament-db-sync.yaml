@@ -1,0 +1,29 @@
+name: Filament DB Sync
+summary: Pulls Filament DB presets into OrcaSlicer and sends reviewed, eligible setting changes back.
+description: >-
+  Pull imports Filament DB filament presets and calibration for the active
+  printer and nozzle into OrcaSlicer. Send compares unsaved OrcaSlicer edits
+  with the shared preset state and asks for confirmation before writing
+  eligible changes. Filament DB must be running, and synchronization occurs
+  only when users run the commands. Calibration, shrinkage, notes, and some
+  plate-specific values cannot be sent through the available Filament DB
+  interface.
+repository: https://github.com/hyiger/orcaslicer-filament-db-plugin
+categories:
+  - filament-and-spool-management
+status: available
+status_note: The README documents a pull, review, and push workflow and specifies OrcaSlicer 2.5.0-rc or later.
+installation:
+  method: python
+  url: https://github.com/hyiger/orcaslicer-filament-db-plugin/releases/latest
+  notes: Install orca_filament_db_sync_any.py from a release through OrcaSlicer's Plugins window.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5.0-rc or later with Python plugin support.
+  platforms: []
+  requires_custom_build: false
+  notes: Platform support is not specified; requires a reachable, running Filament DB instance.
+evidence:
+  - label: README and installation
+    url: https://github.com/hyiger/orcaslicer-filament-db-plugin/blob/main/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

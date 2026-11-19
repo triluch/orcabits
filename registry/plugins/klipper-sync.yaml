@@ -1,0 +1,28 @@
+name: Klipper Sync
+summary: Checks OrcaSlicer printer settings against a Klipper configuration read through Moonraker.
+description: >-
+  Compares the active OrcaSlicer printer profile with values reported by the
+  printer through Moonraker. Checks include motion limits, printable height,
+  macros, and temperatures, with warnings for mismatches that can affect prints
+  or estimates. Supported fixes change the unsaved OrcaSlicer preset so users
+  can review the result; they do not edit the printer configuration. It requires
+  a Klipper printer with Moonraker.
+repository: https://github.com/ahmedbebars/klipper-sync
+categories:
+  - profiles-and-calibration
+status: available
+status_note: README documents OrcaCloud and local installation, usage, and individual check/fix behavior.
+installation:
+  method: native
+  url: https://github.com/ahmedbebars/klipper-sync#install
+  notes: Install through OrcaCloud or use the documented local-plugin installation.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5 or newer.
+  platforms: []
+  requires_custom_build: false
+  notes: Requires a Klipper printer with Moonraker; operating-system support is not specified.
+evidence:
+  - label: README
+    url: https://github.com/ahmedbebars/klipper-sync/blob/main/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

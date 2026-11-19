@@ -1,0 +1,28 @@
+name: Hora de Finalización / Finish Time
+summary: Displays completion-time estimates and per-plate status using OrcaSlicer's sliced G-code.
+description: >-
+  The plugin reads the G-code associated with the current project to show
+  estimated finish time, duration, filament, weight, and cost. A board
+  displays each project plate and supports sequential or independent finish
+  estimates. It marks affected plates for reslicing after project or preset
+  changes and avoids reusing stale G-code for empty plates. Installation
+  requires permission to read OrcaSlicer's generated G-code files.
+repository: https://github.com/joseto1298/orca-time-calculator
+categories:
+  - monitoring-and-print-farms
+status: available
+status_note: The README documents installable Python and wheel files and a working usage workflow.
+installation:
+  method: wheel
+  url: https://github.com/joseto1298/orca-time-calculator/releases/latest
+  notes: Install calculadora_tiempo.py or the hora_de_finalizacion wheel from the releases page.
+compatibility:
+  orca_slicer: Nightly builds or releases after OrcaSlicer 2.4.2 with Python plugin support.
+  platforms: []
+  requires_custom_build: false
+  notes: Desktop platform support is not specified; OrcaSlicer manages the Python runtime.
+evidence:
+  - label: README and installation
+    url: https://github.com/joseto1298/orca-time-calculator/blob/main/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

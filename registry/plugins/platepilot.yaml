@@ -1,0 +1,28 @@
+name: PlatePilot
+summary: Organizes downloaded model files into a searchable library and multi-plate OrcaSlicer projects.
+description: >-
+  PlatePilot indexes model files from watched folders, archives, and files added through its interface.
+  It previews STL, 3MF, and STEP parts and can arrange selected parts across multiple plates.
+  Users can collect parts from several sources in a basket before arranging them together.
+  The plugin opens the generated project in OrcaSlicer, with direct project opening documented for Windows only.
+  Some layout features are marked beta in the project README.
+repository: https://github.com/GNUGiminot/platepilot-orcaslicer
+categories:
+  - modeling-and-textures
+status: experimental
+status_note: The README marks some layout features as beta and documents direct project opening only on Windows.
+installation:
+  method: python
+  url: https://github.com/GNUGiminot/platepilot-orcaslicer#install
+  notes: Follow the repository's OrcaSlicer plugin installation instructions.
+compatibility:
+  orca_slicer: Plugin-enabled OrcaSlicer.
+  platforms:
+    - windows
+  requires_custom_build: false
+  notes: macOS and Linux users must open the generated project manually.
+evidence:
+  - label: README
+    url: https://github.com/GNUGiminot/platepilot-orcaslicer/blob/main/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

@@ -1,0 +1,28 @@
+name: Flotilla
+summary: Shows a live camera grid and printer status with protocol-dependent controls for configured printers.
+description: >-
+  Flotilla creates a tab with a camera tile for each printer host configured
+  in OrcaSlicer. Its expanded view can show status, progress, temperatures,
+  and controls such as pause, resume, cancel, and emergency stop. Moonraker
+  and Elegoo SDCP control are implemented, while other printer types may show
+  camera-only views. The author has tested only a Sovol SV08 and an Elegoo
+  Centauri Carbon; Bambu camera streams require an external relay.
+repository: https://github.com/bmelton/flotilla
+categories:
+  - monitoring-and-print-farms
+status: experimental
+status_note: The README reports testing on exactly two printers and labels other printer types as unverified or unknown.
+installation:
+  method: python
+  url: https://github.com/bmelton/flotilla/blob/main/src/flotilla.py
+  notes: Install the Python file from the Plugins dialog or copy it into OrcaSlicer's plugin directory.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5 or newer with plugin pages support.
+  platforms: []
+  requires_custom_build: false
+  notes: Desktop platform support is not specified. Moonraker and Elegoo SDCP are implemented; other protocols are unverified.
+evidence:
+  - label: README and installation
+    url: https://github.com/bmelton/flotilla/blob/main/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

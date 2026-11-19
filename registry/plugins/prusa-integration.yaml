@@ -1,0 +1,30 @@
+name: Prusa for OrcaSlicer
+summary: Adds PrusaLink printing, Device-tab monitoring, and filament-label synchronization.
+description: >-
+  The plugin adds a printer agent for PrusaLink uploads and print starts, plus
+  a Device-tab page with printer information and controls. It can check nozzles
+  before sending and synchronize filament labels. Optional Prusa Connect
+  support adds features that depend on the enabled connection method. The
+  project describes itself as very experimental and reports testing only on a
+  five-tool Prusa XL.
+repository: https://github.com/thijse/orcaslicer-plugin-prusa
+categories:
+  - printer-connectivity
+status: experimental
+status_note: The upstream README calls it very experimental and reports testing only on a Prusa XL 5T.
+installation:
+  method: wheel
+  url: https://github.com/thijse/orcaslicer-plugin-prusa#install
+  notes: Download prusa_plugin.whl from Releases or build it with uv run python scripts/build_wheel.py.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5 build with Python plugin support and printer_agent/pages capabilities.
+  platforms: []
+  requires_custom_build: false
+  notes: README documents install paths for Windows, macOS, and Linux, but gives no platform test matrix.
+evidence:
+  - label: README
+    url: https://github.com/thijse/orcaslicer-plugin-prusa/blob/main/README.md
+  - label: Releases
+    url: https://github.com/thijse/orcaslicer-plugin-prusa/releases
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

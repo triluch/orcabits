@@ -1,0 +1,31 @@
+name: FlashForge Connect
+summary: Adds a FlashForge account, printer-status, camera, and cloud-send panel to OrcaSlicer.
+description: >-
+  The native plugin provides a FlashForge page with account login, printer
+  selection, status, temperatures, and camera playback. An external SDK helper
+  keeps the vendor library outside OrcaSlicer's process. It can prepare and
+  upload a sliced job through the cloud workflow, but physical print start has
+  not been validated on a printer. The documented manual wheel installation
+  requires Linux and OrcaSlicer 2.5.0 or newer.
+repository: https://github.com/monkyja/flashforge-connect
+categories:
+  - printer-connectivity
+status: experimental
+status_note: Version 0.1.0 is explicitly experimental; physical print start has not been validated on hardware.
+installation:
+  method: wheel
+  url: https://github.com/monkyja/flashforge-connect#instalar-en-orcaslicer
+  notes: Build with uv build or use the documented dist wheel, then install it locally in OrcaSlicer.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5.0 or newer with plugin support.
+  platforms:
+    - linux
+  requires_custom_build: false
+  notes: The README documents and tests the plugin with Linux Flatpak builds.
+evidence:
+  - label: README
+    url: https://github.com/monkyja/flashforge-connect/blob/main/README.md
+  - label: Distribution checker
+    url: https://github.com/monkyja/flashforge-connect/tree/main/scripts
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

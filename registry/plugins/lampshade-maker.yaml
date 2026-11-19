@@ -1,0 +1,30 @@
+name: Lamp Shade Maker
+summary: Generates customizable spiral-vase lampshades with editable silhouettes, patterns, and bulb-holder openings.
+description: >-
+  Lamp Shade Maker generates a solid lampshade base and patterned body for spiral-vase printing.
+  Users can choose or draw silhouettes, configure surface relief, and select or import a bulb-holder opening.
+  The plugin reads layer settings from the active OrcaSlicer print profile to size the base.
+  It provides a 3D preview and saves the generated STL alongside reusable settings.
+  Automatic STL loading is documented for macOS only; Windows and Linux users import the file manually.
+repository: https://github.com/Otto-Gloeckner/orca-lampshade-maker
+categories:
+  - modeling-and-textures
+status: available
+status_note: The README documents Orca Cloud and release-file installation with a complete generation workflow.
+installation:
+  method: python
+  url: https://github.com/Otto-Gloeckner/orca-lampshade-maker#install
+  notes: Download lampshade_maker_any.py from a release and install it through OrcaSlicer's Plugins menu.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5 or a current plugin-enabled nightly build.
+  platforms:
+    - macos
+    - windows
+    - linux
+  requires_custom_build: false
+  notes: The README documents operation on all three platforms; automatic STL loading is macOS-only.
+evidence:
+  - label: README
+    url: https://github.com/Otto-Gloeckner/orca-lampshade-maker/blob/1d17a5c6e4f024d2576702913ed169620ca68a28/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

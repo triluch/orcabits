@@ -1,0 +1,31 @@
+name: Smoothing Wall Speed Along Z
+summary: Smooths outer-wall speed changes between neighboring layers to reduce vertical print banding.
+description: >-
+  Relaxes outer-wall speed changes between adjacent layers using Gaussian
+  smoothing or configurable gradient limits. It slows faster sections rather
+  than speeding up slow overhangs. The plugin provides a tab for simple and
+  advanced configuration and synchronizes settings across slicing sessions.
+  The README documents OrcaCloud and local installation and lists Windows,
+  Linux, and macOS as supported platforms.
+repository: https://github.com/persano/smooth-z-wall-speed-plugin
+categories:
+  - toolpaths-and-gcode
+status: available
+status_note: README documents Plugin Hub and local installation, process configuration, and supported operating systems.
+installation:
+  method: native
+  url: https://github.com/persano/smooth-z-wall-speed-plugin#installation
+  notes: Install from the OrcaCloud Plugin Hub or use the documented local installation method.
+compatibility:
+  orca_slicer: OrcaSlicer 2.4+ or 2.5 nightly, as listed by the project.
+  platforms:
+    - windows
+    - linux
+    - macos
+  requires_custom_build: false
+  notes: These operating systems are explicitly listed as supported; README lists OrcaSlicer v2.4+ / v2.5 nightly.
+evidence:
+  - label: README
+    url: https://github.com/persano/smooth-z-wall-speed-plugin/blob/HEAD/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

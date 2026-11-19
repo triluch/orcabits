@@ -1,0 +1,32 @@
+name: Grove Control
+summary: Routes OrcaSlicer's Print plate action to Grove Control and opens its job form inside OrcaSlicer.
+description: >-
+  The plugin receives the sliced 3MF archive from OrcaSlicer's Print plate
+  action and uploads it to Grove Control without requiring manual file
+  export. After upload, Grove's hosted form handles printer selection,
+  readiness, materials, scheduling, and queue creation. The experimental
+  PrinterAgent adapter uses synthetic P1S compatibility metadata and sends no
+  machine-control commands. Upstream describes it as a prototype that has not
+  passed a real-nightly workflow check, with support limited to a P1S slicing
+  profile.
+repository: https://github.com/EdwardChamberlain/grove-control-orca-plugin
+categories:
+  - monitoring-and-print-farms
+status: experimental
+status_note: The LAN adapter is a prototype, has not passed real-nightly workflow validation, and currently targets a P1S slicing profile.
+installation:
+  method: source
+  url: https://github.com/EdwardChamberlain/grove-control-orca-plugin#setup-and-use
+  notes: Install the plugin package locally; repository source includes a pyproject.toml and documents local wheel replacement, but does not describe a tagged release artifact.
+compatibility:
+  orca_slicer: Plugin-enabled OrcaSlicer with experimental printer agents and the Print plate workflow.
+  platforms: []
+  requires_custom_build: false
+  notes: Desktop platform support and a minimum OrcaSlicer version are not specified; real-nightly workflow validation is pending.
+evidence:
+  - label: README and setup
+    url: https://github.com/EdwardChamberlain/grove-control-orca-plugin/blob/main/README.md
+  - label: LAN adapter validation
+    url: https://github.com/EdwardChamberlain/grove-control-orca-plugin/blob/main/docs/LAN_ADAPTER_VALIDATION.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

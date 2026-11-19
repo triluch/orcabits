@@ -1,0 +1,28 @@
+name: ChromaSave–SmartPurge
+summary: Reorders purge and filament-cutting operations to reduce multi-color filament waste.
+description: >-
+  Moves filament cutting into permitted internal regions so residual material
+  can be consumed before the final purge. It models melt-zone volume and flush
+  requirements, with tower/chute and bucket modes. The repository also provides
+  a command-line tool, separate from its OrcaSlicer plugin. The 1.1.0 beta adds
+  Bambu AMS/AMS Lite support that the authors say still needs physical hardware
+  validation; Klipper and CoPrint setups need adapted macros and purge coordinates.
+repository: https://github.com/deathstroke-co/ChromaSave
+categories:
+  - toolpaths-and-gcode
+status: experimental
+status_note: Explicit 1.1.0 beta; Bambu AMS/AMS Lite support still needs physical hardware validation.
+installation:
+  method: source
+  url: https://github.com/deathstroke-co/ChromaSave#installation
+  notes: Follow the repository's instructions for installing the native OrcaSlicer plugin.
+compatibility:
+  orca_slicer: OrcaSlicer with the Python plugin system.
+  platforms: []
+  requires_custom_build: false
+  notes: Requires machine-specific purge configuration; documented platform support is not specified.
+evidence:
+  - label: README
+    url: https://github.com/deathstroke-co/ChromaSave/blob/HEAD/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

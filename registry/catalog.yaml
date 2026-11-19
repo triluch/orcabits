@@ -1,0 +1,29 @@
+updated_at: "2026-11-19"
+categories:
+  - id: printer-connectivity
+    name: Printer connectivity
+    description: Printer agents, uploads, and device controls.
+  - id: filament-and-spool-management
+    name: Filament and spool management
+    description: Inventory, spool accounting, and filament-slot mapping.
+  - id: profiles-and-calibration
+    name: Profiles and calibration
+    description: Preset imports, synchronization, organization, and tuning.
+  - id: modeling-and-textures
+    name: Modeling and textures
+    description: Model discovery, CAD bridges, generators, and texture libraries.
+  - id: toolpaths-and-gcode
+    name: Toolpaths and G-code
+    description: Native slicing extensions and G-code transformations.
+  - id: monitoring-and-print-farms
+    name: Monitoring and print farms
+    description: Dashboards, print history, estimates, and farm submission.
+  - id: analysis-and-costing
+    name: Analysis and costing
+    description: Preflight checks, analysis exports, and print pricing.
+  - id: ai-and-automation
+    name: AI and automation
+    description: Assistant panels and bridges to external AI tools.
+  - id: workflow-and-integrations
+    name: Workflow and integrations
+    description: Script orchestration, project history, and application bridges.

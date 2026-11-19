@@ -1,0 +1,28 @@
+name: AFC Tool Remap
+summary: Lets users map outgoing tools to physical AFC lanes before sending through Moonraker.
+description: >-
+  Before upload, the plugin lists used tools with their material and color and
+  lets users choose a physical AFC lane for each one. Lane choices show
+  remaining grams when the printer provides that data. It warns about
+  material mismatches and blocks empty or duplicate lane assignments. Applying
+  a mapping updates persistent printer-side tool assignments and verifies
+  them; it does not rewrite G-code and does not affect disk exports.
+repository: https://github.com/suchmememanyskill/orcaslicer-afc-tool-remap
+categories:
+  - filament-and-spool-management
+status: available
+status_note: The README documents the pre-upload mapping, verification, skip, and continue workflow.
+installation:
+  method: source
+  url: https://github.com/suchmememanyskill/orcaslicer-afc-tool-remap/blob/main/build_plugin.py
+  notes: Run the build script to create a wheel containing the plugin and HTML template, then install the wheel through OrcaSlicer's Plugins dialog.
+compatibility:
+  orca_slicer: OrcaSlicer with Python plugin and pre-upload capabilities; minimum version not specified.
+  platforms: []
+  requires_custom_build: false
+  notes: Requires a configured Moonraker printer with AFC lane data; desktop platform support is not specified.
+evidence:
+  - label: README
+    url: https://github.com/suchmememanyskill/orcaslicer-afc-tool-remap/blob/main/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

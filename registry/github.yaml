@@ -1,0 +1,276 @@
+updated_at: 2026-11-19
+checked_at: 2026-11-19
+repositories:
+  adilo-maker/task-multiplier:
+    stars: 1
+    archived: false
+  ahmedbebars/klipper-sync:
+    stars: 0
+    archived: false
+  ahmedbebars/print-memory:
+    stars: 0
+    archived: false
+  barismert98/orcaslicer-color-split:
+    stars: 1
+    archived: false
+  barismert98/orcaslicer-dot-art:
+    stars: 1
+    archived: false
+  barismert98/orcaslicer-flow-line-art:
+    stars: 1
+    archived: false
+  barismert98/orcaslicer-line-art-studio:
+    stars: 1
+    archived: false
+  belik1982/orca-ai-assistant:
+    stars: 0
+    archived: false
+  ben0551/orca-flashforge-c5:
+    stars: 0
+    archived: false
+  bertenvdb/webtabs-orcaslicer-plugin:
+    stars: 0
+    archived: false
+  bloodf/kobracontrol:
+    stars: 1
+    archived: false
+  bloodf/orca_organizer:
+    stars: 1
+    archived: false
+  bloodf/orca_print_calculator:
+    stars: 1
+    archived: false
+  bloodf/spooler:
+    stars: 1
+    archived: false
+  bloodf/u1control:
+    stars: 1
+    archived: false
+  bmelton/flotilla:
+    stars: 0
+    archived: false
+  bmelton/paraspool:
+    stars: 2
+    archived: false
+  bounthi/filament-saver:
+    stars: 1
+    archived: false
+  brandondoster/spoolport:
+    stars: 0
+    archived: false
+  broncosis/orca_x1plus_plugin:
+    stars: 1
+    archived: false
+  cheeky-bastard/adaptive_temperature-orcaslicer_plugin:
+    stars: 1
+    archived: false
+  chrisrollz/head-room:
+    stars: 0
+    archived: false
+  cichr/laserca-orcaslicer_plugin:
+    stars: 1
+    archived: false
+  danm1989/spoolio-orcaslicer:
+    stars: 2
+    archived: false
+  deathstroke-co/chromasave:
+    stars: 0
+    archived: false
+  dhumpf/orca-git-sync:
+    stars: 0
+    archived: false
+  diehardave/orca_spoolman_presets:
+    stars: 2
+    archived: false
+  djvalic/kiln-orca:
+    stars: 0
+    archived: false
+  dmarkovit/mad-spoolman:
+    stars: 0
+    archived: false
+  dr-apple/orca-snapmaker-u1-agent:
+    stars: 0
+    archived: false
+  edwardchamberlain/grove-control-orca-plugin:
+    stars: 0
+    archived: false
+  ericderace/orca-openclaw-plugin:
+    stars: 0
+    archived: false
+  fabiomsnunes/orca-claude-bridge:
+    stars: 0
+    archived: false
+  flashforge-c5-modding-group/opencreator-send:
+    stars: 5
+    archived: false
+  fleeceflames/orca_makerworld_importer:
+    stars: 0
+    archived: false
+  flexicano/orcaslicer-bambustudio-import:
+    stars: 0
+    archived: false
+  fraqtl/orca-ams-custom-profiles:
+    stars: 0
+    archived: false
+  furutsubaki/orcaslicer-hole-reinforcement-plugin:
+    stars: 0
+    archived: false
+  gadonk/pipspool-orcaslicer:
+    stars: 11
+    archived: false
+  gdme-llc/blenderstudio:
+    stars: 0
+    archived: false
+  gittrahan/support-fins:
+    stars: 1040
+    archived: false
+  gnugiminot/platepilot-orcaslicer:
+    stars: 1
+    archived: false
+  gnugiminot/preset-groups-orcaslicer:
+    stars: 0
+    archived: false
+  gomorko/paramability-orca-plugin:
+    stars: 1
+    archived: false
+  harrybin/orcaslicer-anycubicks1-acesync-plugin:
+    stars: 0
+    archived: false
+  heydemoura/creality-orca-integration:
+    stars: 1
+    archived: false
+  hyiger/orcaslicer-bgcode-plugin:
+    stars: 1
+    archived: false
+  hyiger/orcaslicer-filament-db-plugin:
+    stars: 0
+    archived: false
+  ianloic/anycubic-orca-plugin:
+    stars: 2
+    archived: false
+  jensenjcaldwell/orcascripter:
+    stars: 0
+    archived: false
+  joseto1298/orca-time-calculator:
+    stars: 1
+    archived: false
+  kulabisbeebellkbbai-oss/orca-electroplating-calculator:
+    stars: 2
+    archived: false
+  kxkeller/orca-aircraft-structures:
+    stars: 0
+    archived: false
+  lanwen/orca-snapmaker-u1-camera-plugin:
+    stars: 0
+    archived: false
+  mlugo-apx/orca-farm-send:
+    stars: 0
+    archived: false
+  monkyja/flashforge-connect:
+    stars: 0
+    archived: false
+  murillo-romeu/orca-cubic:
+    stars: 0
+    archived: false
+  nicholasgower/gcode-fea:
+    stars: 0
+    archived: false
+  nikotina0001/openanchor:
+    stars: 0
+    archived: false
+  nobodyguy/orca-bambuddy:
+    stars: 3
+    archived: false
+  nokoliko/kobrax_plugin:
+    stars: 0
+    archived: false
+  okamisolutions/kobra3v2-orca-plugin:
+    stars: 0
+    archived: false
+  opoeta/orca-svg-multicor:
+    stars: 1
+    archived: false
+  otto-gloeckner/orca-lampshade-maker:
+    stars: 1
+    archived: false
+  persano/open-bambu-networking-plugin:
+    stars: 21
+    archived: false
+  persano/smooth-z-wall-speed-plugin:
+    stars: 1
+    archived: false
+  peterbedorjr/orca-copilot:
+    stars: 0
+    archived: false
+  rubi3dp/preset-profiler:
+    stars: 1
+    archived: false
+  ruivalim/orca-creality-cfs-sync:
+    stars: 1
+    archived: false
+  ruivalim/orca-profiles-git:
+    stars: 0
+    archived: false
+  schirrel/orcaslicer-plugin-custom-gcode:
+    stars: 0
+    archived: false
+  shiratsuyudachi/multicolor-batching:
+    stars: 0
+    archived: false
+  starforgefoundry/bambuddy-orca-plugin:
+    stars: 0
+    archived: false
+  stodgywaif/orcaslicer-spoolman-plugin:
+    stars: 0
+    archived: false
+  suchmememanyskill/orcaslicer-afc-tool-remap:
+    stars: 1
+    archived: false
+  suchmememanyskill/orcaslicer-compact-tools:
+    stars: 0
+    archived: false
+  takumion/orcaslicer-plugin:
+    stars: 0
+    archived: false
+  tarknap/easy-speed-slider:
+    stars: 0
+    archived: false
+  theolympuscloud/orcaslicer-spoolman-filaments:
+    stars: 0
+    archived: false
+  thijse/orcaslicer-plugin-prusa:
+    stars: 0
+    archived: false
+  tommasobbianchi/orcaslicer-model-search-plugin:
+    stars: 8
+    archived: false
+  tommasobbianchi/printprofiles-orca-plugin:
+    stars: 4
+    archived: false
+  topi314/medusahc-orcaslicer-plugin:
+    stars: 1
+    archived: false
+  trane77/orca-versioning-plugin:
+    stars: 0
+    archived: false
+  ushmask/flashforge-device-tab:
+    stars: 0
+    archived: false
+  valenokmc/orcaslicer-calibration-plugin:
+    stars: 1
+    archived: false
+  venku122/printlint:
+    stars: 0
+    archived: false
+  welizard/orca-plugins:
+    stars: 0
+    archived: false
+  yahya-tamur/orca_slicer_to_prusa_usb:
+    stars: 0
+    archived: false
+  zed-0xff/orca-edit-in-blender:
+    stars: 0
+    archived: false
+  zfdt/orca-vendor-source-plugin:
+    stars: 0
+    archived: false

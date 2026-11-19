@@ -1,0 +1,28 @@
+name: Color Split
+summary: Splits color-painted models into printable parts assigned to separate filaments.
+description: >-
+  Color Split reads OrcaSlicer's color painting and separates painted regions into mesh parts.
+  It supports raised details and inlays as well as splitting features from the base model.
+  The plugin exports individual STLs and a split 3MF, and can add the result to the plate on Windows.
+  Other platforms can import the generated 3MF manually.
+  Support, seam, and fuzzy-skin painting are not used by the splitter.
+repository: https://github.com/barismert98/orcaslicer-color-split
+categories:
+  - modeling-and-textures
+status: available
+status_note: The README documents wheel installation and the split/export workflow; automatic plate handoff is Windows-only.
+installation:
+  method: wheel
+  url: https://github.com/barismert98/orcaslicer-color-split/releases/latest
+  notes: Download the wheel and install it from OrcaSlicer's Plugins menu.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5 with plugin support.
+  platforms:
+    - windows
+  requires_custom_build: false
+  notes: Windows is the tested platform; other systems use manual 3MF import.
+evidence:
+  - label: README
+    url: https://github.com/barismert98/orcaslicer-color-split/blob/main/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

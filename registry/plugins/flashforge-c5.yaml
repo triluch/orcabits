@@ -1,0 +1,29 @@
+name: FlashForge C5
+summary: Adds LAN printing and a printer-control tab for FlashForge Creator 5 and 5 Pro.
+description: >-
+  The plugin provides a printer agent for OrcaSlicer's Print and Send workflow
+  and a separate tab for monitoring the Creator 5 and 5 Pro. The tab shows live
+  status, temperatures, camera, printer files and previews, and print controls.
+  It installs independently from the repository's MakerWorld converter plugin.
+  OrcaSlicer 2.5.0 or newer and a printer in LAN/offline mode are required.
+repository: https://github.com/ben0551/orca-flashforge-c5
+categories:
+  - printer-connectivity
+status: available
+status_note: The README documents installation and LAN printing, monitoring, and camera workflows.
+installation:
+  method: python
+  url: https://github.com/ben0551/orca-flashforge-c5#install
+  notes: Install flashforge-c5_any.py as its own local plugin.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5.0 or newer.
+  platforms: []
+  requires_custom_build: false
+  notes: Platform support is not specified.
+evidence:
+  - label: README
+    url: https://github.com/ben0551/orca-flashforge-c5/blob/main/README.md
+  - label: Plugin source
+    url: https://github.com/ben0551/orca-flashforge-c5/blob/main/flashforge-c5_any.py
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

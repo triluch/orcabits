@@ -1,0 +1,28 @@
+name: Electroplating Calculator
+summary: Estimates electroplating current from selected model surface area and bath settings.
+description: >-
+  Electroplating Calculator measures selected model instances using their loaded scale.
+  It estimates current from surface area, coverage adjustments, and a selected current density.
+  The plugin includes reference bath profiles and reports a suggested current.
+  It does not control equipment or calculate deposition time.
+  Overlapping meshes and unapplied negative cuts can inflate the measured area.
+repository: https://github.com/kulabisbeebellkbbai-oss/orca-electroplating-calculator
+categories:
+  - analysis-and-costing
+status: experimental
+status_note: The README labels it beta, requires a plugin-enabled nightly, and reports native testing only on Windows.
+installation:
+  method: wheel
+  url: https://github.com/kulabisbeebellkbbai-oss/orca-electroplating-calculator/releases/latest
+  notes: Download the wheel from Releases or build it locally, then install through the Plugins menu.
+compatibility:
+  orca_slicer: Plugin-enabled OrcaSlicer nightly; the README identifies 2.5.0-dev testing.
+  platforms:
+    - windows
+  requires_custom_build: false
+  notes: Stable OrcaSlicer 2.4.2 is not supported; Linux and macOS native operation are unverified.
+evidence:
+  - label: README
+    url: https://github.com/kulabisbeebellkbbai-oss/orca-electroplating-calculator/blob/6a128b9544153372c250e7b4073827de7309709f/README.md
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"

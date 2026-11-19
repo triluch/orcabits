@@ -1,0 +1,33 @@
+name: OrcaScripter
+summary: Manages and runs an ordered chain of external G-code post-processing scripts from OrcaSlicer.
+description: >-
+  The plugin integrates with OrcaSlicer's slicing pipeline to run selected
+  external scripts sequentially after slicing. It provides script discovery,
+  configurable arguments, ordering, and backups, but does not bundle the
+  scripts themselves. It can be installed by copying or symlinking its
+  orcascripter package into OrcaSlicer's plugin folder. The README targets
+  OrcaSlicer's PythonPluginBridge and labels compatibility as v2.4+.
+repository: https://github.com/jensenjcaldwell/OrcaScripter
+categories:
+  - workflow-and-integrations
+status: experimental
+status_note: The README targets an evolving PythonPluginBridge; its v2.4+ compatibility claim needs confirmation against the host build.
+installation:
+  method: source
+  url: https://github.com/jensenjcaldwell/OrcaScripter#installation-into-orcaslicer
+  notes: Copy or symlink the installable orcascripter directory into the OrcaSlicer plugin folder.
+compatibility:
+  orca_slicer: PythonPluginBridge is required; the README claims v2.4+.
+  platforms:
+    - windows
+    - linux
+    - macos
+  requires_custom_build: false
+  notes: The README documents installation paths for these platforms; it does not identify tested host builds.
+evidence:
+  - label: README
+    url: https://github.com/jensenjcaldwell/OrcaScripter/blob/main/README.md
+  - label: Installable package
+    url: https://github.com/jensenjcaldwell/OrcaScripter/tree/main/orcascripter
+updated_at: "2026-11-19"
+reviewed_at: "2026-11-19"
