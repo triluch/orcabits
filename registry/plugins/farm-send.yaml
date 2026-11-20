@@ -4,7 +4,9 @@ description: >-
   Farm Send keeps a sliced plate for each printer type and shows live status
   for configured printers in a docked panel. Users can upload or start
   matching plates on individual printers or all available printers together.
-  It also supports saved plates and production orders with part counts.
+  It can save multiple sliced plates to a library and divide a production order
+  among idle printers. Compatible printers can print only selected quantities
+  from labeled plates; the Centauri Carbon 2 prints whole plates.
   Hardware testing is documented for the Elegoo Centauri Carbon 2 and
   Snapmaker U1 on Linux; Windows, macOS, broader Moonraker support, and
   multicolor Centauri jobs are untested.
@@ -25,6 +27,8 @@ compatibility:
   notes: Developed and tested on Linux with OrcaSlicer 2.5.1; Windows and macOS are not tested.
 evidence:
   - label: README and installation
-    url: https://github.com/mlugo-apx/orca-farm-send/blob/main/README.md
-updated_at: "2026-11-19"
-reviewed_at: "2026-11-19"
+    url: https://github.com/mlugo-apx/orca-farm-send/blob/e7af229ec98ece4828a79833fa6714e06c011212/README.md
+  - label: Release with the updated plate library
+    url: https://github.com/mlugo-apx/orca-farm-send/releases/tag/v0.3.3
+updated_at: "2026-11-20"
+reviewed_at: "2026-11-20"

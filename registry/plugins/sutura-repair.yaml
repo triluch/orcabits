@@ -1,0 +1,31 @@
+name: Sutura Repair
+summary: Analyzes and repairs plate meshes from an OrcaSlicer panel using the Sutura CLI.
+description: >-
+  Sutura Repair lists the models on the plate and can analyze holes, non-manifold regions, and self-intersections.
+  For repairs, it exports an object's model parts to a single STL and passes the file to a separately installed Sutura CLI.
+  Modifiers and support blockers are not included, and deliberately separate or overlapping model parts may be treated as one solid.
+  The repaired mesh comes back as a new object, leaving the original on the plate.
+repository: https://github.com/Krateian/Sutura
+categories:
+  - modeling-and-textures
+  - analysis-and-costing
+status: experimental
+status_note: The author describes the integration as early-stage and reports reload verification on OrcaSlicer 2.5.1.
+installation:
+  method: python
+  url: https://github.com/Krateian/Sutura/blob/HEAD/orcaslicer-plugin/README.md#install-orcaslicer-250
+  notes: Install the Sutura CLI first, then copy and activate sutura_repair_linux_x86_64.py as documented.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5.0 or newer.
+  platforms:
+    - linux
+    - macos
+  requires_custom_build: false
+  notes: The same plugin file is used on both platforms despite its name. The author verified reload on macOS and on the Linux Flatpak on SteamOS.
+evidence:
+  - label: Plugin README, limitations, and installation
+    url: https://github.com/Krateian/Sutura/blob/bd86babbf48f97ac34e74f56a55932c42c1ca1be/orcaslicer-plugin/README.md
+  - label: Plugin source
+    url: https://github.com/Krateian/Sutura/blob/bd86babbf48f97ac34e74f56a55932c42c1ca1be/orcaslicer-plugin/sutura_repair_linux_x86_64.py
+updated_at: "2026-11-20"
+reviewed_at: "2026-11-20"

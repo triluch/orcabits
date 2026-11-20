@@ -1,0 +1,28 @@
+name: Chest Room
+summary: Fits cosplay breastplates, backplates, and cuirasses to a measured torso or scan.
+description: >-
+  Chest Room can make a rough torso form from five measurements or load an upright torso STL for a closer fit.
+  Move, rotate, and scale the front and back plates independently relative to the form.
+  Cross sections, gap measurements, and optional foam pads help you inspect clearance.
+  Save named fits in the library and open each fitted plate separately in OrcaSlicer.
+repository: https://github.com/ChrisRollz/chest-room
+categories:
+  - modeling-and-textures
+status: available
+status_note: The author documents a working fitting workflow and publishes both a plugin file and an Orca Cloud listing.
+installation:
+  method: python
+  url: https://github.com/ChrisRollz/chest-room#install
+  notes: Install dist/chest_room_any.py through Plugins or subscribe through Orca Cloud, then activate it.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5.0 with Python plugin support.
+  platforms: []
+  requires_custom_build: false
+  notes: If OrcaSlicer cannot open a fitted plate directly, the plugin shows the saved STL path.
+evidence:
+  - label: README and fitting workflow
+    url: https://github.com/ChrisRollz/chest-room/blob/084063f90430843fc9ce68f81c4be45fcbb95cfb/README.md
+  - label: Plugin source and manifest
+    url: https://github.com/ChrisRollz/chest-room/blob/084063f90430843fc9ce68f81c4be45fcbb95cfb/src/chest_room_any.py
+updated_at: "2026-11-20"
+reviewed_at: "2026-11-20"

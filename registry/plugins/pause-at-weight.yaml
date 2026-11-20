@@ -1,0 +1,31 @@
+name: Pause at Weight
+summary: Inserts a filament-change pause based on the weight left on a spool.
+description: >-
+  Enter the remaining filament weight and a reserve, then select Pause at Weight in the process preset.
+  The plugin estimates filament use and adds one pause at the start of the layer where the remaining allowance would be exceeded.
+  The pause command is configurable for the printer's firmware.
+  The pause appears only in the exported G-code, not in OrcaSlicer's preview.
+  On multi-material jobs it uses the combined filament weight, not a separate budget for each spool.
+repository: https://github.com/jhjessup/orcaslicer-pause-at-weight
+categories:
+  - filament-and-spool-management
+  - toolpaths-and-gcode
+status: experimental
+status_note: The author marks it as early and recommends checking the exported G-code before relying on the pause.
+installation:
+  method: python
+  url: https://github.com/jhjessup/orcaslicer-pause-at-weight/blob/HEAD/pause_at_weight.py
+  notes: Install the repository's standalone Python file through Plugins, restart, and select Pause at Weight under Process > Others > Slicing Pipeline Plugin.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5 or newer for the native plugin.
+  platforms:
+    - linux
+  requires_custom_build: false
+  notes: The author tested OrcaSlicer 2.5 on Linux (Flatpak). Use a pause command supported by your printer.
+evidence:
+  - label: README and pipeline setup
+    url: https://github.com/jhjessup/orcaslicer-pause-at-weight/blob/3df40f619f86ee93d5893d9625d93fe4a387d765/README.md
+  - label: Installable Python plugin and manifest
+    url: https://github.com/jhjessup/orcaslicer-pause-at-weight/blob/3df40f619f86ee93d5893d9625d93fe4a387d765/pause_at_weight.py
+updated_at: "2026-11-20"
+reviewed_at: "2026-11-20"

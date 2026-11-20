@@ -1,0 +1,28 @@
+name: LayerCost
+summary: Estimates print costs and prepares quotes from sliced jobs in OrcaSlicer.
+description: >-
+  LayerCost adds a costing and quoting tab to OrcaSlicer.
+  Its slicing hook reads print time and filament weights from sliced jobs.
+  Estimates can include electricity and design costs as well as materials.
+  The tab can prepare PDF quotes, and a manual action is available to pull in the current slice.
+repository: https://github.com/Hark3n/LayerCost
+categories:
+  - analysis-and-costing
+status: experimental
+status_note: A single-file plugin is checked into the repository, but the author has not published a release or documented native testing.
+installation:
+  method: python
+  url: https://github.com/Hark3n/LayerCost/blob/HEAD/public/layercost_plugin.py
+  notes: Download layercost_plugin.py, install it through OrcaSlicer's local-plugin installer, and activate it.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5 or newer with Python plugin support.
+  platforms: []
+  requires_custom_build: false
+  notes: The source gives paths for Windows, macOS, and Linux but does not report testing on them.
+evidence:
+  - label: Packaged plugin and manifest
+    url: https://github.com/Hark3n/LayerCost/blob/fe014ae00f3c399c646bc719e9a6de08e435eb3a/public/layercost_plugin.py
+  - label: Plugin build and capability registration
+    url: https://github.com/Hark3n/LayerCost/blob/fe014ae00f3c399c646bc719e9a6de08e435eb3a/scripts/build-orcaslicer-plugin.mjs
+updated_at: "2026-11-20"
+reviewed_at: "2026-11-20"

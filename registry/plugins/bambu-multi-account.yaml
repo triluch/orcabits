@@ -1,0 +1,31 @@
+name: Bambu Multi Account
+summary: Shows and operates printers from multiple Bambu Lab accounts in OrcaSlicer.
+description: >-
+  The Bambu Accounts tab can label extra accounts and toggle which ones are active.
+  Printers from active accounts appear together in the Device tab and print dialog, with each printer routed through its own account.
+  The main account still owns presets and MakerWorld, and switching the main account takes effect after a restart.
+  Simultaneous use needs the plugin's multi-account build of Open Bambu Networking and accounts in the same Bambu region.
+repository: https://github.com/RubberDingyRapids/bambu-multi-account
+categories:
+  - printer-connectivity
+status: available
+status_note: The author publishes platform-specific packages and documents installation and restoring the original networking library.
+installation:
+  method: wheel
+  url: https://github.com/RubberDingyRapids/bambu-multi-account#install
+  notes: Keep Open Bambu Networking installed, then subscribe through Orca Cloud or use the platform-specific release wheel.
+compatibility:
+  orca_slicer: Requires an OrcaSlicer build with Python plugins and the Open Bambu Networking plugin.
+  platforms:
+    - linux
+    - macos
+    - windows
+  requires_custom_build: false
+  notes: The releases package the library for Linux and Windows x86-64 and Apple Silicon macOS. The standalone Python file does not bundle the library.
+evidence:
+  - label: Setup and networking library requirements
+    url: https://github.com/RubberDingyRapids/bambu-multi-account/blob/8cadab4a80c4e86246eece8c6b22660f621000d9/README.md
+  - label: Packaged client and library by platform
+    url: https://github.com/RubberDingyRapids/bambu-multi-account/releases/tag/v0.3.23
+updated_at: "2026-11-20"
+reviewed_at: "2026-11-20"

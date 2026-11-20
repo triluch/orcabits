@@ -1,0 +1,31 @@
+name: FilamentStandard
+summary: Restores a standard filament list across OrcaSlicer projects and nozzle profiles.
+description: >-
+  FilamentStandard stores slot colors, preferred presets per nozzle diameter, and optional Spoolman spool links.
+  Capture a list from an existing project or edit it in the plugin tab.
+  Both editions can reassign the presets of existing slots and apply filament prices.
+  The GitHub full edition can optionally restore slot count and colors by updating OrcaSlicer's configuration after it closes.
+repository: https://github.com/jeffersonraimon/FilamentStandard
+categories:
+  - filament-and-spool-management
+  - profiles-and-calibration
+status: available
+status_note: The author publishes a full edition on GitHub and a Cloud edition without direct configuration-file edits.
+installation:
+  method: python
+  url: https://github.com/jeffersonraimon/FilamentStandard/releases/latest
+  notes: Install filament_standard.py for the full edition or subscribe to the Cloud edition.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5 or newer with Python plugin support.
+  platforms: []
+  requires_custom_build: false
+  notes: Spoolman is optional. The Cloud edition restores presets in existing slots but does not directly rewrite the slot count or colors.
+evidence:
+  - label: README and edition comparison
+    url: https://github.com/jeffersonraimon/FilamentStandard/blob/6aece63a584d3f43b1435b88fc840f48e236b73f/README.md
+  - label: Plugin source
+    url: https://github.com/jeffersonraimon/FilamentStandard/blob/6aece63a584d3f43b1435b88fc840f48e236b73f/filament_standard.py
+  - label: Release with both plugin editions
+    url: https://github.com/jeffersonraimon/FilamentStandard/releases/tag/v3.0.3
+updated_at: "2026-11-20"
+reviewed_at: "2026-11-20"

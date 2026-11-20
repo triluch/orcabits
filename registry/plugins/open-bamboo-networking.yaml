@@ -6,8 +6,8 @@ description: >-
   cloud printing, remote camera streaming, and AMS slot synchronization on
   supported Bambu Lab printers. It is an unofficial installer for open-source
   native libraries and includes a recovered Bambu application client secret.
-  The README lists Windows, Linux, and macOS and OrcaSlicer 2.3+, 2.4, or 2.5
-  nightly builds.
+  The bundled library also exposes read-only printer snapshots and events for
+  third-party queue integrations; the plugin itself does not add a queue UI.
 repository: https://github.com/persano/open-bambu-networking-plugin
 categories:
   - printer-connectivity
@@ -16,9 +16,9 @@ status_note: The README documents the installer workflow and a published release
 installation:
   method: python
   url: https://github.com/persano/open-bambu-networking-plugin#installation
-  notes: Use the documented Orca Cloud plugin listing or install the released plugin from the repository.
+  notes: Use the documented Orca Cloud listing on plugin-enabled builds, or follow the manual ZIP installation instructions.
 compatibility:
-  orca_slicer: OrcaSlicer 2.3+, 2.4, or 2.5 nightly, as listed by the project.
+  orca_slicer: OrcaSlicer 2.5.0 or newer for the plugin UI; 2.3.0 or newer for manual library installation.
   platforms:
     - windows
     - linux
@@ -27,10 +27,10 @@ compatibility:
   notes: The README lists these platforms but does not claim every printer model is tested.
 evidence:
   - label: README
-    url: https://github.com/persano/open-bambu-networking-plugin/blob/main/README.md
+    url: https://github.com/persano/open-bambu-networking-plugin/blob/69545a7b6accee6a0eca43fcb7d42a35481d4706/README.md
   - label: Orca Cloud listing
     url: https://cloud.orcaslicer.com/app/plugins/shared-plugins/5d35283e-0378-474d-8d3a-6d8f718fddeb
-  - label: Releases
-    url: https://github.com/persano/open-bambu-networking-plugin/releases
-updated_at: "2026-11-19"
-reviewed_at: "2026-11-19"
+  - label: Release notes for queue integration
+    url: https://github.com/persano/open-bambu-networking-plugin/releases/tag/v0.2.57
+updated_at: "2026-11-20"
+reviewed_at: "2026-11-20"

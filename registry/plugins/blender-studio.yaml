@@ -14,7 +14,7 @@ status_note: The README documents local plugin installation and the Blender work
 installation:
   method: python
   url: https://github.com/GDME-LLC/BlenderStudio#60-second-installation
-  notes: Install blender_studio.py through OrcaSlicer's local plugin installer.
+  notes: Use the author's Orca Cloud listing, or locally install blender_studio.py or dist/blender_studio_any.py.
 compatibility:
   orca_slicer: OrcaSlicer 2.5.0 or later with Python Pages plugin support.
   platforms:
@@ -22,9 +22,9 @@ compatibility:
     - macos
     - linux
   requires_custom_build: false
-  notes: Blender 4.2 or later is also required.
+  notes: Blender 4.2 or later is required; the README reports testing on Blender 5.2.
 evidence:
   - label: README
-    url: https://github.com/GDME-LLC/BlenderStudio/blob/215f5dfdd285cd2e9c0076dab04d36a8f2625d4e/README.md
-updated_at: "2026-11-19"
-reviewed_at: "2026-11-19"
+    url: https://github.com/GDME-LLC/BlenderStudio/blob/83992ea8ecb7b636ac77416747959e0c09fe6fee/README.md
+updated_at: "2026-11-20"
+reviewed_at: "2026-11-20"

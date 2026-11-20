@@ -1,0 +1,32 @@
+name: OrcaCAD
+summary: Adds a parametric model library and an OpenSCAD editor to OrcaSlicer.
+description: >-
+  Pick a model such as a Gridfinity bin, case, bracket, or nameplate from the library.
+  Adjust its parameters while inspecting the result in a live 3D preview.
+  The Code tab can render custom OpenSCAD code with the bundled libraries.
+  Send to plate exports the design as an STL and hands it back to OrcaSlicer.
+  The plugin can reuse an installed OpenSCAD or download the engine separately.
+repository: https://github.com/yazdannl/orcad-plugin
+categories:
+  - modeling-and-textures
+status: available
+status_note: The author publishes a single-file plugin and documents local and Orca Cloud installation.
+installation:
+  method: python
+  url: https://github.com/yazdannl/orcad-plugin/releases/latest
+  notes: Download orcad.py and select it under Plugins > Install local plugin.
+compatibility:
+  orca_slicer: A plugin-enabled OrcaSlicer build with the Pages API; the README specifies the current nightly.
+  platforms:
+    - windows
+    - macos
+    - linux
+  requires_custom_build: false
+  notes: Engine downloads are documented for Windows x86-64, Linux x86-64 and ARM64, and Intel and Apple Silicon Macs.
+evidence:
+  - label: README and installation
+    url: https://github.com/yazdannl/orcad-plugin/blob/13265f9a1f270663fcf6d1252dc70a07b36d0ef8/README.md
+  - label: Installable release
+    url: https://github.com/yazdannl/orcad-plugin/releases/tag/v0.9.27
+updated_at: "2026-11-20"
+reviewed_at: "2026-11-20"

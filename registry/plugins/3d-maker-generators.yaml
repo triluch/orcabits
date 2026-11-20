@@ -1,0 +1,33 @@
+name: 3D Maker Generators
+summary: Turns images into multicolor models or paints them onto existing meshes.
+description: >-
+  Generators turn artwork into printable trays, tokens, keychains, and other shapes with separate parts for each color.
+  The painting tool projects artwork onto an STL or 3MF without changing its shape.
+  The OrcaSlicer tab reads the active filament slots and lets you map colors before exporting.
+  Send to plate imports a multicolor 3MF with those assignments; use Import geometry only to keep objects already on the plate.
+repository: https://github.com/MagnusPerditor/3DMakerGenerators
+categories:
+  - modeling-and-textures
+status: available
+status_note: GitHub releases include a native OrcaSlicer plugin alongside the separate browser and desktop versions.
+installation:
+  method: python
+  url: https://github.com/MagnusPerditor/3DMakerGenerators/releases/latest
+  notes: Install maker_generators_orca_plugin_any.py from the release through OrcaSlicer's Plugins window and activate it.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5 with Python plugin support.
+  platforms:
+    - windows
+    - macos
+    - linux
+  requires_custom_build: false
+  notes: The plugin source documents plate handoff for all three platforms. The separate desktop app is Windows-only.
+evidence:
+  - label: README and installation
+    url: https://github.com/MagnusPerditor/3DMakerGenerators/blob/db9139285221b45043950ca59669ecea56368ea1/README.md
+  - label: Plugin source
+    url: https://github.com/MagnusPerditor/3DMakerGenerators/blob/db9139285221b45043950ca59669ecea56368ea1/plugin/plugin_template.py
+  - label: Release with the plugin artifact
+    url: https://github.com/MagnusPerditor/3DMakerGenerators/releases/tag/v2.0
+updated_at: "2026-11-20"
+reviewed_at: "2026-11-20"

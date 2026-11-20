@@ -1,0 +1,32 @@
+name: Anycubic Cloud (Bob-41)
+summary: Monitors and controls Anycubic FDM printers through the global Anycubic Cloud.
+description: >-
+  The Anycubic Cloud tab shows temperatures, progress, and camera feeds for printers on the account.
+  It can upload sliced G-code from a watch folder or expose a local OctoPrint-compatible bridge for direct sends.
+  Pause, resume, stop, and starting a watched file require confirmation.
+  A global Anycubic account and an online FDM printer are required; the printer cannot be in LAN-only mode.
+repository: https://github.com/Bob-41/anycubic-plugin
+categories:
+  - printer-connectivity
+  - monitoring-and-print-farms
+status: available
+status_note: The author provides an installable Python file and documents monitoring, upload, and printer-control workflows.
+installation:
+  method: python
+  url: https://github.com/Bob-41/anycubic-plugin/releases/latest
+  notes: Install anycubic_cloud_any.py locally or subscribe through Orca Cloud. Setup requires an Anycubic Slicer Next session token.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5.0 or later with Python plugin support.
+  platforms:
+    - windows
+    - macos
+    - linux
+  requires_custom_build: false
+  notes: The author lists these platforms. Camera support depends on the printer firmware and streaming provider.
+evidence:
+  - label: README and requirements
+    url: https://github.com/Bob-41/anycubic-plugin/blob/032cc5c8a1fb42cf0d137bd40e7452aef52c3731/README.md
+  - label: Installable Python release
+    url: https://github.com/Bob-41/anycubic-plugin/releases/tag/v0.9.1
+updated_at: "2026-11-20"
+reviewed_at: "2026-11-20"

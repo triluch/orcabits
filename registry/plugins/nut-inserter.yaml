@@ -1,0 +1,30 @@
+name: Nut Inserter
+summary: Checks pockets for embedded nuts and adds insertion commands for toolchanging printers.
+description: >-
+  Nut Inserter finds specially named modifier bodies and compares their pockets with its nut library.
+  A report and preview show the findings before export.
+  The slicing-pipeline capability adds an insertion command at the appropriate layer for each nut.
+  The first build supports square nuts on the first plate, with layer-by-layer printing and no support material in the pockets.
+repository: https://github.com/Garth-42/FFF-nut-insert-automation-plugin
+categories:
+  - analysis-and-costing
+  - toolpaths-and-gcode
+status: experimental
+status_note: The author verified G-code export for one square-nut case in OrcaSlicer on macOS but has not tested it on a printer.
+installation:
+  method: source
+  url: https://github.com/Garth-42/FFF-nut-insert-automation-plugin#install-into-orcaslicer
+  notes: Build the wheel with uv build, install it locally, restart OrcaSlicer, and enable Nut insert in the process preset.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5 with Python plugin support.
+  platforms:
+    - macos
+  requires_custom_build: false
+  notes: The author used OrcaSlicer 2.5.0 on macOS with a Voron Klipper profile. Other platforms and firmware combinations are not verified.
+evidence:
+  - label: README, setup and tested scope
+    url: https://github.com/Garth-42/FFF-nut-insert-automation-plugin/blob/f4887b1634d1b2bcdb2037eb8814e72a073076d7/README.md
+  - label: Wheel configuration
+    url: https://github.com/Garth-42/FFF-nut-insert-automation-plugin/blob/f4887b1634d1b2bcdb2037eb8814e72a073076d7/pyproject.toml
+updated_at: "2026-11-20"
+reviewed_at: "2026-11-20"

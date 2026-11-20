@@ -1,0 +1,30 @@
+name: Spool Stock Probe
+summary: Logs OrcaSlicer events and Bambu LAN printer reports for filament-accounting diagnostics.
+description: >-
+  The probe records which trays supply a print and reads filament weights from the job file.
+  Its tab lets you capture a full status snapshot on demand.
+  It does not update inventory or change printer settings.
+  It is intended for diagnostics rather than day-to-day spool tracking and is installed separately from Spool Stock.
+repository: https://github.com/jwilss/spool-stock
+categories:
+  - analysis-and-costing
+  - filament-and-spool-management
+status: experimental
+status_note: The author documents it as a diagnostic prototype and reports results from P1S printers.
+installation:
+  method: python
+  url: https://github.com/jwilss/spool-stock/blob/HEAD/orca-plugin/probe/README.md#install
+  notes: Install spoolstock_probe.py from the probe directory through Plugins, then add your printer in the probe tab.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5 with Python plugin support.
+  platforms:
+    - windows
+  requires_custom_build: false
+  notes: The documented setup uses Windows paths and requires local access to the Bambu printer. Avoid running the probe alongside Spool Stock because printer connections are limited.
+evidence:
+  - label: Probe documentation and test observations
+    url: https://github.com/jwilss/spool-stock/blob/421a0c716abbde8a84b4e19c8094695cb426fe49/orca-plugin/probe/README.md
+  - label: Separately installable probe
+    url: https://github.com/jwilss/spool-stock/blob/421a0c716abbde8a84b4e19c8094695cb426fe49/orca-plugin/probe/spoolstock_probe.py
+updated_at: "2026-11-20"
+reviewed_at: "2026-11-20"

@@ -1,0 +1,30 @@
+name: Spool Stock
+summary: Deducts Bambu LAN print usage from the corresponding spools in Spool Stock.
+description: >-
+  Spool Stock reads filament usage from the sliced job on the printer and maps it to the loaded AMS trays or external spool.
+  It deducts filament automatically for completed jobs and asks you to confirm usage for failed or cancelled prints.
+  Its OrcaSlicer tab shows inventory, low-spool warnings, and optional RTSP camera feeds.
+  It can also keep a group of OrcaSlicer filament presets in sync with your inventory.
+repository: https://github.com/jwilss/spool-stock
+categories:
+  - filament-and-spool-management
+  - monitoring-and-print-farms
+status: available
+status_note: The author documents the download, account pairing, and workflow with supported Bambu printers.
+installation:
+  method: python
+  url: https://github.com/jwilss/spool-stock/blob/HEAD/orca-plugin/spoolstock/README.md#install
+  notes: Download spool_stock.py from Setup > Orca plugin in Spool Stock, install it in OrcaSlicer, and paste the Spool Stock sign-in code.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5 or newer.
+  platforms:
+    - windows
+  requires_custom_build: false
+  notes: Setup documents Windows paths and requires Bambu printers in LAN mode. Older plugin-enabled builds may need a restart to see preset updates.
+evidence:
+  - label: Plugin documentation
+    url: https://github.com/jwilss/spool-stock/blob/421a0c716abbde8a84b4e19c8094695cb426fe49/orca-plugin/spoolstock/README.md
+  - label: Plugin source and manifest
+    url: https://github.com/jwilss/spool-stock/blob/421a0c716abbde8a84b4e19c8094695cb426fe49/orca-plugin/spoolstock/spool_stock.py
+updated_at: "2026-11-20"
+reviewed_at: "2026-11-20"

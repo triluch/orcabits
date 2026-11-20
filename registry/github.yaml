@@ -1,5 +1,5 @@
-updated_at: 2026-11-19
-checked_at: 2026-11-19
+updated_at: 2026-11-20
+checked_at: 2026-11-20
 repositories:
   adilo-maker/task-multiplier:
     stars: 1
@@ -22,6 +22,9 @@ repositories:
   barismert98/orcaslicer-line-art-studio:
     stars: 1
     archived: false
+  bastimila/tigertag-orca-plugin:
+    stars: 0
+    archived: false
   belik1982/orca-ai-assistant:
     stars: 0
     archived: false
@@ -29,6 +32,9 @@ repositories:
     stars: 0
     archived: false
   bertenvdb/webtabs-orcaslicer-plugin:
+    stars: 0
+    archived: false
+  bloodf/embedder:
     stars: 0
     archived: false
   bloodf/kobracontrol:
@@ -47,10 +53,13 @@ repositories:
     stars: 1
     archived: false
   bmelton/flotilla:
-    stars: 0
+    stars: 1
     archived: false
   bmelton/paraspool:
     stars: 2
+    archived: false
+  bob-41/anycubic-plugin:
+    stars: 1
     archived: false
   bounthi/filament-saver:
     stars: 1
@@ -64,11 +73,17 @@ repositories:
   cheeky-bastard/adaptive_temperature-orcaslicer_plugin:
     stars: 1
     archived: false
+  chrisrollz/chest-room:
+    stars: 1
+    archived: false
   chrisrollz/head-room:
     stars: 0
     archived: false
   cichr/laserca-orcaslicer_plugin:
-    stars: 1
+    stars: 2
+    archived: false
+  d-carrigg/mesh-splitter:
+    stars: 0
     archived: false
   danm1989/spoolio-orcaslicer:
     stars: 2
@@ -118,11 +133,14 @@ repositories:
   gadonk/pipspool-orcaslicer:
     stars: 11
     archived: false
+  garth-42/fff-nut-insert-automation-plugin:
+    stars: 0
+    archived: false
   gdme-llc/blenderstudio:
     stars: 0
     archived: false
   gittrahan/support-fins:
-    stars: 1040
+    stars: 1047
     archived: false
   gnugiminot/platepilot-orcaslicer:
     stars: 1
@@ -132,6 +150,12 @@ repositories:
     archived: false
   gomorko/paramability-orca-plugin:
     stars: 1
+    archived: false
+  happypants9999/orca_spoolman_presets:
+    stars: 0
+    archived: false
+  hark3n/layercost:
+    stars: 0
     archived: false
   harrybin/orcaslicer-anycubicks1-acesync-plugin:
     stars: 0
@@ -148,11 +172,23 @@ repositories:
   ianloic/anycubic-orca-plugin:
     stars: 2
     archived: false
+  jeffersonraimon/filamentstandard:
+    stars: 0
+    archived: false
   jensenjcaldwell/orcascripter:
+    stars: 0
+    archived: false
+  jhjessup/orcaslicer-pause-at-weight:
     stars: 0
     archived: false
   joseto1298/orca-time-calculator:
     stars: 1
+    archived: false
+  jwilss/spool-stock:
+    stars: 0
+    archived: false
+  krateian/sutura:
+    stars: 14
     archived: false
   kulabisbeebellkbbai-oss/orca-electroplating-calculator:
     stars: 2
@@ -162,6 +198,9 @@ repositories:
     archived: false
   lanwen/orca-snapmaker-u1-camera-plugin:
     stars: 0
+    archived: false
+  magnusperditor/3dmakergenerators:
+    stars: 1
     archived: false
   mlugo-apx/orca-farm-send:
     stars: 0
@@ -179,7 +218,7 @@ repositories:
     stars: 0
     archived: false
   nobodyguy/orca-bambuddy:
-    stars: 3
+    stars: 4
     archived: false
   nokoliko/kobrax_plugin:
     stars: 0
@@ -200,6 +239,9 @@ repositories:
     stars: 1
     archived: false
   peterbedorjr/orca-copilot:
+    stars: 0
+    archived: false
+  rubberdingyrapids/bambu-multi-account:
     stars: 0
     archived: false
   rubi3dp/preset-profiler:
@@ -235,6 +277,9 @@ repositories:
   tarknap/easy-speed-slider:
     stars: 0
     archived: false
+  thelegendtubaguy/kobra-3-max-file-fix:
+    stars: 0
+    archived: false
   theolympuscloud/orcaslicer-spoolman-filaments:
     stars: 0
     archived: false
@@ -262,11 +307,26 @@ repositories:
   venku122/printlint:
     stars: 0
     archived: false
+  victorfernande/orca-box-generator:
+    stars: 0
+    archived: false
+  victorfernande/orca-gear-generator:
+    stars: 0
+    archived: false
+  victorfernande/orca-thread-generator:
+    stars: 0
+    archived: false
+  victorfernande/orca-vase-generator:
+    stars: 0
+    archived: false
   welizard/orca-plugins:
     stars: 0
     archived: false
   yahya-tamur/orca_slicer_to_prusa_usb:
     stars: 0
+    archived: false
+  yazdannl/orcad-plugin:
+    stars: 4
     archived: false
   zed-0xff/orca-edit-in-blender:
     stars: 0
