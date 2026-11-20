@@ -1,0 +1,31 @@
+name: Orca Vase Studio
+summary: Designs textured vases, planters, and matching saucers inside OrcaSlicer.
+description: >-
+  The studio can shape a vessel with dimensional controls or an editable side-profile curve.
+  Four surface textures can be combined and adjusted for depth, spacing, and twist.
+  Cutaway views show wall thickness, and planter designs can add drainage holes and a fitted saucer.
+  You can make hollow printable meshes or prepare a design for spiral vase mode.
+repository: https://github.com/victorFernande/orca-vase-generator
+categories:
+  - modeling-and-textures
+status: available
+status_note: The author supplies local plugin packages and documents the design and export workflow.
+installation:
+  method: python
+  url: https://github.com/victorFernande/orca-vase-generator/releases/latest
+  notes: Install the released orca_vase_generator.py or wheel through Plugins, activate it, and reopen OrcaSlicer.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5.1 or newer.
+  platforms:
+    - windows
+  requires_custom_build: false
+  notes: The README documents direct Windows plate handoff; cross-platform build checks do not establish native integration on other systems.
+evidence:
+  - label: README and local installation
+    url: https://github.com/victorFernande/orca-vase-generator/blob/ff437abfa8ed481360922f5373314b6614c37fb4/README.md
+  - label: OrcaSlicer bridge
+    url: https://github.com/victorFernande/orca-vase-generator/blob/ff437abfa8ed481360922f5373314b6614c37fb4/src/vase_studio/plugin_main.py
+  - label: Packaged release
+    url: https://github.com/victorFernande/orca-vase-generator/releases/tag/v1.2.0
+updated_at: "2026-11-20"
+reviewed_at: "2026-11-20"

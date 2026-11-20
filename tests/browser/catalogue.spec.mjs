@@ -130,10 +130,12 @@ test("multi-select filters preserve the chosen sort and default to highest stars
     orderedNames("name")[0],
   );
   const search = page.locator("pagefind-input input");
-  await search.fill("PipSpool");
+  await search.fill('"PipSpool Slot Sync"');
   await sort.selectOption("category");
-  await expect(search).toHaveValue("PipSpool");
-  await expect(page.locator("pagefind-results h2 a")).toHaveText(["PipSpool"]);
+  await expect(search).toHaveValue('"PipSpool Slot Sync"');
+  await expect(page.locator("pagefind-results h2 a")).toHaveText([
+    "PipSpool Slot Sync",
+  ]);
 });
 
 test("renders the complete faceted catalogue, search, combined filters and no results", async ({
@@ -159,8 +161,12 @@ test("renders the complete faceted catalogue, search, combined filters and no re
   );
   const search = page.locator("pagefind-input input");
   await search.fill("PipSpool");
-  await expect(cards).toHaveCount(1);
-  await expect(cards.first()).toContainText("PipSpool");
+  await expect(
+    cards.getByRole("link", { name: "PipSpool", exact: true }),
+  ).toBeVisible();
+  await expect(
+    cards.getByRole("link", { name: "PipSpool Slot Sync", exact: true }),
+  ).toBeVisible();
   await search.fill('"xyqwv987654321notacatalogueentry"');
   await expect(cards).toHaveCount(0);
   await expect(page.locator("pagefind-summary")).toContainText(/no|0/i);

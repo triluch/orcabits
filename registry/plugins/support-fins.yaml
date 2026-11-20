@@ -4,27 +4,28 @@ description: >-
   Runs the printfins.com geometry engine on the model being sliced and merges
   generated fin cross-sections into OrcaSlicer's layer polygons. Fins follow
   model transforms when resliced, and the plugin can skip objects that already
-  have OrcaSlicer supports enabled. The README documents building a single-file
-  Python plugin and installing it in OrcaSlicer's plugin directory or through
-  the Plugins window. A real Windows nightly test compared the resulting
-  toolpaths with a separately finned model; auto brim behavior can differ.
+  have OrcaSlicer supports enabled. The settings page exposes the fin controls
+  in OrcaSlicer. The plugin must be enabled in the process preset, and automatic
+  brim behavior can differ from a model with fins already included.
 repository: https://github.com/gittrahan/support-fins
 categories:
   - toolpaths-and-gcode
 status: available
-status_note: README documents an installable Orca plugin and reports real Windows nightly slicing tests; use requires enabling it in each process preset.
+status_note: Upstream publishes the plugin to Orca Cloud and reports real Windows nightly slicing tests.
 installation:
-  method: source
-  url: https://github.com/gittrahan/support-fins/blob/main/plugins/orca/README.md
-  notes: Build the single-file Orca plugin with plugins/orca/build.py, install it, then enable it in the process slicing-pipeline settings.
+  method: python
+  url: https://github.com/gittrahan/support-fins/blob/HEAD/plugins/orca/README.md
+  notes: Subscribe through Orca Cloud or install the single-file Python build. Then select Support Fins in the process slicing-pipeline settings.
 compatibility:
-  orca_slicer: OrcaSlicer 2.5 nightly with Python plugins and the slicing-pipeline API.
+  orca_slicer: OrcaSlicer 2.5 with Python plugins and the slicing-pipeline API.
   platforms:
     - windows
   requires_custom_build: false
   notes: A real OrcaSlicer 2.5 development nightly was tested on Windows; Orca's bundled uv installs declared Python dependencies.
 evidence:
   - label: Orca plugin README
-    url: https://github.com/gittrahan/support-fins/blob/main/plugins/orca/README.md
-updated_at: "2026-11-19"
-reviewed_at: "2026-11-19"
+    url: https://github.com/gittrahan/support-fins/blob/529d28b4cd35fc32a236bd4a4af9963ce47b4ecf/plugins/orca/README.md
+  - label: Orca Cloud listing
+    url: https://cloud.orcaslicer.com/app/plugins/shared-plugins/42520a1e-e6fd-47d6-956f-e18c2e108522
+updated_at: "2026-11-20"
+reviewed_at: "2026-11-20"

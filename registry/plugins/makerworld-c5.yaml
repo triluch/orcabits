@@ -4,9 +4,9 @@ description: >-
   Converts a local 3MF project or a MakerWorld project link into a project
   prepared for the selected Creator 5 printer. It retains creator process
   settings while adapting the project to the target machine. A MakerWorld link
-  requires a BambuCloud token, while local files can be opened directly. This
-  page plugin is independently installed from the repository's Creator 5
-  printer-agent plugin.
+  requires a BambuCloud token, while local files can be dropped into the tab
+  or chosen from a file dialog. This page plugin is independently installed
+  from the repository's Creator 5 printer-agent plugin.
 repository: https://github.com/ben0551/orca-flashforge-c5
 categories:
   - profiles-and-calibration
@@ -23,6 +23,6 @@ compatibility:
   notes: Requires a FlashForge Creator 5/5 Pro target profile; operating-system support is not specified.
 evidence:
   - label: README
-    url: https://github.com/ben0551/orca-flashforge-c5/blob/main/README.md
-updated_at: "2026-11-19"
-reviewed_at: "2026-11-19"
+    url: https://github.com/ben0551/orca-flashforge-c5/blob/98dae1996d5419501c30f340a9a3f00edb0c4562/README.md
+updated_at: "2026-11-20"
+reviewed_at: "2026-11-20"

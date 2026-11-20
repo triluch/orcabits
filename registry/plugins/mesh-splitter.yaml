@@ -1,0 +1,28 @@
+name: Mesh Splitter
+summary: Splits a single mesh into color-coded parts for multi-filament printing.
+description: >-
+  Mesh Splitter reads models from the current OrcaSlicer plate in its own tab.
+  It can split a mesh automatically, by disconnected shells, or by points you pick on the model.
+  Each part can be moved, resized, or replaced with another STL while keeping its filament assignment.
+  The plugin saves a multipart 3MF to Downloads, which you import back into OrcaSlicer.
+repository: https://github.com/d-carrigg/mesh-splitter
+categories:
+  - modeling-and-textures
+status: available
+status_note: The author publishes a ready-to-install OrcaSlicer plugin and documents the split and reimport workflow.
+installation:
+  method: python
+  url: https://github.com/d-carrigg/mesh-splitter/releases/tag/orca-plugin
+  notes: Install mesh_splitter_any.py through Plugins, activate it, and allow writes to Downloads.
+compatibility:
+  orca_slicer: Stock OrcaSlicer 2.5 with Python plugin support.
+  platforms: []
+  requires_custom_build: false
+  notes: The Python plugin declares NumPy; the browser version is a separate workflow.
+evidence:
+  - label: README and local installation
+    url: https://github.com/d-carrigg/mesh-splitter/blob/9f0eb03af566c73d1a22b9d0449013661c014580/README.md
+  - label: OrcaSlicer plugin source
+    url: https://github.com/d-carrigg/mesh-splitter/blob/9f0eb03af566c73d1a22b9d0449013661c014580/plugin/plugin.py
+updated_at: "2026-11-20"
+reviewed_at: "2026-11-20"

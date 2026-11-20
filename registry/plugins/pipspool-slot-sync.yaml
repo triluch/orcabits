@@ -1,0 +1,29 @@
+name: PipSpool Slot Sync
+summary: Selects the PipSpool filament profile that matches each spool loaded on a Moonraker printer.
+description: >-
+  PipSpool Slot Sync reads the spool ID for each lane from Moonraker and selects the matching profile in the current project.
+  It honors an explicit Spoolman preset override when one is available.
+  Unlike the original Orca Spoolman Presets plugin, it does not create or modify presets; PipSpool supplies them.
+  Run it after synchronizing the filament list in OrcaSlicer so the slot count and colors are set.
+repository: https://github.com/HappyPants9999/orca_spoolman_presets
+categories:
+  - filament-and-spool-management
+  - profiles-and-calibration
+status: experimental
+status_note: The fork has a documented local installation, but a live end-to-end setup is not documented.
+installation:
+  method: python
+  url: https://github.com/HappyPants9999/orca_spoolman_presets#install
+  notes: Uninstall the original Orca Spoolman Presets plugin first, then install orca_spoolman_presets.py and configure the Moonraker URL.
+compatibility:
+  orca_slicer: Plugin-enabled OrcaSlicer 2.5 or later.
+  platforms: []
+  requires_custom_build: false
+  notes: Needs synchronized PipSpool profiles and Moonraker with Spoolman and lane data that includes the loaded spool IDs.
+evidence:
+  - label: Fork differences and installation
+    url: https://github.com/HappyPants9999/orca_spoolman_presets/blob/05d0c4bd9ba2ad63fa24bd3d7e85419c9e1d8c72/README.md
+  - label: Installable plugin source
+    url: https://github.com/HappyPants9999/orca_spoolman_presets/blob/05d0c4bd9ba2ad63fa24bd3d7e85419c9e1d8c72/orca_spoolman_presets.py
+updated_at: "2026-11-20"
+reviewed_at: "2026-11-20"

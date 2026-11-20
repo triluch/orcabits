@@ -1,4 +1,4 @@
-updated_at: "2026-11-19"
+updated_at: "2026-11-20"
 exclusions:
   - repository: https://github.com/zaosoula/orcaslicer-plugin-spoolman
     scope: repository
@@ -135,11 +135,15 @@ exclusions:
   - repository: https://github.com/kainpl/orca-bamdude
     scope: repository
     reason: not-installable
-    note: No installable wheel or implemented Orca-facing agent/tab yet; host-independent core alone is insufficient.
+    note: A beta wheel is published, but its package contains only the host-independent core. The Orca-facing agent and tab are not implemented.
     evidence:
       - label: README
-        url: https://github.com/kainpl/orca-bamdude/blob/HEAD/README.md
-    reviewed_at: "2026-11-19"
+        url: https://github.com/kainpl/orca-bamdude/blob/bb5899ce0f5f261307890133ef78dbfa9f156d9f/README.md
+      - label: Source package
+        url: https://github.com/kainpl/orca-bamdude/tree/bb5899ce0f5f261307890133ef78dbfa9f156d9f/src/orca_bamdude
+      - label: Beta release
+        url: https://github.com/kainpl/orca-bamdude/releases/tag/v1.0.0b1
+    reviewed_at: "2026-11-20"
   - repository: https://github.com/upy77/orcaslicer_plugin_spoolman
     scope: repository
     reason: not-installable
@@ -150,9 +154,73 @@ exclusions:
     reviewed_at: "2026-11-19"
   - repository: https://github.com/J0eB0l/Orca-AFC-Plugin
     scope: repository
-    reason: not-installable
-    note: Copied slicer README does not establish a separate native plugin or installation path.
+    reason: out-of-scope
+    note: Releases are builds of the whole OrcaSlicer fork, not a separately installable plugin.
     evidence:
       - label: README
-        url: https://github.com/J0eB0l/Orca-AFC-Plugin/blob/HEAD/README.md
-    reviewed_at: "2026-11-19"
+        url: https://github.com/J0eB0l/Orca-AFC-Plugin/blob/3880f2c58ec392ed2bd5932d7c496c0eb2/README.md
+      - label: Fork release artifacts
+        url: https://github.com/J0eB0l/Orca-AFC-Plugin/releases/tag/v2.5.0%2Bafc1
+    reviewed_at: "2026-11-20"
+  - repository: https://github.com/Dragg30000/multiace-bridge
+    scope: repository
+    reason: not-installable
+    note: The repository contains only a license and has no published plugin release.
+    evidence:
+      - label: Repository tree
+        url: https://github.com/Dragg30000/multiace-bridge/tree/e65e8e09dc9f182fcf85d48ef84e9b585631b25f
+      - label: Releases
+        url: https://github.com/Dragg30000/multiace-bridge/releases
+    reviewed_at: "2026-11-20"
+  - repository: https://github.com/KhaytApp/khayt-orca
+    scope: repository
+    reason: not-installable
+    note: Upstream says the plugin is not released and pairing is disabled in current Khayt app releases.
+    evidence:
+      - label: README availability notice
+        url: https://github.com/KhaytApp/khayt-orca/blob/4167663d0dccf19092df8b141a8b1230c421cb53/README.md
+    reviewed_at: "2026-11-20"
+  - repository: https://github.com/jglerner/OrcaSlicer_Plugin_Lab
+    scope: repository
+    reason: duplicate
+    note: A testing notebook that republishes the exact Support Fins build it tested, not an independently maintained plugin.
+    evidence:
+      - label: README and repository layout
+        url: https://github.com/jglerner/OrcaSlicer_Plugin_Lab/blob/bf95c38b9d42830a5c2956343c7746f3637721b4/README.md
+    reviewed_at: "2026-11-20"
+  - repository: https://github.com/wuyscc/opencreator-send
+    scope: repository
+    reason: duplicate
+    note: Installer wrapper for the same OpenCreator Send workflow and plugin file, with the modding group's repository credited as its source.
+    evidence:
+      - label: Mirror README and upstream credit
+        url: https://github.com/wuyscc/opencreator-send/blob/324db27776bf643c0678c292bd270e046f7bac18/README.md
+      - label: Original plugin
+        url: https://github.com/FlashForge-C5-Modding-Group/opencreator-send
+    reviewed_at: "2026-11-20"
+  - repository: https://github.com/HappyPants9999/spooltag
+    scope: repository
+    reason: out-of-scope
+    note: A self-hosted spool tracking service; its OrcaSlicer integration uses separately installed PipSpool and PipSpool Slot Sync.
+    evidence:
+      - label: README OrcaSlicer integration
+        url: https://github.com/HappyPants9999/spooltag/blob/40e8bfdb7ccccb4026bf7be7f5ea6f6fbe193649/README.md#optional-orcaslicer-and-pipspool-integration
+    reviewed_at: "2026-11-20"
+  - repository: https://github.com/jamesK1000011/AgentLink-OrcaSlicer
+    scope: repository
+    reason: out-of-scope
+    note: Installs with Agent Link for FreeCAD or runs as a standalone MCP server. It invokes OrcaSlicer externally rather than installing into it.
+    evidence:
+      - label: README architecture and installation
+        url: https://github.com/jamesK1000011/AgentLink-OrcaSlicer/blob/827e545b7f1f92bdbc86a19889144e0506f7b0ae/README.md
+    reviewed_at: "2026-11-20"
+  - repository: https://github.com/justinh-rahb/Adaptive_Temperature-OrcaSlicer_Plugin
+    scope: repository
+    reason: duplicate
+    note: Publishes an older copy of Adaptive Temperature, not a distinct plugin.
+    evidence:
+      - label: Older repository and release version
+        url: https://github.com/justinh-rahb/Adaptive_Temperature-OrcaSlicer_Plugin/blob/cf2c946029702fc4f140f6812d5f94aec6a5f541/README.md
+      - label: Current Adaptive Temperature repository
+        url: https://github.com/cheeky-bastard/Adaptive_Temperature-OrcaSlicer_Plugin
+    reviewed_at: "2026-11-20"

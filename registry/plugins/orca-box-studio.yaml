@@ -1,0 +1,31 @@
+name: Orca Box Studio
+summary: Builds parametric enclosures, organizers, and hinged cases inside OrcaSlicer.
+description: >-
+  The studio includes snap lids, sliding lids, screw-corner enclosures, stackable bins, and print-in-place cases.
+  Change dimensions and add features such as PCB standoffs, cutouts, or dividers.
+  A main tab and a smaller dock offer preview and export to STL or 3MF.
+  Calibration pieces are available for some styles, but functional fit still depends on the printer and material.
+repository: https://github.com/victorFernande/orca-box-generator
+categories:
+  - modeling-and-textures
+status: available
+status_note: Both local install formats are published, and the author reports native Windows verification for several designs.
+installation:
+  method: python
+  url: https://github.com/victorFernande/orca-box-generator/releases/latest
+  notes: Install the released orca_box_generator.py or wheel through Plugins, activate it, and reopen OrcaSlicer.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5.1 or newer.
+  platforms:
+    - windows
+  requires_custom_build: false
+  notes: Requires Python 3.12 or newer and NumPy 1.26 or newer. The author documents macOS and Linux handoff code but has not verified it in the native host.
+evidence:
+  - label: README and local installation
+    url: https://github.com/victorFernande/orca-box-generator/blob/8800aaf2b42a0bb9ae0d974ce05d1603225e29f5/README.md
+  - label: Native validation status
+    url: https://github.com/victorFernande/orca-box-generator/blob/8800aaf2b42a0bb9ae0d974ce05d1603225e29f5/docs/VALIDATION.md
+  - label: Packaged release
+    url: https://github.com/victorFernande/orca-box-generator/releases/tag/v1.4.0
+updated_at: "2026-11-20"
+reviewed_at: "2026-11-20"

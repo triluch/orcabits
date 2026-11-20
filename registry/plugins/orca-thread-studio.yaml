@@ -1,0 +1,30 @@
+name: Orca Thread Studio
+summary: Generates threaded containers, caps, adapters, and matched hardware inside OrcaSlicer.
+description: >-
+  The studio offers parametric threads with adjustable profiles, pitch, handedness, and clearance.
+  It can build containers with matched lids, bottle necks and caps, hose adapters, and nuts and bolts.
+  A 3D preview and engagement view show how the parts fit, and calibration rings let you check clearances on your printer.
+  Models export as STL or multipart 3MF, and the author marks the bottle-cap presets as experimental.
+repository: https://github.com/victorFernande/orca-thread-generator
+categories:
+  - modeling-and-textures
+status: experimental
+status_note: Packages and automated checks are available, but the author has not yet verified native activation and plate handoff.
+installation:
+  method: python
+  url: https://github.com/victorFernande/orca-thread-generator/releases/latest
+  notes: Install the released orca_thread_generator.py through Plugins and activate it; a wheel is also available.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5.1 or newer.
+  platforms: []
+  requires_custom_build: false
+  notes: Requires Python 3.12 or newer and NumPy 1.26 or newer. CI covers Windows, macOS, and Linux, but live OrcaSlicer verification is pending on all three.
+evidence:
+  - label: README and installation
+    url: https://github.com/victorFernande/orca-thread-generator/blob/ab6d9a0971ce843cafefed72758af1939b3e4f2a/README.md
+  - label: OrcaSlicer bridge
+    url: https://github.com/victorFernande/orca-thread-generator/blob/ab6d9a0971ce843cafefed72758af1939b3e4f2a/src/thread_studio/plugin_main.py
+  - label: Packaged release
+    url: https://github.com/victorFernande/orca-thread-generator/releases/tag/v1.0.1
+updated_at: "2026-11-20"
+reviewed_at: "2026-11-20"

@@ -11,11 +11,11 @@ repository: https://github.com/bloodf/spooler
 categories:
   - filament-and-spool-management
 status: available
-status_note: The README documents a downloadable plugin file and Orca Cloud installation.
+status_note: The README documents a downloadable wheel and Orca Cloud installation.
 installation:
-  method: python
+  method: wheel
   url: https://github.com/bloodf/spooler/releases/latest
-  notes: Download spooler_any.py and install it in its own folder in OrcaSlicer's plugin directory, or subscribe through Orca Cloud.
+  notes: Install spooler_any.whl through Plugins, or subscribe through Orca Cloud. Remove any older manually installed spooler_any.py first.
 compatibility:
   orca_slicer: OrcaSlicer 2.5.0 or later with plugin preset APIs.
   platforms:
@@ -26,6 +26,8 @@ compatibility:
   notes: README explicitly lists Windows, macOS, and Linux.
 evidence:
   - label: README and installation
-    url: https://github.com/bloodf/spooler/blob/main/README.md
-updated_at: "2026-11-19"
-reviewed_at: "2026-11-19"
+    url: https://github.com/bloodf/spooler/blob/81533179769670d2c24de7dfcbdb0cae2adb03a8/README.md
+  - label: Packaging change
+    url: https://github.com/bloodf/spooler/blob/81533179769670d2c24de7dfcbdb0cae2adb03a8/CHANGELOG.md
+updated_at: "2026-11-20"
+reviewed_at: "2026-11-20"

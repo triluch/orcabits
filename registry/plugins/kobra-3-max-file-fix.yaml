@@ -1,0 +1,29 @@
+name: Kobra 3 Max File Fix
+summary: Removes metadata comments that the Anycubic Kobra 3 Max firmware can reject.
+description: >-
+  The plugin activates only when the resolved printer model is Anycubic Kobra 3 Max.
+  It strips a set of metadata comment lines from the final G-code used for file export or upload.
+  It leaves other printers' output and earlier slicing stages unchanged.
+  The removal is not reflected in OrcaSlicer's G-code preview.
+repository: https://github.com/thelegendtubaguy/kobra-3-max-file-fix
+categories:
+  - toolpaths-and-gcode
+status: available
+status_note: The repository supplies a standalone Python plugin, a documented install path, and the upstream workaround it implements.
+installation:
+  method: python
+  url: https://github.com/thelegendtubaguy/kobra-3-max-file-fix#install
+  notes: Install kobra_3_max_file_fix_any.py locally and select its slicing-pipeline capability in the Kobra 3 Max preset.
+compatibility:
+  orca_slicer: An OrcaSlicer build with the Python plugin system and slicing-pipeline API.
+  platforms:
+    - macos
+  requires_custom_build: false
+  notes: The README documents macOS manual installation and describes the Python file as platform-independent; native tests by OS are not listed.
+evidence:
+  - label: README and installation
+    url: https://github.com/thelegendtubaguy/kobra-3-max-file-fix/blob/26a09bfb5a0412e609da9407edd8f90c636954b1/README.md
+  - label: Plugin and manifest
+    url: https://github.com/thelegendtubaguy/kobra-3-max-file-fix/blob/26a09bfb5a0412e609da9407edd8f90c636954b1/kobra_3_max_file_fix_any.py
+updated_at: "2026-11-20"
+reviewed_at: "2026-11-20"

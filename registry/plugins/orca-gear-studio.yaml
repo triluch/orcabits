@@ -1,0 +1,32 @@
+name: Orca Gear Studio
+summary: Designs matched spur, helical, and herringbone gears in OrcaSlicer.
+description: >-
+  The studio provides a full tab and a compact dock for building gear pairs with adjustable tooth geometry.
+  Each gear can have its own shaft bore, hub, or hardware recess.
+  A synchronized 3D view and 2D engagement view help inspect tooth interference and center spacing.
+  You can send the full pair, a single gear, or a smaller clearance test kit to the OrcaSlicer plate.
+repository: https://github.com/victorFernande/orca-gear-generator
+categories:
+  - modeling-and-textures
+status: available
+status_note: The author publishes single-file and wheel packages and documents the Windows and macOS workflows.
+installation:
+  method: python
+  url: https://github.com/victorFernande/orca-gear-generator/releases/latest
+  notes: Install the released orca_gear_generator.py or wheel, following the repository's platform-specific instructions.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5.1 or newer.
+  platforms:
+    - windows
+    - macos
+  requires_custom_build: false
+  notes: Direct plate handoff is documented on Windows and on Apple Silicon and Intel Macs.
+evidence:
+  - label: README and platform installation
+    url: https://github.com/victorFernande/orca-gear-generator/blob/8ff13970ad18c2512b5319d61ea9b8700a9ce6c1/README.md
+  - label: OrcaSlicer bridge
+    url: https://github.com/victorFernande/orca-gear-generator/blob/8ff13970ad18c2512b5319d61ea9b8700a9ce6c1/src/gear_studio/plugin_main.py
+  - label: Packaged release
+    url: https://github.com/victorFernande/orca-gear-generator/releases/tag/v1.4.0
+updated_at: "2026-11-20"
+reviewed_at: "2026-11-20"

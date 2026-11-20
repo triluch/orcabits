@@ -3,7 +3,7 @@ summary: Adds local mesh checks to OrcaSlicer manually and in the slicing pipeli
 description: >-
   PrintLint provides manual and slicing-pipeline checks for non-manifold meshes, import repairs, small dimensions, and triangle budgets.
   The native plugin can report findings or block slicing based on configured limits.
-  Its companion CLI performs broader checks including transformed geometry, color assignments, and 3MF compliance.
+  Its companion CLI adds checks for transformed geometry, color assignments, 3MF compliance, and critical features in the final slice.
   The plugin does not connect to printers or submit prints.
   The README records native GUI and blocking/reslicing checks on an OrcaSlicer beta build.
 repository: https://github.com/venku122/printlint
@@ -26,5 +26,7 @@ evidence:
     url: https://github.com/venku122/printlint/blob/2572bb23adb363fa828fb6f1355875153780d0ca/README.md
   - label: Native integration scope
     url: https://github.com/venku122/printlint/blob/b098d3e5deba960848ac18d480b7146b177bba6f/docs/slicer-integration.md
-updated_at: "2026-11-19"
-reviewed_at: "2026-11-19"
+  - label: Companion CLI checks for critical features
+    url: https://github.com/venku122/printlint/blob/2572bb23adb363fa828fb6f1355875153780d0ca/docs/dfam.md
+updated_at: "2026-11-20"
+reviewed_at: "2026-11-20"
