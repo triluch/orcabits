@@ -27,4 +27,4 @@ evidence:
   - label: Plugin source and manifest
     url: https://github.com/jwilss/spool-stock/blob/421a0c716abbde8a84b4e19c8094695cb426fe49/orca-plugin/spoolstock/spool_stock.py
 updated_at: "2026-11-20"
-reviewed_at: "2026-11-20"
+reviewed_at: "2026-11-22"

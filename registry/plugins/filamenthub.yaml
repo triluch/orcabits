@@ -1,0 +1,28 @@
+name: FilamentHub
+summary: Embeds the FilamentHub catalogue in OrcaSlicer and synchronizes saved presets.
+description: >-
+  The plug-in opens the FilamentHub materials catalogue inside OrcaSlicer.
+  A FilamentHub account lets you synchronize saved printer, filament, and process presets.
+  Presets go into a managed local bundle, and older host builds may need a restart to load changes.
+  Supported printer integrations can report filament and slot information to the FilamentHub service.
+repository: https://github.com/WeLizard/FilamentHub
+categories:
+  - filament-and-spool-management
+  - profiles-and-calibration
+status: experimental
+status_note: The author describes the OrcaSlicer plugin as alpha and publishes a wheel alongside the service.
+installation:
+  method: wheel
+  url: https://github.com/WeLizard/FilamentHub/releases/latest
+  notes: Install the filamenthub wheel or use the Plugin Hub listing, then sign in to FilamentHub to sync presets.
+compatibility:
+  orca_slicer: An OrcaSlicer build with Python plugin support; the embedded tab uses the Pages API.
+  platforms: []
+  requires_custom_build: false
+evidence:
+  - label: Plugin README and synchronization behavior
+    url: https://github.com/WeLizard/FilamentHub/blob/f4a55f5225d0a3780f299e9e86102736ba2380a3/orca-plugin/README.md
+  - label: Release with plugin wheel
+    url: https://github.com/WeLizard/FilamentHub/releases/tag/v0.2.10
+updated_at: "2026-11-22"
+reviewed_at: "2026-11-22"

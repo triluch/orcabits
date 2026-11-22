@@ -5,7 +5,8 @@ description: >-
   its OrcaSlicer tab. Its printer view tracks loaded spools and job progress,
   while Slice Sync checks whether selected spools have enough filament. For
   Spoolman, it can book filament consumption after a print finishes and
-  provides print and usage statistics. Live-link support for Klipper,
+  provides print and usage statistics. Stats-only tracking records prints
+  without deducting filament from Spoolman. Live-link support for Klipper,
   PrusaLink, and OctoPrint is not hardware-tested according to the README.
 repository: https://github.com/danm1989/spoolio-orcaslicer
 categories:
@@ -27,5 +28,7 @@ compatibility:
 evidence:
   - label: README and installation
     url: https://github.com/danm1989/spoolio-orcaslicer/blob/main/README.md
-updated_at: "2026-11-19"
-reviewed_at: "2026-11-20"
+  - label: Stats-only tracking release
+    url: https://github.com/danm1989/spoolio-orcaslicer/releases/tag/v0.12.0
+updated_at: "2026-11-22"
+reviewed_at: "2026-11-22"

@@ -46,7 +46,16 @@ function orderedNames(mode, categories = [], statuses = []) {
 async function expectResultOrder(page, expected) {
   const items = page.locator("pagefind-results .pf-results > li");
   await expect(items).toHaveCount(expected.length);
-  await expect(page.locator("pagefind-results h2 a")).toHaveText(expected);
+  await expect
+    .poll(() =>
+      items.evaluateAll((results) => {
+        results
+          .find((item) => item.getAttribute("aria-hidden") === "true")
+          ?.scrollIntoView({ block: "center" });
+        return results.map((item) => item.querySelector("h2 a")?.textContent);
+      }),
+    )
+    .toEqual(expected);
 }
 
 test("multi-select filters preserve the chosen sort and default to highest stars first", async ({

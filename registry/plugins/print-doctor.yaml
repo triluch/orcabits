@@ -1,0 +1,28 @@
+name: Print Doctor
+summary: Uses an AI chat panel to diagnose print defects and suggest changes to OrcaSlicer presets.
+description: >-
+  Describe a defect or attach a photo or sliced file in the Print Doctor panel.
+  The plugin can read the active settings and inspect model measurements, overhangs, and mesh issues on the plate.
+  It explains proposed process or filament changes, applies them only when asked, and lets you undo them.
+  It connects to a configured AI service or local model; with a remote service, relevant settings and attachments are shared with that provider.
+repository: https://github.com/MarcoPiazza83/Print-Doctor
+categories:
+  - ai-and-automation
+  - analysis-and-costing
+status: experimental
+status_note: The author distributes a beta and says native OrcaSlicer testing is still in progress.
+installation:
+  method: python
+  url: https://github.com/MarcoPiazza83/Print-Doctor/releases
+  notes: Install print_doctor.py from the prerelease, activate and run it, then connect an AI service in the panel settings.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5.1 or newer.
+  platforms: []
+  requires_custom_build: false
+evidence:
+  - label: README, installation, and provider behavior
+    url: https://github.com/MarcoPiazza83/Print-Doctor/blob/f387849a7da34b7cabeb9f3d42459fbfa7c3391e/README.md
+  - label: Beta plugin artifact
+    url: https://github.com/MarcoPiazza83/Print-Doctor/releases/tag/v0.5.0
+updated_at: "2026-11-22"
+reviewed_at: "2026-11-22"

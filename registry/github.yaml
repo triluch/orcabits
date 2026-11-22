@@ -1,5 +1,5 @@
-updated_at: 2026-11-20
-checked_at: 2026-11-20
+updated_at: 2026-11-22
+checked_at: 2026-11-22
 repositories:
   adilo-maker/task-multiplier:
     stars: 1
@@ -9,6 +9,12 @@ repositories:
     archived: false
   ahmedbebars/print-memory:
     stars: 0
+    archived: false
+  alexx-powered/layer-time-smoother:
+    stars: 0
+    archived: false
+  amitkuzi/orcaplugin:
+    stars: 2
     archived: false
   barismert98/orcaslicer-color-split:
     stars: 1
@@ -28,6 +34,9 @@ repositories:
   belik1982/orca-ai-assistant:
     stars: 0
     archived: false
+  ben0551/orca-3mf-converter:
+    stars: 0
+    archived: false
   ben0551/orca-flashforge-c5:
     stars: 0
     archived: false
@@ -44,13 +53,13 @@ repositories:
     stars: 1
     archived: false
   bloodf/orca_print_calculator:
-    stars: 1
+    stars: 2
     archived: false
   bloodf/spooler:
-    stars: 1
+    stars: 4
     archived: false
   bloodf/u1control:
-    stars: 1
+    stars: 4
     archived: false
   bmelton/flotilla:
     stars: 1
@@ -67,10 +76,22 @@ repositories:
   brandondoster/spoolport:
     stars: 0
     archived: false
+  briancoy/orca_anycubic_kobra_3_max:
+    stars: 0
+    archived: false
   broncosis/orca_x1plus_plugin:
     stars: 1
     archived: false
+  brotholomew/filament-match:
+    stars: 0
+    archived: false
+  cathome1/orcacubic:
+    stars: 0
+    archived: false
   cheeky-bastard/adaptive_temperature-orcaslicer_plugin:
+    stars: 1
+    archived: false
+  chenlei0504/orca-plate-queue:
     stars: 1
     archived: false
   chrisrollz/chest-room:
@@ -83,10 +104,10 @@ repositories:
     stars: 2
     archived: false
   d-carrigg/mesh-splitter:
-    stars: 0
+    stars: 2
     archived: false
   danm1989/spoolio-orcaslicer:
-    stars: 2
+    stars: 4
     archived: false
   deathstroke-co/chromasave:
     stars: 0
@@ -106,10 +127,19 @@ repositories:
   dr-apple/orca-snapmaker-u1-agent:
     stars: 0
     archived: false
+  dragg30000/mange-3mf:
+    stars: 0
+    archived: false
+  dragg30000/multiace-bridge:
+    stars: 1
+    archived: false
   edwardchamberlain/grove-control-orca-plugin:
     stars: 0
     archived: false
   ericderace/orca-openclaw-plugin:
+    stars: 0
+    archived: false
+  extrudiosite/extrudio-orca-plugin:
     stars: 0
     archived: false
   fabiomsnunes/orca-claude-bridge:
@@ -119,6 +149,9 @@ repositories:
     stars: 5
     archived: false
   fleeceflames/orca_makerworld_importer:
+    stars: 0
+    archived: false
+  fleeceflames/orca_print_advisor:
     stars: 0
     archived: false
   flexicano/orcaslicer-bambustudio-import:
@@ -140,7 +173,7 @@ repositories:
     stars: 0
     archived: false
   gittrahan/support-fins:
-    stars: 1047
+    stars: 1062
     archived: false
   gnugiminot/platepilot-orcaslicer:
     stars: 1
@@ -158,6 +191,9 @@ repositories:
     stars: 0
     archived: false
   harrybin/orcaslicer-anycubicks1-acesync-plugin:
+    stars: 0
+    archived: false
+  heberdiafet/flashforge-monitor:
     stars: 0
     archived: false
   heydemoura/creality-orca-integration:
@@ -199,8 +235,14 @@ repositories:
   lanwen/orca-snapmaker-u1-camera-plugin:
     stars: 0
     archived: false
+  lpschreck1/bmcu-klipper-tool-assignment:
+    stars: 0
+    archived: false
   magnusperditor/3dmakergenerators:
     stars: 1
+    archived: false
+  marcopiazza83/print-doctor:
+    stars: 0
     archived: false
   mlugo-apx/orca-farm-send:
     stars: 0
@@ -215,6 +257,9 @@ repositories:
     stars: 0
     archived: false
   nikotina0001/openanchor:
+    stars: 0
+    archived: false
+  niratama/flashforge-adv4-orca-support:
     stars: 0
     archived: false
   nobodyguy/orca-bambuddy:
@@ -233,7 +278,7 @@ repositories:
     stars: 1
     archived: false
   persano/open-bambu-networking-plugin:
-    stars: 21
+    stars: 23
     archived: false
   persano/smooth-z-wall-speed-plugin:
     stars: 1
@@ -311,13 +356,16 @@ repositories:
     stars: 0
     archived: false
   victorfernande/orca-gear-generator:
-    stars: 0
+    stars: 1
     archived: false
   victorfernande/orca-thread-generator:
     stars: 0
     archived: false
   victorfernande/orca-vase-generator:
     stars: 0
+    archived: false
+  welizard/filamenthub:
+    stars: 3
     archived: false
   welizard/orca-plugins:
     stars: 0

@@ -1,0 +1,29 @@
+name: CentauriSync
+summary: Imports CANVAS tray materials and colors into OrcaSlicer's filament sync for the first-generation Centauri Carbon.
+description: >-
+  CentauriSync reads the Elegoo printer's CANVAS tray information over the local network.
+  Its setup action lets you find or enter the printer and preview the tray assignments before saving them.
+  Once configured, OrcaSlicer's Sync filaments action reads the tray material and color.
+  The plugin does not upload or start prints, so printing still uses your existing print host.
+repository: https://github.com/amitkuzi/OrcaPlugin
+categories:
+  - filament-and-spool-management
+status: experimental
+status_note: The author publishes a prerelease but reports only mock-printer and fixture tests, not native or hardware validation.
+installation:
+  method: python
+  url: https://github.com/amitkuzi/OrcaPlugin/releases/tag/v0.2.0
+  notes: Extract the release ZIP and install centauri_canvas_sync.py through Plugins. Enable CentauriSync and run Centauri CANVAS setup.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5.1 with Python plugin support, as documented for installation.
+  platforms:
+    - windows
+  requires_custom_build: false
+  notes: The workflow is documented for Windows and the first-generation Centauri Carbon, not the Centauri Carbon 2.
+evidence:
+  - label: CentauriSync README and validation scope
+    url: https://github.com/amitkuzi/OrcaPlugin/blob/56b6daf308e3260a6b9d40f368f2cd6af27ccfee/CentauriSync/README.md
+  - label: Prerelease plugin package
+    url: https://github.com/amitkuzi/OrcaPlugin/releases/tag/v0.2.0
+updated_at: "2026-11-22"
+reviewed_at: "2026-11-22"

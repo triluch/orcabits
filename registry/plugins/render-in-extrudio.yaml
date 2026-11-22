@@ -1,0 +1,31 @@
+name: Render in Extrudio
+summary: Sends sliced G-code from OrcaSlicer to Extrudio for rendered previews.
+description: >-
+  After slicing, a notification can open Extrudio in a panel beside OrcaSlicer's 3D view.
+  The plugin uploads the sliced job to your Extrudio account after you approve the send in that panel.
+  Extrudio uses the file to preview the print in a chosen filament and scene.
+  Files can be up to 100 MB, and binary G-code is not supported.
+repository: https://github.com/extrudiosite/extrudio-orca-plugin
+categories:
+  - modeling-and-textures
+  - workflow-and-integrations
+status: available
+status_note: The author provides a release file and reports macOS and Windows testing.
+installation:
+  method: python
+  url: https://github.com/extrudiosite/extrudio-orca-plugin/releases/latest
+  notes: Put extrudio_render_any.py in its own plugin folder, restart OrcaSlicer, and activate it.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5 with Python plugins.
+  platforms:
+    - macos
+    - windows
+  requires_custom_build: false
+  notes: The author tested OrcaSlicer 2.5.1 on macOS and 2.5.2 on Windows 10.
+evidence:
+  - label: README, installation, and upload behavior
+    url: https://github.com/extrudiosite/extrudio-orca-plugin/blob/a95ee605ae8aed58ecae48a7edc7f8a189b32a59/README.md
+  - label: Downloadable plugin
+    url: https://github.com/extrudiosite/extrudio-orca-plugin/releases/tag/v1.1.0
+updated_at: "2026-11-22"
+reviewed_at: "2026-11-22"

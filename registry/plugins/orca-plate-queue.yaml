@@ -1,0 +1,30 @@
+name: Orca Plate Queue
+summary: Queues plates separately for Bambu Lab A1 and P1S printers.
+description: >-
+  Orca Plate Queue stores jobs locally and keeps a separate queue for each printer.
+  It supports per-plate filament mapping, object skipping, and workflows for an A1 plate changer.
+  The computer and OrcaSlicer must stay running while the queues are active.
+  Print control requires the project's connection component; the standard Open Bamboo API integration is read-only.
+repository: https://github.com/ChenLei0504/orca-plate-queue
+categories:
+  - printer-connectivity
+  - monitoring-and-print-farms
+status: experimental
+status_note: Upstream calls it a public test and documents software validation but not full printer or plate-changer acceptance.
+installation:
+  method: wheel
+  url: https://github.com/ChenLei0504/orca-plate-queue/releases
+  notes: Install the Windows x64 wheel in Plugins. Follow upstream's connection-component instructions for printer control; the component is a separate download.
+compatibility:
+  orca_slicer: Plugin-capable OrcaSlicer 2.5.0 beta as documented by the author.
+  platforms:
+    - windows
+  requires_custom_build: false
+  notes: Windows 11 is the documented validation host. The full Windows 10 install has not been verified.
+evidence:
+  - label: README, install, and connection requirements
+    url: https://github.com/ChenLei0504/orca-plate-queue/blob/c56df138c543fd48fa9b99d01b58a09b654e0208/README.md
+  - label: Queue wheel and connection package
+    url: https://github.com/ChenLei0504/orca-plate-queue/releases/tag/v0.7.10
+updated_at: "2026-11-22"
+reviewed_at: "2026-11-22"

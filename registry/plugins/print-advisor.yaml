@@ -1,0 +1,28 @@
+name: Print Advisor
+summary: Checks plate geometry and slicer settings and proposes printability fixes you can review.
+description: >-
+  Print Advisor scans the current plate or a saved 3MF for overhangs, tipping risk, and other printability issues.
+  It can flag bottom fillets and Grid infill intersections and suggest geometry-specific settings.
+  Live-plate changes are applied to the active process in memory and can be reverted.
+  In file mode it exports a separate 3MF and removes stale G-code so the result can be sliced again.
+repository: https://github.com/FleeceFlames/Orca_Print_Advisor
+categories:
+  - analysis-and-costing
+  - profiles-and-calibration
+status: available
+status_note: The author publishes a single-file plugin and documents both live and file-based workflows.
+installation:
+  method: python
+  url: https://github.com/FleeceFlames/Orca_Print_Advisor/releases/tag/Print_advisor
+  notes: Install print_advisor_any.py through OrcaSlicer's Plugins window.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5 or later with Python plugin support.
+  platforms: []
+  requires_custom_build: false
+evidence:
+  - label: README and scan workflow
+    url: https://github.com/FleeceFlames/Orca_Print_Advisor/blob/eb2630ca2f332143b9ae614025a30359d24edf84/README.md
+  - label: Release with plugin file
+    url: https://github.com/FleeceFlames/Orca_Print_Advisor/releases/tag/Print_advisor
+updated_at: "2026-11-22"
+reviewed_at: "2026-11-22"
