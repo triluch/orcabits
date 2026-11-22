@@ -1,0 +1,32 @@
+name: OrcaCubic (cathome1)
+summary: Provides native printing and monitoring for Anycubic Cloud FDM printers.
+description: >-
+  OrcaCubic adds a printer agent for sending or starting jobs through OrcaSlicer's own controls.
+  Its tab shows temperatures, progress, and ACE Pro information and can pause, resume, or stop a print.
+  For supported cameras it can show live video and record local timelapses.
+  The author documents AWS KVS camera support and lists Agora support as planned.
+repository: https://github.com/cathome1/OrcaCubic
+categories:
+  - printer-connectivity
+  - monitoring-and-print-farms
+status: available
+status_note: The author documents an Orca Cloud listing and provides a local installer for the native plugin.
+installation:
+  method: source
+  url: https://github.com/cathome1/OrcaCubic/blob/HEAD/README.md
+  notes: Subscribe through Orca Cloud or run the documented source installer. Sign in to Anycubic Cloud from the plugin.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5 or later with Python printer-agent support.
+  platforms:
+    - macos
+    - windows
+    - linux
+  requires_custom_build: false
+  notes: The author lists all three platforms; the optional native macOS sign-in helper needs Swift to build locally.
+evidence:
+  - label: README and installation
+    url: https://github.com/cathome1/OrcaCubic/blob/7668473c769f13999f0681719462565fba6e5416/README.md
+  - label: OrcaSlicer printer-agent source
+    url: https://github.com/cathome1/OrcaCubic/blob/7668473c769f13999f0681719462565fba6e5416/plugin/orcacubic_plugin.py
+updated_at: "2026-11-22"
+reviewed_at: "2026-11-22"

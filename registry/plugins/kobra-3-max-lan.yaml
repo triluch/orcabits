@@ -1,0 +1,28 @@
+name: Kobra 3 Max LAN
+summary: Connects a stock Anycubic Kobra 3 Max to OrcaSlicer for local printing and control.
+description: >-
+  The Kobra Max tab shows print progress, temperatures, and the printer's file list.
+  Its printer agent supports OrcaSlicer's Send and Print workflow without an Anycubic cloud login.
+  It can map filaments to ACE Pro slots or use a supported external-spool setup.
+  Stock firmware may reject external-spool jobs while ACE units are attached.
+repository: https://github.com/briancoy/Orca_Anycubic_Kobra_3_MAX
+categories:
+  - printer-connectivity
+status: experimental
+status_note: The author describes a stock LAN preview prepared for specific firmware and a two-ACE configuration.
+installation:
+  method: python
+  url: https://github.com/briancoy/Orca_Anycubic_Kobra_3_MAX#setup
+  notes: Install kobra3max_lan.py through Plugins and select Kobra 3 Max LAN as the printer agent for native Send and Print.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5 with Python printer-agent support.
+  platforms: []
+  requires_custom_build: false
+  notes: Documented for stock Kobra 3 Max firmware V2.5.2.8 in LAN-only mode.
+evidence:
+  - label: Setup and firmware limitations
+    url: https://github.com/briancoy/Orca_Anycubic_Kobra_3_MAX/blob/35ababe18da16e94c316416f4e51f76e4eef5f1e/README.md
+  - label: Installable plugin and manifest
+    url: https://github.com/briancoy/Orca_Anycubic_Kobra_3_MAX/blob/35ababe18da16e94c316416f4e51f76e4eef5f1e/kobra3max_lan.py
+updated_at: "2026-11-22"
+reviewed_at: "2026-11-22"

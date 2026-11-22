@@ -24,11 +24,11 @@ compatibility:
   platforms:
     - linux
   requires_custom_build: false
-  notes: Developed and tested on Linux with OrcaSlicer 2.5.1; Windows and macOS are not tested.
+  notes: The author tested on Linux and confirmed loading, live status, and slice capture on OrcaSlicer 2.5.2. Windows and macOS are not tested.
 evidence:
   - label: README and installation
-    url: https://github.com/mlugo-apx/orca-farm-send/blob/e7af229ec98ece4828a79833fa6714e06c011212/README.md
+    url: https://github.com/mlugo-apx/orca-farm-send/blob/cba83857ef9ccbe2ed75f2de548778f2442c5def/README.md
   - label: Release with the updated plate library
     url: https://github.com/mlugo-apx/orca-farm-send/releases/tag/v0.3.3
-updated_at: "2026-11-20"
-reviewed_at: "2026-11-20"
+updated_at: "2026-11-22"
+reviewed_at: "2026-11-22"

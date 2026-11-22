@@ -15,14 +15,19 @@ status_note: README documents OrcaSlicer 2.5+ local installation and the 3MF con
 installation:
   method: python
   url: https://github.com/FleeceFlames/Orca_makerworld_importer#installation
-  notes: Install makerworld_importer.py as a local plugin.
+  notes: Download Orca_makerworld_importer.py from the GitHub release and install it through Plugins, or subscribe through Orca Cloud.
 compatibility:
   orca_slicer: OrcaSlicer 2.5.0 or newer.
-  platforms: []
+  platforms:
+    - windows
+    - macos
+    - linux
   requires_custom_build: false
-  notes: Operating-system support is not specified.
+  notes: The author documents native file pickers on all three platforms; Linux needs zenity or kdialog for that picker.
 evidence:
   - label: README
-    url: https://github.com/FleeceFlames/Orca_makerworld_importer/blob/HEAD/README.md
-updated_at: "2026-11-19"
-reviewed_at: "2026-11-19"
+    url: https://github.com/FleeceFlames/Orca_makerworld_importer/blob/7966d3236475da0ad415757ef145d4ef10b9a023/README.md
+  - label: Release with the local plugin file
+    url: https://github.com/FleeceFlames/Orca_makerworld_importer/releases/tag/Makerworld_Importer
+updated_at: "2026-11-22"
+reviewed_at: "2026-11-22"

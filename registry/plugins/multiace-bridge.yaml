@@ -1,0 +1,29 @@
+name: multiACE Bridge
+summary: Brings multiACE spool management and print preflight for the Snapmaker U1 into OrcaSlicer.
+description: >-
+  The panel shows U1 toolheads, ACE spool colors, remaining weight, humidity, and drying status.
+  It can edit spool records, check which nozzles are mounted, and display the printer camera.
+  The plugin presents multiACE's preflight plan when exporting so you can review spool and tool assignments.
+  It is a front end for multiACE and needs that software installed on the printer.
+repository: https://github.com/Dragg30000/multiace-bridge
+categories:
+  - printer-connectivity
+  - filament-and-spool-management
+status: available
+status_note: The author publishes an installable file and reports testing on a Snapmaker U1 with two ACE Pro units.
+installation:
+  method: python
+  url: https://github.com/Dragg30000/multiace-bridge/releases/latest
+  notes: Install multiace_bridge_any.py through Plugins, restart OrcaSlicer, and allow access to the U1.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5 with Python plugin support.
+  platforms: []
+  requires_custom_build: false
+  notes: The in-slicer preflight requires multiACE 1.27b or later and runs preflight code supplied by the printer. Remote Screen requires compatible Extended Firmware with that feature enabled.
+evidence:
+  - label: README and multiACE requirements
+    url: https://github.com/Dragg30000/multiace-bridge/blob/60a60ef2707b1c3507782b4c8fa730e27f2e0f8b/README.md
+  - label: Release with native plugin
+    url: https://github.com/Dragg30000/multiace-bridge/releases/tag/v0.38.2
+updated_at: "2026-11-22"
+reviewed_at: "2026-11-22"

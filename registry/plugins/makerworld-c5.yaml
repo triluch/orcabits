@@ -1,28 +1,28 @@
-name: MakerWorld C5
-summary: Rebuilds MakerWorld projects for the currently selected FlashForge Creator 5 printer.
+name: 3MF Converter
+summary: Rebuilds a MakerWorld link or local 3MF for the printer currently selected in OrcaSlicer.
 description: >-
-  Converts a local 3MF project or a MakerWorld project link into a project
-  prepared for the selected Creator 5 printer. It retains creator process
-  settings while adapting the project to the target machine. A MakerWorld link
-  requires a BambuCloud token, while local files can be dropped into the tab
-  or chosen from a file dialog. This page plugin is independently installed
-  from the repository's Creator 5 printer-agent plugin.
-repository: https://github.com/ben0551/orca-flashforge-c5
+  The converter replaces the original machine settings with those of the selected printer.
+  It retains the designer's process settings, such as layer height, walls, infill, and supports.
+  Drop a local 3MF into its tab or choose one with the file dialog.
+  For a MakerWorld link, sign in with a Bambu Cloud token and select the plate to convert.
+repository: https://github.com/ben0551/orca-3mf-converter
 categories:
   - profiles-and-calibration
 status: available
-status_note: README documents this plugin as independently installable and provides its conversion workflow.
+status_note: The author publishes a standalone Python plugin and documents local-file and MakerWorld conversion.
 installation:
   method: python
-  url: https://github.com/ben0551/orca-flashforge-c5#install
-  notes: Install the separate makerworld-c5 plugin file; it does not require the Creator 5 printer agent.
+  url: https://github.com/ben0551/orca-3mf-converter#install
+  notes: Install 3mf-converter_any.py through Plugins. The Creator 5 printer agent is not required.
 compatibility:
   orca_slicer: OrcaSlicer 2.5.0 or newer.
   platforms: []
   requires_custom_build: false
-  notes: Requires a FlashForge Creator 5/5 Pro target profile; operating-system support is not specified.
+  notes: Requires a selected printer profile. Local 3MF conversion does not need a Bambu Cloud token.
 evidence:
   - label: README
-    url: https://github.com/ben0551/orca-flashforge-c5/blob/98dae1996d5419501c30f340a9a3f00edb0c4562/README.md
-updated_at: "2026-11-20"
-reviewed_at: "2026-11-20"
+    url: https://github.com/ben0551/orca-3mf-converter/blob/c462b3af78aeb27ce847eb9c8d0a60abf773e851/README.md
+  - label: Plugin file and manifest
+    url: https://github.com/ben0551/orca-3mf-converter/blob/c462b3af78aeb27ce847eb9c8d0a60abf773e851/3mf-converter_any.py
+updated_at: "2026-11-22"
+reviewed_at: "2026-11-22"

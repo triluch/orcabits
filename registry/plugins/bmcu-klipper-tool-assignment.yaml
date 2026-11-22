@@ -1,0 +1,28 @@
+name: BMCU-Klipper Tool Assignment
+summary: Assigns Snapmaker U1 print colors to tools to reduce filament swaps on BMCU-Klipper.
+description: >-
+  The plugin reads the printer's current routing and loaded filament at export or send time.
+  It proposes a tool layout that reduces swaps and lets you review or edit it before rewriting the G-code.
+  A docked panel shows the printer's routing and loaded filament, and the plugin can account for swaps in the time estimate.
+  It needs BMCU-Klipper on the Snapmaker U1 and a matching printer profile in OrcaSlicer.
+repository: https://github.com/lpschreck1/bmcu-klipper-tool-assignment
+categories:
+  - filament-and-spool-management
+  - toolpaths-and-gcode
+status: available
+status_note: The author publishes a single-file plugin and documents its printer setup and export workflow.
+installation:
+  method: python
+  url: https://github.com/lpschreck1/bmcu-klipper-tool-assignment/releases/latest
+  notes: Install bmcu_klipper_plugin.py through Plugins and use a U1 profile pointing to the printer running BMCU-Klipper.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5 or later.
+  platforms: []
+  requires_custom_build: false
+evidence:
+  - label: README, printer requirements, and usage
+    url: https://github.com/lpschreck1/bmcu-klipper-tool-assignment/blob/73ccf721ea9d4eb26ad1a42905015cd9c09596bd/README.md
+  - label: Release with native plugin
+    url: https://github.com/lpschreck1/bmcu-klipper-tool-assignment/releases/tag/v1.1.0
+updated_at: "2026-11-22"
+reviewed_at: "2026-11-22"

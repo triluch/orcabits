@@ -4,10 +4,10 @@ description: >-
   The plugin adds a printer tab with camera, four toolheads, RFID tags,
   Spoolman data, file management, and firmware settings. Its print workflow
   matches project filaments to toolheads and adjusts U1 G-code before sending
-  jobs over the local network. It supports stock firmware and U1 Extended
-  Firmware and has an Orca Cloud listing and downloadable wheel. The project
-  says automated tests use a fake printer, so they do not establish hardware
-  behavior.
+  jobs over the local network. When multiACE is active in supported modes,
+  the plugin leaves filament routing and G-code to multiACE. On supported
+  firmware the print setup also warns if the mounted nozzle type differs
+  from the sliced profile. Stock firmware and U1 Extended Firmware are supported.
 repository: https://github.com/bloodf/u1control
 categories:
   - printer-connectivity
@@ -29,5 +29,7 @@ evidence:
     url: https://cloud.orcaslicer.com/p/55b8c347d443
   - label: Releases
     url: https://github.com/bloodf/u1control/releases
-updated_at: "2026-11-19"
-reviewed_at: "2026-11-20"
+  - label: Nozzle check and multiACE behavior
+    url: https://github.com/bloodf/u1control/blob/8a313410615d8f710e726a988643dfaeba0f80f8/CHANGELOG.md
+updated_at: "2026-11-22"
+reviewed_at: "2026-11-22"

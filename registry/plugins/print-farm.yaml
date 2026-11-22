@@ -14,9 +14,9 @@ categories:
 status: experimental
 status_note: The project labels the plugin alpha and says active testing uses exact OrcaSlicer PR artifacts.
 installation:
-  method: source
-  url: https://github.com/WeLizard/orca-plugins/tree/main/plugins/print-farm
-  notes: Install the Print Farm plugin from its plugin directory using the repository's documented source/package workflow.
+  method: wheel
+  url: https://github.com/WeLizard/orca-plugins/releases/tag/v0.1.3
+  notes: Install the printers wheel through Plugins. OrcaSlicer needs access to install the declared keyring dependency.
 compatibility:
   orca_slicer: Plugin-enabled OrcaSlicer with the Python Pages API; older builds use a host-managed Script window fallback.
   platforms: []
@@ -25,5 +25,7 @@ compatibility:
 evidence:
   - label: Print Farm README
     url: https://github.com/WeLizard/orca-plugins/blob/main/plugins/print-farm/README.md
-updated_at: "2026-11-19"
-reviewed_at: "2026-11-19"
+  - label: Release with the Print Farm wheel
+    url: https://github.com/WeLizard/orca-plugins/releases/tag/v0.1.3
+updated_at: "2026-11-22"
+reviewed_at: "2026-11-22"

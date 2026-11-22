@@ -4,6 +4,7 @@ description: >-
   Blender Studio connects OrcaSlicer to a local or remote Blender instance through a TCP bridge.
   Its tab supports procedural modeling with Python or bpy, diagnostic renders, and manifold audits.
   It separates printable meshes from reference hardware mockups and displays their dimensions.
+  An optional AI workflow discovers local Ollama models and supports configured cloud providers.
   Users can send exported binary STLs directly to the active build plate.
   The workflow requires Blender 4.2 or later and OrcaSlicer 2.5 or later with Pages plugin support.
 repository: https://github.com/GDME-LLC/BlenderStudio
@@ -13,8 +14,8 @@ status: available
 status_note: The README documents local plugin installation and the Blender workflow, including cross-platform handoff.
 installation:
   method: python
-  url: https://github.com/GDME-LLC/BlenderStudio#60-second-installation
-  notes: Use the author's Orca Cloud listing, or locally install blender_studio.py or dist/blender_studio_any.py.
+  url: https://github.com/GDME-LLC/BlenderStudio/releases/latest
+  notes: Use the author's Orca Cloud listing or install blender_studio_any.py from the GitHub release.
 compatibility:
   orca_slicer: OrcaSlicer 2.5.0 or later with Python Pages plugin support.
   platforms:
@@ -26,5 +27,7 @@ compatibility:
 evidence:
   - label: README
     url: https://github.com/GDME-LLC/BlenderStudio/blob/83992ea8ecb7b636ac77416747959e0c09fe6fee/README.md
-updated_at: "2026-11-20"
-reviewed_at: "2026-11-20"
+  - label: Plugin artifacts and AI model discovery
+    url: https://github.com/GDME-LLC/BlenderStudio/releases/tag/v1.2.8
+updated_at: "2026-11-22"
+reviewed_at: "2026-11-22"

@@ -1,4 +1,4 @@
-updated_at: "2026-11-20"
+updated_at: "2026-11-22"
 exclusions:
   - repository: https://github.com/zaosoula/orcaslicer-plugin-spoolman
     scope: repository
@@ -162,16 +162,6 @@ exclusions:
       - label: Fork release artifacts
         url: https://github.com/J0eB0l/Orca-AFC-Plugin/releases/tag/v2.5.0%2Bafc1
     reviewed_at: "2026-11-20"
-  - repository: https://github.com/Dragg30000/multiace-bridge
-    scope: repository
-    reason: not-installable
-    note: The repository contains only a license and has no published plugin release.
-    evidence:
-      - label: Repository tree
-        url: https://github.com/Dragg30000/multiace-bridge/tree/e65e8e09dc9f182fcf85d48ef84e9b585631b25f
-      - label: Releases
-        url: https://github.com/Dragg30000/multiace-bridge/releases
-    reviewed_at: "2026-11-20"
   - repository: https://github.com/KhaytApp/khayt-orca
     scope: repository
     reason: not-installable
@@ -179,7 +169,7 @@ exclusions:
     evidence:
       - label: README availability notice
         url: https://github.com/KhaytApp/khayt-orca/blob/4167663d0dccf19092df8b141a8b1230c421cb53/README.md
-    reviewed_at: "2026-11-20"
+    reviewed_at: "2026-11-22"
   - repository: https://github.com/jglerner/OrcaSlicer_Plugin_Lab
     scope: repository
     reason: duplicate
@@ -224,3 +214,27 @@ exclusions:
       - label: Current Adaptive Temperature repository
         url: https://github.com/cheeky-bastard/Adaptive_Temperature-OrcaSlicer_Plugin
     reviewed_at: "2026-11-20"
+  - repository: https://github.com/erdalkeskin61/baskihesap-slicer-plugin
+    scope: repository
+    reason: out-of-scope
+    note: OrcaSlicer integration is an external post-processing script. The native package is for Cura.
+    evidence:
+      - label: Installation instructions by slicer
+        url: https://github.com/erdalkeskin61/baskihesap-slicer-plugin/blob/cdaaea38dcec8f6fc74590b4028a8418f1144c2c/README.md
+    reviewed_at: "2026-11-22"
+  - repository: https://github.com/ZackaryShen/ColorYourModel
+    scope: repository
+    reason: out-of-scope
+    note: Standalone desktop app exports 3MF files for OrcaSlicer. Native plugin integration is on the roadmap.
+    evidence:
+      - label: README and roadmap
+        url: https://github.com/ZackaryShen/ColorYourModel/blob/a6c15b16c78f2fcc7ec98722fd9e9aabe4fcab03/README.md
+    reviewed_at: "2026-11-22"
+  - repository: https://github.com/marcodiniz/OrcaCubic
+    scope: repository
+    reason: out-of-scope
+    note: This project distributes a fork of OrcaSlicer for the Anycubic Kobra X, not a separately installed plugin.
+    evidence:
+      - label: README
+        url: https://github.com/marcodiniz/OrcaCubic/blob/386775d947a4ce43d8637d98ca95e2ef49300c8b/README.md
+    reviewed_at: "2026-11-22"

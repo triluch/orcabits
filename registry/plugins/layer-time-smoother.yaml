@@ -1,0 +1,29 @@
+name: Layer Time Smoother
+summary: Smooths layer-to-layer print time by adjusting model infill speeds.
+description: >-
+  Layer Time Smoother changes the speed of sparse and internal solid infill to reduce abrupt changes in layer time.
+  A manual slider in OrcaSlicer sets the smoothing strength, and the plugin provides a layer-time comparison.
+  It leaves the first layer, walls, supports, and filament changes alone and does not add pauses.
+  The author provides measured G-code comparisons; the visual effect on printed parts still needs physical comparison.
+repository: https://github.com/Alexx-Powered/layer-time-smoother
+categories:
+  - toolpaths-and-gcode
+status: available
+status_note: The author publishes an OrcaSlicer wheel and documents export checks on OrcaSlicer 2.5.1.
+installation:
+  method: wheel
+  url: https://github.com/Alexx-Powered/layer-time-smoother/releases/latest
+  notes: Install the orca_layer_smoothing wheel through Plugins, not the separate Bambu Studio post-processing script.
+compatibility:
+  orca_slicer: Python-plugin-enabled OrcaSlicer; the documented workflow uses 2.5.1.
+  platforms:
+    - windows
+  requires_custom_build: false
+  notes: The author documents Windows for the native plugin; macOS and Linux references are for the separate script.
+evidence:
+  - label: README, configuration, and export results
+    url: https://github.com/Alexx-Powered/layer-time-smoother/blob/7e096d62a9fca83f695425002e3639372a04b478/README.md
+  - label: Release with OrcaSlicer wheel
+    url: https://github.com/Alexx-Powered/layer-time-smoother/releases/tag/v0.2.2
+updated_at: "2026-11-22"
+reviewed_at: "2026-11-22"

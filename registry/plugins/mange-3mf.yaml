@@ -1,0 +1,29 @@
+name: Mange-3MF
+summary: Converts multicolor 3MF projects to the user's Snapmaker U1 profiles while preserving color assignments.
+description: >-
+  Drop a 3MF from MakerWorld or another slicer into the Mange-3MF tab.
+  It preserves painted colors, modifiers, layer ranges, and plate names while replacing the source printer and process settings.
+  It maps each project color to a compatible filament preset and lets you review or change the mappings.
+  The converted file opens as an OrcaSlicer project for your Snapmaker U1.
+repository: https://github.com/Dragg30000/mange-3mf
+categories:
+  - profiles-and-calibration
+  - workflow-and-integrations
+status: available
+status_note: The author supplies a local plugin file and documents a complete conversion workflow with before-and-after examples.
+installation:
+  method: python
+  url: https://github.com/Dragg30000/mange-3mf/releases/latest
+  notes: Install mange_3mf_any.py locally or subscribe through Orca Cloud, then save the active U1 settings in the plugin.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5 with Python plugin support.
+  platforms: []
+  requires_custom_build: false
+  notes: The conversion targets the Snapmaker U1.
+evidence:
+  - label: README and setup
+    url: https://github.com/Dragg30000/mange-3mf/blob/03a577602fa55b57fe914a9fb3f610c3e821e1ce/README.md
+  - label: Release with plugin file
+    url: https://github.com/Dragg30000/mange-3mf/releases/tag/v0.5.0
+updated_at: "2026-11-22"
+reviewed_at: "2026-11-22"

@@ -1,0 +1,30 @@
+name: FlashForge Adventurer 4 Bridge
+summary: Adds local printing and a monitoring dashboard for the FlashForge Adventurer 4.
+description: >-
+  The plugin adds an Adventurer 4 tab with a temperature graph, camera, and snapshot history.
+  Its printer agent supports direct Print Plate and printer controls in OrcaSlicer's Device tab.
+  The project can also provide a local OctoPrint-compatible bridge for a print-host workflow.
+  In printer-agent mode the bridge can be turned off while keeping the native dashboard and camera relay.
+repository: https://github.com/niratama/flashforge-adv4-orca-support
+categories:
+  - printer-connectivity
+  - monitoring-and-print-farms
+status: experimental
+status_note: The author documents a source build and native Windows setup but does not state a broader native test matrix.
+installation:
+  method: source
+  url: https://github.com/niratama/flashforge-adv4-orca-support/blob/HEAD/README.md
+  notes: Follow section 4 to build the plugin bundle and copy it into OrcaSlicer's plugin directory.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5.0 or later with Python plugins.
+  platforms:
+    - windows
+  requires_custom_build: false
+  notes: The native plugin instructions are for Windows; the separate server is not the OrcaSlicer plugin.
+evidence:
+  - label: README and native installation
+    url: https://github.com/niratama/flashforge-adv4-orca-support/blob/0996d0906cbb03ded92028f764aa6149c27a1112/README.md
+  - label: Native plugin manifest
+    url: https://github.com/niratama/flashforge-adv4-orca-support/blob/0996d0906cbb03ded92028f764aa6149c27a1112/orca_plugin/orca-plugin.json
+updated_at: "2026-11-22"
+reviewed_at: "2026-11-22"

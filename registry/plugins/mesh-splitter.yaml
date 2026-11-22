@@ -11,18 +11,19 @@ categories:
 status: available
 status_note: The author publishes a ready-to-install OrcaSlicer plugin and documents the split and reimport workflow.
 installation:
-  method: python
-  url: https://github.com/d-carrigg/mesh-splitter/releases/tag/orca-plugin
-  notes: Install mesh_splitter_any.py through Plugins, activate it, and allow writes to Downloads.
+  method: wheel
+  url: https://github.com/d-carrigg/mesh-splitter/releases/latest
+  notes: Install mesh_splitter_any.whl through Plugins, activate it, and allow writes to Downloads.
 compatibility:
   orca_slicer: Stock OrcaSlicer 2.5 with Python plugin support.
-  platforms: []
+  platforms:
+    - linux
   requires_custom_build: false
-  notes: The Python plugin declares NumPy; the browser version is a separate workflow.
+  notes: Upstream checks native installation and 3MF reimport on OrcaSlicer 2.5.1 Linux AppImage. The separate command-line downloads are not plugin packages.
 evidence:
   - label: README and local installation
-    url: https://github.com/d-carrigg/mesh-splitter/blob/9f0eb03af566c73d1a22b9d0449013661c014580/README.md
-  - label: OrcaSlicer plugin source
-    url: https://github.com/d-carrigg/mesh-splitter/blob/9f0eb03af566c73d1a22b9d0449013661c014580/plugin/plugin.py
-updated_at: "2026-11-20"
-reviewed_at: "2026-11-20"
+    url: https://github.com/d-carrigg/mesh-splitter/blob/5f9d469b58c03f125b309d90f3f2abcc25f60a03/README.md
+  - label: Release with plugin wheel
+    url: https://github.com/d-carrigg/mesh-splitter/releases/tag/v0.3.18
+updated_at: "2026-11-22"
+reviewed_at: "2026-11-22"

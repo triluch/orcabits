@@ -1,0 +1,32 @@
+name: FlashForge Monitor
+summary: Adds a local dashboard and printer controls for FlashForge AD5X and Adventurer 5M printers.
+description: >-
+  FlashForge Monitor shows job progress, temperatures, and the active material slots in an OrcaSlicer tab.
+  Its dashboard can jog axes, run calibration, and load or unload filament.
+  A remote file manager can upload G-code or 3MF files and start stored prints.
+  It connects over the local network and requires LAN-only mode on the printer.
+repository: https://github.com/heberdiafet/flashforge-monitor
+categories:
+  - printer-connectivity
+  - monitoring-and-print-farms
+status: available
+status_note: The author publishes a wheel and reports a real AD5X test on Fedora with OrcaSlicer 2.5.1 Flatpak.
+installation:
+  method: wheel
+  url: https://github.com/heberdiafet/flashforge-monitor/releases/latest
+  notes: Install flashforge_monitor_any.whl through Plugins or subscribe through Orca Cloud, then enter the printer address, serial, and check code.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5.0 or later.
+  platforms:
+    - linux
+    - macos
+    - windows
+  requires_custom_build: false
+  notes: The author describes it as cross-platform; the documented physical test was on Linux with the AD5X.
+evidence:
+  - label: README and installation
+    url: https://github.com/heberdiafet/flashforge-monitor/blob/268c3bae500651815df1675b0ee904b40306a620/README.md
+  - label: Packaged plugin
+    url: https://github.com/heberdiafet/flashforge-monitor/releases/tag/v0.10.0
+updated_at: "2026-11-22"
+reviewed_at: "2026-11-22"

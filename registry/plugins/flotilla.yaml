@@ -14,8 +14,8 @@ status: experimental
 status_note: The README reports testing on exactly two printers and labels other printer types as unverified or unknown.
 installation:
   method: python
-  url: https://github.com/bmelton/flotilla/blob/main/src/flotilla.py
-  notes: Install the Python file from the Plugins dialog or copy it into OrcaSlicer's plugin directory.
+  url: https://github.com/bmelton/flotilla/releases/latest
+  notes: Install the released Python file through Plugins. The repository also documents installing the single file from source.
 compatibility:
   orca_slicer: OrcaSlicer 2.5 or newer with plugin pages support.
   platforms: []
@@ -23,6 +23,8 @@ compatibility:
   notes: Desktop platform support is not specified. Moonraker and Elegoo SDCP are implemented; other protocols are unverified.
 evidence:
   - label: README and installation
-    url: https://github.com/bmelton/flotilla/blob/main/README.md
-updated_at: "2026-11-19"
-reviewed_at: "2026-11-19"
+    url: https://github.com/bmelton/flotilla/blob/b09d1d991cb16c31a63cf754b66d6dab4b5cef4b/README.md
+  - label: Release with installable Python file
+    url: https://github.com/bmelton/flotilla/releases/tag/v0.2.0
+updated_at: "2026-11-22"
+reviewed_at: "2026-11-22"
