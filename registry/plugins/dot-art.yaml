@@ -13,9 +13,9 @@ categories:
 status: experimental
 status_note: The README shows an initial test print and identifies later listed features as not yet printed.
 installation:
-  method: native
-  url: https://github.com/barismert98/orcaslicer-dot-art#installation
-  notes: Available through OrcaCloud; follow the README's plugin setup and slicing workflow.
+  method: wheel
+  url: https://github.com/barismert98/orcaslicer-dot-art/releases/latest
+  notes: Install the Dot Art wheel through Plugins or subscribe through Orca Cloud, then follow the documented slicing workflow.
 compatibility:
   orca_slicer: OrcaSlicer 2.5.0 or later.
   platforms: []
@@ -24,5 +24,7 @@ compatibility:
 evidence:
   - label: README
     url: https://github.com/barismert98/orcaslicer-dot-art/blob/HEAD/README.md
-updated_at: "2026-11-19"
-reviewed_at: "2026-11-19"
+  - label: Release with plugin wheel
+    url: https://github.com/barismert98/orcaslicer-dot-art/releases/tag/v1.0.0
+updated_at: "2026-11-25"
+reviewed_at: "2026-11-25"

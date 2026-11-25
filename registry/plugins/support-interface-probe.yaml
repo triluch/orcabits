@@ -1,0 +1,29 @@
+name: Support Interface Probe
+summary: Logs the model and slicing data OrcaSlicer exposes for support-interface filament experiments.
+description: >-
+  Run the model dump to inspect how the plugin API represents parts and modifiers.
+  The slicing probe records support generation and filament information exposed during a slice.
+  It writes to OrcaSlicer's Python log and saves a text report beside the slicer's G-code.
+  The probe does not change supports, assign filaments, or rewrite the G-code.
+repository: https://github.com/zacharyinserra/support_probe
+categories:
+  - analysis-and-costing
+  - toolpaths-and-gcode
+status: experimental
+status_note: Upstream documents a read-only diagnostic experiment and provides a Windows x64 plugin.
+installation:
+  method: python
+  url: https://github.com/zacharyinserra/support_probe#install
+  notes: Install support_probe_win_x86_64.py and run the model dump or select the slicing probe in the process settings.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5 alpha or a plugin-enabled nightly newer than 2.4.2, as documented.
+  platforms:
+    - windows
+  requires_custom_build: false
+evidence:
+  - label: README and diagnostic workflow
+    url: https://github.com/zacharyinserra/support_probe/blob/81c87958863acb8b7ee2a6337874b985eb32999c/README.md
+  - label: Installable plugin
+    url: https://github.com/zacharyinserra/support_probe/blob/81c87958863acb8b7ee2a6337874b985eb32999c/support_probe_win_x86_64.py
+updated_at: "2026-11-25"
+reviewed_at: "2026-11-25"

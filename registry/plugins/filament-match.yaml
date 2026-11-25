@@ -2,9 +2,10 @@ name: Filament Match
 summary: Matches loaded printer filament to compatible OrcaSlicer presets for review before applying.
 description: >-
   Filament Match reads the loaded filament from the connected Moonraker or Snapmaker printer.
-  It explains why each installed preset matches and lets you correct the detected filament or choose a different preset.
+  It explains why a preset matches and lets you correct the detected filament or choose a different preset.
   It changes the project only when you press Apply, and remembers confirmed mappings for future use.
-  Spoolman and the Open Filament Database can enrich the suggestions but are optional.
+  Open Filament Database matching is enabled by default and can supply a preset when none is installed.
+  You can turn off database matching or enrich the suggestions with Spoolman.
 repository: https://github.com/Brotholomew/filament-match
 categories:
   - filament-and-spool-management
@@ -25,8 +26,8 @@ compatibility:
   notes: The author lists all three platforms. Hosts without dock panels open a separate window.
 evidence:
   - label: README and installation
-    url: https://github.com/Brotholomew/filament-match/blob/5889e16c9d344056ebd314192750d5391480c958/README.md
+    url: https://github.com/Brotholomew/filament-match/blob/d1d2e0a0fe4bfe195560157ec114efaea4df46cd/README.md
   - label: Plugin source
     url: https://github.com/Brotholomew/filament-match/blob/5889e16c9d344056ebd314192750d5391480c958/plugin/filament_match.py
-updated_at: "2026-11-22"
-reviewed_at: "2026-11-22"
+updated_at: "2026-11-25"
+reviewed_at: "2026-11-25"

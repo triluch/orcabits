@@ -1,4 +1,4 @@
-updated_at: "2026-11-22"
+updated_at: "2026-11-25"
 exclusions:
   - repository: https://github.com/zaosoula/orcaslicer-plugin-spoolman
     scope: repository
@@ -238,3 +238,29 @@ exclusions:
       - label: README
         url: https://github.com/marcodiniz/OrcaCubic/blob/386775d947a4ce43d8637d98ca95e2ef49300c8b/README.md
     reviewed_at: "2026-11-22"
+  - repository: https://github.com/SFRSKZ/orcaslicer-nonplanar-2.5
+    scope: repository
+    reason: out-of-scope
+    note: Nonplanar top surfaces are built into a fork distributed as a slicer installer, not as a plugin.
+    evidence:
+      - label: README and Windows installation
+        url: https://github.com/SFRSKZ/orcaslicer-nonplanar-2.5/blob/8e21025ce6033a57ae398a579dbd3c3ea812a336/README.md
+    reviewed_at: "2026-11-25"
+  - repository: https://github.com/whoxllm/OrcaMicro
+    scope: repository
+    reason: out-of-scope
+    note: Standalone Android slicer incorporating the OrcaSlicer engine, not installed into OrcaSlicer.
+    evidence:
+      - label: README and Android requirements
+        url: https://github.com/whoxllm/OrcaMicro/blob/e80bdacb9ea945dcf6f156bf678f077d6ac92a50/README.md
+    reviewed_at: "2026-11-25"
+  - repository: https://github.com/dennisklappe/OrcaSlicer-WaveOverhangs
+    scope: repository
+    reason: out-of-scope
+    note: Wave overhangs are built into this slicer fork. The separate port to OrcaSlicer's Python plugin system is eligible.
+    evidence:
+      - label: Slicer fork README
+        url: https://github.com/dennisklappe/OrcaSlicer-WaveOverhangs/blob/0e44f2bcef5e38c84607f3c955a03629342cdc32/README.md
+      - label: Separate native plugin
+        url: https://github.com/micatlkw/WaveOverHangsPlugin
+    reviewed_at: "2026-11-25"

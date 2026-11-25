@@ -1,0 +1,28 @@
+name: Ultimate Snowflake Generator
+summary: Designs printable snowflakes and ornaments in an OrcaSlicer tab.
+description: >-
+  The plugin embeds the snowflake designer in OrcaSlicer.
+  Adjust the shape, branches, and dimensions or combine several planes into a design.
+  Preview and export the result, then import the downloaded model into OrcaSlicer.
+  The web and desktop versions are separate from the OrcaSlicer plugin build.
+repository: https://github.com/kar883/Ultimate-Snowflake-Generator
+categories:
+  - modeling-and-textures
+status: available
+status_note: Upstream provides a native Pages plugin template and documents how to build and install it.
+installation:
+  method: source
+  url: https://github.com/kar883/Ultimate-Snowflake-Generator#orcaslicer-plugin
+  notes: Run the documented npm build and install snowflake_generator_orcaslicer.py from dist-orca through Plugins.
+compatibility:
+  orca_slicer: A build with Python plugins and the Pages capability.
+  platforms: []
+  requires_custom_build: false
+  notes: The operating-system downloads listed for the desktop app are not native plugin packages.
+evidence:
+  - label: README and OrcaSlicer plugin installation
+    url: https://github.com/kar883/Ultimate-Snowflake-Generator/blob/97312c6f1135ff62c7762d8fb8ef16f8460940ba/README.md
+  - label: Native plugin build script
+    url: https://github.com/kar883/Ultimate-Snowflake-Generator/blob/97312c6f1135ff62c7762d8fb8ef16f8460940ba/scripts/build-orca-plugin.mjs
+updated_at: "2026-11-25"
+reviewed_at: "2026-11-25"

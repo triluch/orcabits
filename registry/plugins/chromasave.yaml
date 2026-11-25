@@ -7,11 +7,12 @@ description: >-
   has a visual configuration panel for purge and hotend settings.
   The author reports physical validation on Klipper with SmartPurge.
   Bambu AMS support remains beta, and dynamic pre-cut retraction on Bambu is experimental.
+  The Creality SPARKX i7 workflow uses native G-code instead of a custom Klipper macro and is also in beta.
 repository: https://github.com/deathstroke-co/ChromaSave
 categories:
   - toolpaths-and-gcode
 status: experimental
-status_note: The author marks the Klipper setup stable and physically validated, while Bambu integration remains beta.
+status_note: The author reports physical verification on Klipper and labels the Creality SPARKX i7 and Bambu integrations beta.
 installation:
   method: wheel
   url: https://github.com/deathstroke-co/ChromaSave/blob/HEAD/README.md
@@ -23,6 +24,8 @@ compatibility:
   notes: Requires machine-specific purge configuration; documented platform support is not specified.
 evidence:
   - label: README
-    url: https://github.com/deathstroke-co/ChromaSave/blob/e5dbbc14e66f6fcc1d72ebb39a155cb257e94c03/README.md
-updated_at: "2026-11-22"
-reviewed_at: "2026-11-22"
+    url: https://github.com/deathstroke-co/ChromaSave/blob/1625b8974e44b1434a8fb002a99bb5726bfe6e93/README.md
+  - label: Creality support and maturity by printer
+    url: https://github.com/deathstroke-co/ChromaSave/releases/tag/v1.1.1
+updated_at: "2026-11-25"
+reviewed_at: "2026-11-25"

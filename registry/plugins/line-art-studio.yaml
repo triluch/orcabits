@@ -13,9 +13,9 @@ categories:
 status: available
 status_note: README documents the complete workflow and shows a physical print; other-host preview and insertion limits are stated.
 installation:
-  method: native
-  url: https://github.com/barismert98/orcaslicer-line-art-studio#installation
-  notes: Available through OrcaCloud; enable its slicing-pipeline step in the process preset.
+  method: wheel
+  url: https://github.com/barismert98/orcaslicer-line-art-studio/releases/latest
+  notes: Install the Line Art Studio wheel or subscribe through Orca Cloud, then enable its slicing-pipeline step in the process preset.
 compatibility:
   orca_slicer: OrcaSlicer with Pages and Slicing Pipeline plugin APIs.
   platforms: []
@@ -24,5 +24,7 @@ compatibility:
 evidence:
   - label: README
     url: https://github.com/barismert98/orcaslicer-line-art-studio/blob/HEAD/README.md
-updated_at: "2026-11-19"
-reviewed_at: "2026-11-19"
+  - label: Release with plugin wheel
+    url: https://github.com/barismert98/orcaslicer-line-art-studio/releases/tag/v1.0.0
+updated_at: "2026-11-25"
+reviewed_at: "2026-11-25"

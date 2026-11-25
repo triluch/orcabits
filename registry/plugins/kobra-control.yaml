@@ -1,17 +1,16 @@
 name: Kobra Control
-summary: Adds LAN printing and a control dashboard for the Anycubic Kobra X.
+summary: Adds LAN printing and a control dashboard for Anycubic Kobra printers.
 description: >-
   The plugin registers a printer agent for OrcaSlicer's Print and Send dialogs
   and adds a Kobra Control tab with status, camera, files, and ACE slot data.
   It also documents Spoolman integration and controls for the local printer.
-  Installation is available from Orca Cloud or as a wheel from GitHub releases.
-  The author has tested its service layer on a real Kobra X but has not tested
-  the plugin inside OrcaSlicer itself.
+  It can share ACE slot data with Spooler without opening a second connection to the printer.
+  Upstream lists Kobra X as verified and Kobra 3, S1, and 4 variants as experimental.
 repository: https://github.com/bloodf/kobracontrol
 categories:
   - printer-connectivity
 status: experimental
-status_note: The author reports service-layer hardware tests but explicitly says the plugin is not yet tested inside OrcaSlicer.
+status_note: Upstream verifies Kobra X firmware 2.0.2.8 and labels the other supported models experimental.
 installation:
   method: wheel
   url: https://github.com/bloodf/kobracontrol#-install
@@ -23,10 +22,10 @@ compatibility:
   notes: A tested operating-system matrix is not stated.
 evidence:
   - label: README
-    url: https://github.com/bloodf/kobracontrol/blob/main/README.md
+    url: https://github.com/bloodf/kobracontrol/blob/c414db4f36d4c96f2b232c368ad6cfe56e3d0408/README.md
   - label: Orca Cloud listing
     url: https://cloud.orcaslicer.com/p/59c786285255
-  - label: Releases
-    url: https://github.com/bloodf/kobracontrol/releases
-updated_at: "2026-11-19"
-reviewed_at: "2026-11-20"
+  - label: Release with shared Spooler connection support
+    url: https://github.com/bloodf/kobracontrol/releases/tag/v0.12.4
+updated_at: "2026-11-25"
+reviewed_at: "2026-11-25"

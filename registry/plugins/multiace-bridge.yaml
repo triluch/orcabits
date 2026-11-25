@@ -4,6 +4,7 @@ description: >-
   The panel shows U1 toolheads, ACE spool colors, remaining weight, humidity, and drying status.
   It can edit spool records, check which nozzles are mounted, and display the printer camera.
   The plugin presents multiACE's preflight plan when exporting so you can review spool and tool assignments.
+  It can schedule longer drying runs by starting successive cycles while OrcaSlicer stays open.
   It is a front end for multiACE and needs that software installed on the printer.
 repository: https://github.com/Dragg30000/multiace-bridge
 categories:
@@ -24,6 +25,6 @@ evidence:
   - label: README and multiACE requirements
     url: https://github.com/Dragg30000/multiace-bridge/blob/60a60ef2707b1c3507782b4c8fa730e27f2e0f8b/README.md
   - label: Release with native plugin
-    url: https://github.com/Dragg30000/multiace-bridge/releases/tag/v0.38.2
-updated_at: "2026-11-22"
-reviewed_at: "2026-11-22"
+    url: https://github.com/Dragg30000/multiace-bridge/releases/tag/v0.44.0
+updated_at: "2026-11-25"
+reviewed_at: "2026-11-25"

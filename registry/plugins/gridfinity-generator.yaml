@@ -1,0 +1,31 @@
+name: Gridfinity Bin & Baseplate Generator
+summary: Builds parametric Gridfinity bins and baseplates from an OrcaSlicer panel.
+description: >-
+  Set the dimensions and preview a bin or baseplate before exporting it.
+  Bins support uniform or row- and column-specific compartments, finger scoops, and label tabs.
+  The plugin exports binary STL for slicing.
+  Direct placement on the active build plate is documented for Windows and Linux.
+repository: https://github.com/JonasMerrell/Gridfinity-Orca-Plugin
+categories:
+  - modeling-and-textures
+status: available
+status_note: Upstream documents a Plugin Hub listing and provides platform-specific Python plugin files.
+installation:
+  method: python
+  url: https://github.com/JonasMerrell/Gridfinity-Orca-Plugin/blob/HEAD/README.md
+  notes: Subscribe through the Plugin Hub or follow the local build and installation instructions for your platform.
+compatibility:
+  orca_slicer: A build with Python plugins.
+  platforms:
+    - windows
+    - macos
+    - linux
+  requires_custom_build: false
+  notes: The author targets x64 and ARM64 on all three platforms; direct plate placement is not documented for macOS.
+evidence:
+  - label: README, workflows, and platform matrix
+    url: https://github.com/JonasMerrell/Gridfinity-Orca-Plugin/blob/71090b9121598de3477ea7ae8cd34522d41bdcf8/README.md
+  - label: Plugin builder
+    url: https://github.com/JonasMerrell/Gridfinity-Orca-Plugin/blob/71090b9121598de3477ea7ae8cd34522d41bdcf8/build_orca_plugin.py
+updated_at: "2026-11-25"
+reviewed_at: "2026-11-25"

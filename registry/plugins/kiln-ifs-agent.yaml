@@ -1,0 +1,29 @@
+name: Kiln OS IFS Agent
+summary: Adds native LAN printing and four-slot IFS control for the Flashforge AD5X running Kiln OS.
+description: >-
+  The printer agent shows the four IFS slots in OrcaSlicer's Device tab.
+  You can edit slot materials and colors, load or unload filament, and configure auto-refill.
+  In the Send dialog, choose the IFS slot for each sliced filament before uploading and starting the job.
+  The Device tab also shows print progress and temperatures and can pause, resume, or cancel the job.
+repository: https://github.com/ziboobiz/kiln-ifs-agent
+categories:
+  - printer-connectivity
+  - filament-and-spool-management
+status: experimental
+status_note: The author calls it an early version and reports using it on one printer.
+installation:
+  method: python
+  url: https://github.com/ziboobiz/kiln-ifs-agent#installation
+  notes: Install kiln_ifs_agent.py, configure the printer address, and select Kiln OS (IFS) as the printer agent.
+compatibility:
+  orca_slicer: A build with Python plugins and printer agents.
+  platforms: []
+  requires_custom_build: false
+  notes: Requires a Flashforge AD5X with IFS and Kiln OS reachable over the local network.
+evidence:
+  - label: README, requirements, and setup
+    url: https://github.com/ziboobiz/kiln-ifs-agent/blob/19d472bb6d7c7339a259f5f972d75ecbfe32b509/README.md
+  - label: Installable printer agent
+    url: https://github.com/ziboobiz/kiln-ifs-agent/blob/19d472bb6d7c7339a259f5f972d75ecbfe32b509/kiln_ifs_agent.py
+updated_at: "2026-11-25"
+reviewed_at: "2026-11-25"

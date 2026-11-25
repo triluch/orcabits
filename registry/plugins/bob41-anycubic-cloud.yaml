@@ -5,6 +5,7 @@ description: >-
   It can upload sliced G-code from a watch folder or expose a local OctoPrint-compatible bridge for direct sends.
   Pause, resume, stop, and starting a watched file require confirmation.
   A global Anycubic account and an online FDM printer are required; the printer cannot be in LAN-only mode.
+  The dashboard displays temperatures but does not set them remotely.
 repository: https://github.com/Bob-41/anycubic-plugin
 categories:
   - printer-connectivity
@@ -27,6 +28,6 @@ evidence:
   - label: README and requirements
     url: https://github.com/Bob-41/anycubic-plugin/blob/032cc5c8a1fb42cf0d137bd40e7452aef52c3731/README.md
   - label: Installable Python release
-    url: https://github.com/Bob-41/anycubic-plugin/releases/tag/v0.9.1
-updated_at: "2026-11-20"
-reviewed_at: "2026-11-22"
+    url: https://github.com/Bob-41/anycubic-plugin/releases/tag/v1.0.0
+updated_at: "2026-11-25"
+reviewed_at: "2026-11-25"

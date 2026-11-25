@@ -4,13 +4,13 @@ description: >-
   TigerTag creates one preset per spool with its material properties and temperature ranges.
   The presets inherit matching OrcaSlicer system profiles and are refreshed when you run the sync again.
   The plugin can use TigerSpool reports to select profiles for the loaded filament slots.
-  Its tab also shows remaining filament and can send a requested slot assignment back to TigerSpool.
+  The tab shows remaining filament, but sending slot load requests requires TigerSpool firmware that upstream says is not released.
 repository: https://github.com/BastiMila/TigerTag-Orca-Plugin
 categories:
   - filament-and-spool-management
   - profiles-and-calibration
 status: experimental
-status_note: The author verified preset creation on OrcaSlicer 2.5.0 RC but marks slot loading and the tab as untested.
+status_note: The author reports testing on OrcaSlicer 2.5.0 RC and 2.5.1; the TigerSpool load request is a prototype.
 installation:
   method: python
   url: https://github.com/BastiMila/TigerTag-Orca-Plugin#install
@@ -22,8 +22,8 @@ compatibility:
   notes: Requires a TigerTag account; printer-slot features also use TigerSpool.
 evidence:
   - label: README and verification status
-    url: https://github.com/BastiMila/TigerTag-Orca-Plugin/blob/f77d7724bfb67f503435aab2261b00854a0d4f15/README.md
+    url: https://github.com/BastiMila/TigerTag-Orca-Plugin/blob/b56ee26cb3e80e632167cfd325c001538379d3e9/README.md
   - label: Plugin and manifest
     url: https://github.com/BastiMila/TigerTag-Orca-Plugin/blob/f77d7724bfb67f503435aab2261b00854a0d4f15/tigertag_orca_plugin.py
-updated_at: "2026-11-20"
-reviewed_at: "2026-11-22"
+updated_at: "2026-11-25"
+reviewed_at: "2026-11-25"

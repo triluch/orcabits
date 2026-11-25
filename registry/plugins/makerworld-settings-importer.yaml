@@ -5,7 +5,8 @@ description: >-
   applying compatible creator process settings to the existing setup. It avoids
   overwriting the target printer, build plate, or filament profiles. The plugin
   writes a converted project and a categorized report of changes and
-  incompatibilities. Its documented workflow accepts downloaded files rather
+  incompatibilities. It strips cached G-code so the converted project is sliced
+  for the active printer. Its documented workflow accepts downloaded files rather
   than MakerWorld URLs.
 repository: https://github.com/FleeceFlames/Orca_makerworld_importer
 categories:
@@ -26,8 +27,8 @@ compatibility:
   notes: The author documents native file pickers on all three platforms; Linux needs zenity or kdialog for that picker.
 evidence:
   - label: README
-    url: https://github.com/FleeceFlames/Orca_makerworld_importer/blob/7966d3236475da0ad415757ef145d4ef10b9a023/README.md
+    url: https://github.com/FleeceFlames/Orca_makerworld_importer/blob/f494b9cd52630f9afd3ceac8ca585a29bb4b9f11/README.md
   - label: Release with the local plugin file
     url: https://github.com/FleeceFlames/Orca_makerworld_importer/releases/tag/Makerworld_Importer
-updated_at: "2026-11-22"
-reviewed_at: "2026-11-22"
+updated_at: "2026-11-25"
+reviewed_at: "2026-11-25"

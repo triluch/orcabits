@@ -1,0 +1,30 @@
+name: 3D Filament Profiles
+summary: Imports presets and tracks spool use from the 3D Filament Profiles service.
+description: >-
+  The docked panel searches the filament catalogue and shows the spools in your account.
+  It fetches settings for the selected printer and nozzle, applies them to a filament slot, and can also save a user preset.
+  Link slots to spools to see estimated grams from the most recent slice and deduct them from inventory.
+  The integration requires a 3D Filament Profiles API key.
+repository: https://github.com/macdat-git/orcaslicer-3dfp-plugin
+categories:
+  - filament-and-spool-management
+  - profiles-and-calibration
+status: available
+status_note: The author documents local installation and reports testing on Windows with a Bambu Lab H2C.
+installation:
+  method: python
+  url: https://github.com/macdat-git/orcaslicer-3dfp-plugin#install
+  notes: Install threedfp_profiles.py through Plugins and enter your API key in the 3DFP panel.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5 or newer with Python plugins.
+  platforms:
+    - windows
+  requires_custom_build: false
+  notes: For printers without a detected match, the plugin requests the service's printer-neutral profile.
+evidence:
+  - label: README, supported workflow, and testing
+    url: https://github.com/macdat-git/orcaslicer-3dfp-plugin/blob/406172207ad2755b4bd83f79de8e4fa2783b23c2/README.md
+  - label: Installable plugin and manifest
+    url: https://github.com/macdat-git/orcaslicer-3dfp-plugin/blob/406172207ad2755b4bd83f79de8e4fa2783b23c2/threedfp_profiles.py
+updated_at: "2026-11-25"
+reviewed_at: "2026-11-25"

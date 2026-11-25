@@ -25,4 +25,4 @@ evidence:
   - label: Release with plugin wheel
     url: https://github.com/WeLizard/FilamentHub/releases/tag/v0.2.10
 updated_at: "2026-11-22"
-reviewed_at: "2026-11-22"
+reviewed_at: "2026-11-25"

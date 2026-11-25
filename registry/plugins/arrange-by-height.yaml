@@ -1,0 +1,31 @@
+name: Arrange by Height
+summary: Arranges OrcaSlicer plates with taller objects in the center and shorter ones around them.
+description: >-
+  The Arrange tab previews compact, row, or grid layouts and orders the object list from shortest to tallest.
+  It can work on the active plate or rearrange objects across several plates by height.
+  The plugin exports the current project and writes the proposed arrangement to a new 3MF or backs up and replaces the saved file.
+  Reopen the written project to use the new layout; the open window is not updated in place.
+repository: https://github.com/bacoj913/arrange-plugin-for-orca-slicer
+categories:
+  - modeling-and-textures
+status: available
+status_note: The author supplies a single-file plugin and documents the arrangement and reopen workflow.
+installation:
+  method: python
+  url: https://github.com/bacoj913/arrange-plugin-for-orca-slicer#install
+  notes: Install arrange_by_height.py locally and activate Arrange by Height.
+compatibility:
+  orca_slicer: A build with the Python plugin system.
+  platforms:
+    - windows
+    - macos
+    - linux
+  requires_custom_build: false
+  notes: Upstream documents install paths for all three platforms.
+evidence:
+  - label: README and workflow
+    url: https://github.com/bacoj913/arrange-plugin-for-orca-slicer/blob/87b832b620485b5304b33b6dc442410cb42af1e0/README.md
+  - label: Installable plugin and manifest
+    url: https://github.com/bacoj913/arrange-plugin-for-orca-slicer/blob/87b832b620485b5304b33b6dc442410cb42af1e0/arrange_by_height/arrange_by_height.py
+updated_at: "2026-11-25"
+reviewed_at: "2026-11-25"

@@ -5,6 +5,7 @@ description: >-
   The painting tool projects artwork onto an STL or 3MF without changing its shape.
   The OrcaSlicer tab reads the active filament slots and lets you map colors before exporting.
   Send to plate imports a multicolor 3MF with those assignments; use Import geometry only to keep objects already on the plate.
+  Flat models can carry selected colors through the base instead of placing them only on top.
 repository: https://github.com/MagnusPerditor/3DMakerGenerators
 categories:
   - modeling-and-textures
@@ -28,6 +29,6 @@ evidence:
   - label: Plugin source
     url: https://github.com/MagnusPerditor/3DMakerGenerators/blob/db9139285221b45043950ca59669ecea56368ea1/plugin/plugin_template.py
   - label: Release with the plugin artifact
-    url: https://github.com/MagnusPerditor/3DMakerGenerators/releases/tag/v2.0
-updated_at: "2026-11-20"
-reviewed_at: "2026-11-20"
+    url: https://github.com/MagnusPerditor/3DMakerGenerators/releases/tag/v2.0.1
+updated_at: "2026-11-25"
+reviewed_at: "2026-11-25"

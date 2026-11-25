@@ -6,7 +6,9 @@ description: >-
   Spoolman filament and shows which spools are loaded in printer lanes or
   toolheads. After slicing, it compares the plate's filament needs with
   available spool weight. Bambu Cloud inventory is read-only and explicitly
-  experimental; Spoolman is the documented primary source.
+  experimental; Spoolman is the documented primary source. For Kobra 3 and S1
+  printers already connected to Kobra Control, Spooler reads slot data from that
+  plugin rather than opening a competing LAN connection.
 repository: https://github.com/bloodf/spooler
 categories:
   - filament-and-spool-management
@@ -29,5 +31,7 @@ evidence:
     url: https://github.com/bloodf/spooler/blob/81533179769670d2c24de7dfcbdb0cae2adb03a8/README.md
   - label: Packaging change
     url: https://github.com/bloodf/spooler/blob/81533179769670d2c24de7dfcbdb0cae2adb03a8/CHANGELOG.md
-updated_at: "2026-11-20"
-reviewed_at: "2026-11-20"
+  - label: Release with Kobra Control integration
+    url: https://github.com/bloodf/spooler/releases/tag/v0.33.4
+updated_at: "2026-11-25"
+reviewed_at: "2026-11-25"

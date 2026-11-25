@@ -1,0 +1,32 @@
+name: Spoolman Profiles (daum1988)
+summary: Creates standalone OrcaSlicer filament profiles from Spoolman and shows printer usage statistics.
+description: >-
+  The plugin creates one profile for each active Spoolman filament and nozzle variant of a configured template.
+  The generated profiles can be reloaded without restarting OrcaSlicer.
+  On printers that report matching Spoolman-based filament IDs, OrcaSlicer's filament sync can select those profiles automatically.
+  A read-only statistics view uses Moonraker history and Spoolman for usage, low-stock warnings, and available timelapses.
+repository: https://github.com/daum1988/orca-spoolman-profiles
+categories:
+  - filament-and-spool-management
+  - profiles-and-calibration
+status: experimental
+status_note: The author documents local and Orca Cloud installation and reports testing on one Klipper/Kalico printer.
+installation:
+  method: python
+  url: https://github.com/daum1988/orca-spoolman-profiles#install
+  notes: Install spoolman_profiles.py or subscribe through Orca Cloud, then configure the Spoolman address and profile templates.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5.0 or newer with Python plugins.
+  platforms:
+    - windows
+    - macos
+    - linux
+  requires_custom_build: false
+  notes: Upstream lists install paths for all three platforms. Automatic matching needs printer-side setup, and statistics need Moonraker history.
+evidence:
+  - label: README, testing, and printer requirements
+    url: https://github.com/daum1988/orca-spoolman-profiles/blob/252f5b0ee31c69538005b241be4698ce95a15487/README.md
+  - label: Installable plugin and manifest
+    url: https://github.com/daum1988/orca-spoolman-profiles/blob/252f5b0ee31c69538005b241be4698ce95a15487/spoolman_profiles.py
+updated_at: "2026-11-25"
+reviewed_at: "2026-11-25"

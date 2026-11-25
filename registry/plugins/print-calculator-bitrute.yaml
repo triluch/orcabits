@@ -1,0 +1,31 @@
+name: Print Calculator (Bitrute)
+summary: Calculates the selling price and cost breakdown for each sliced FDM plate.
+description: >-
+  The Print Calculator tab updates from the G-code each time you slice a plate.
+  It tracks material by color and includes electricity, printer wear, failures, labor, and packaging.
+  Add your margin and tax to estimate the selling price per part.
+  In multi-plate projects, the plugin retains each sliced plate's price and shows a project total.
+repository: https://github.com/Bitrute/print-calculator
+categories:
+  - analysis-and-costing
+status: available
+status_note: The author provides an installable release and reports checking material, time, and part counts against OrcaSlicer G-code.
+installation:
+  method: python
+  url: https://github.com/Bitrute/print-calculator/releases/latest
+  notes: Install print_calculator.py locally or subscribe through Orca Cloud, then set your rates in the plugin.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5.0 or later with plugins enabled.
+  platforms:
+    - windows
+    - macos
+    - linux
+  requires_custom_build: false
+  notes: The author documents install paths for all three platforms. The calculator is for FDM prints.
+evidence:
+  - label: README and cost workflow
+    url: https://github.com/Bitrute/print-calculator/blob/d46d6e2cbf1dab344d9f331b079112665dc5da95/README.md
+  - label: Release with installable plugin
+    url: https://github.com/Bitrute/print-calculator/releases/tag/v2.10.0
+updated_at: "2026-11-25"
+reviewed_at: "2026-11-25"
