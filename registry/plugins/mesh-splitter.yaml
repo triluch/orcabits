@@ -4,6 +4,7 @@ description: >-
   Mesh Splitter reads models from the current OrcaSlicer plate in its own tab.
   It can split a mesh automatically, by disconnected shells, or by points you pick on the model.
   Each part can be moved, resized, or replaced with another STL while keeping its filament assignment.
+  Add matching pegs and holes or separate dowels to align parts printed separately.
   The plugin saves a multipart 3MF to Downloads, which you import back into OrcaSlicer.
 repository: https://github.com/d-carrigg/mesh-splitter
 categories:
@@ -22,8 +23,8 @@ compatibility:
   notes: Upstream checks native installation and 3MF reimport on OrcaSlicer 2.5.1 Linux AppImage. The separate command-line downloads are not plugin packages.
 evidence:
   - label: README and local installation
-    url: https://github.com/d-carrigg/mesh-splitter/blob/5f9d469b58c03f125b309d90f3f2abcc25f60a03/README.md
+    url: https://github.com/d-carrigg/mesh-splitter/blob/9372ebc4a70ccd2b1352bed253fb6ef515f45d44/README.md
   - label: Release with plugin wheel
-    url: https://github.com/d-carrigg/mesh-splitter/releases/tag/v0.3.18
-updated_at: "2026-11-22"
-reviewed_at: "2026-11-22"
+    url: https://github.com/d-carrigg/mesh-splitter/releases/tag/v0.3.21
+updated_at: "2026-11-25"
+reviewed_at: "2026-11-25"

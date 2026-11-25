@@ -1,0 +1,28 @@
+name: Arm Room
+summary: Fits cosplay arm and shoulder armor to a measured profile or arm scan in OrcaSlicer.
+description: >-
+  Start with a guided arm profile, an upright arm scan, or the included shoulder model.
+  Move, rotate, and scale armor shells and inspect cross-sections, clearance, and foam padding.
+  Import a Chest Room shoulder reference to check how shoulder armor overlaps fitted torso plates in several rigid poses.
+  Save named fits and open the selected fitted piece on the build plate.
+repository: https://github.com/ChrisRollz/arm-room
+categories:
+  - modeling-and-textures
+status: available
+status_note: The author provides a local plugin file, a Plugin Hub listing, and a documented fitting workflow.
+installation:
+  method: python
+  url: https://github.com/ChrisRollz/arm-room#try-it
+  notes: Install dist/arm_room_any.py through Plugins or subscribe in the Plugin Hub.
+compatibility:
+  orca_slicer: An OrcaSlicer build with Python plugins.
+  platforms: []
+  requires_custom_build: false
+  notes: Importing a fitted-plate reference requires Chest Room 0.1.1 or later.
+evidence:
+  - label: README and fitting workflow
+    url: https://github.com/ChrisRollz/arm-room/blob/5113926346e16afae2491db4c2cd04807583996c/README.md
+  - label: Installable plugin file
+    url: https://github.com/ChrisRollz/arm-room/blob/5113926346e16afae2491db4c2cd04807583996c/dist/arm_room_any.py
+updated_at: "2026-11-25"
+reviewed_at: "2026-11-25"

@@ -7,7 +7,8 @@ description: >-
   jobs over the local network. When multiACE is active in supported modes,
   the plugin leaves filament routing and G-code to multiACE. On supported
   firmware the print setup also warns if the mounted nozzle type differs
-  from the sliced profile. Stock firmware and U1 Extended Firmware are supported.
+  from the sliced profile. A top-down preview shows the chosen toolhead colors
+  on the sliced model. Stock firmware and U1 Extended Firmware are supported.
 repository: https://github.com/bloodf/u1control
 categories:
   - printer-connectivity
@@ -31,5 +32,7 @@ evidence:
     url: https://github.com/bloodf/u1control/releases
   - label: Nozzle check and multiACE behavior
     url: https://github.com/bloodf/u1control/blob/8a313410615d8f710e726a988643dfaeba0f80f8/CHANGELOG.md
-updated_at: "2026-11-22"
-reviewed_at: "2026-11-22"
+  - label: Release with the color print preview
+    url: https://github.com/bloodf/u1control/releases/tag/v0.20.0
+updated_at: "2026-11-25"
+reviewed_at: "2026-11-25"

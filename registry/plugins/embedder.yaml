@@ -4,7 +4,7 @@ description: >-
   Pick an insert size and click a face in the Embedder tab to place a pocket with adjustable clearance.
   Open pockets let you press in the insert after printing, while enclosed pockets add a layer pause before the pocket closes.
   The plugin groups pockets that can share a pause and lists the inserts to have ready.
-  An automatic mode can place symmetric magnet pockets on the bottom of the selected object.
+  An automatic mode places symmetric magnet pockets on the bottom and can estimate how many magnets the part needs.
   Applying the changes opens a new project copy and leaves the original untouched.
 repository: https://github.com/bloodf/embedder
 categories:
@@ -26,7 +26,7 @@ evidence:
     url: https://github.com/bloodf/embedder/blob/d42401db6b12f3b2241e97838edb7b7692c7f30f/README.md
   - label: OrcaSlicer plugin source
     url: https://github.com/bloodf/embedder/blob/d42401db6b12f3b2241e97838edb7b7692c7f30f/src/embedder/plugin.py
-  - label: Automatic bottom pocket placement
-    url: https://github.com/bloodf/embedder/blob/ac859788f32d33e973b02d1a1e249f1291cba68d/CHANGELOG.md
-updated_at: "2026-11-22"
-reviewed_at: "2026-11-22"
+  - label: Release with the magnet hold estimate
+    url: https://github.com/bloodf/embedder/releases/tag/v0.10.0
+updated_at: "2026-11-25"
+reviewed_at: "2026-11-25"

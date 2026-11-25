@@ -1,12 +1,12 @@
 name: FlashForge Device Tab
 summary: Adds monitoring, file browsing, history, and job controls for FlashForge printers.
 description: >-
-  The plugin adds a Device-tab panel with job progress, temperatures, a
-  30-minute temperature chart, and an optional camera stream. It can browse
+  The monitor can open in Device or in a separate FlashForge tab. It shows job
+  progress, temperatures, a 30-minute chart, and an optional camera stream. It can browse
   printer files and previews and keeps print history across OrcaSlicer restarts.
   Pause, resume, and cancel controls are available, but the plugin does not
-  upload files or start prints. The documented release installation targets
-  OrcaSlicer 2.5.0 or newer on Windows x64.
+  upload files or start prints. It can open the printer's web interface in your
+  browser without closing the monitor.
 repository: https://github.com/UshMask/flashforge-device-tab
 categories:
   - printer-connectivity
@@ -25,7 +25,7 @@ compatibility:
 evidence:
   - label: README
     url: https://github.com/UshMask/flashforge-device-tab/blob/main/README.md
-  - label: Releases
-    url: https://github.com/UshMask/flashforge-device-tab/releases
-updated_at: "2026-11-19"
-reviewed_at: "2026-11-19"
+  - label: Release with optional FlashForge tab
+    url: https://github.com/UshMask/flashforge-device-tab/releases/tag/v1.12.0
+updated_at: "2026-11-25"
+reviewed_at: "2026-11-25"

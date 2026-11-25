@@ -1,0 +1,31 @@
+name: Interfinity
+summary: Generates modular Interfinity tiles and lays them out on OrcaSlicer plates.
+description: >-
+  Choose preset or custom tile sizes, or divide a larger area into equal tiles with optional staggered seams.
+  The plugin uses the active printer's bed size and can spread tiles across multiple plates.
+  Tiles can have adjustable height, connector clearance, and internal dividers that leave a path for vase-mode printing.
+  Send the generated STL to OrcaSlicer or save it to a file.
+repository: https://github.com/tommasobbianchi/interfinity-orca-plugin
+categories:
+  - modeling-and-textures
+status: available
+status_note: The author documents a source build and reports checking the geometry and vase-mode slicing against reference models.
+installation:
+  method: source
+  url: https://github.com/tommasobbianchi/interfinity-orca-plugin#installazione
+  notes: Build and install with the repository's Python build script, then activate Interfinity.
+compatibility:
+  orca_slicer: A build with Python plugins; upstream documents slice checks with OrcaSlicer 2.5.0-dev.
+  platforms:
+    - windows
+    - macos
+    - linux
+  requires_custom_build: false
+  notes: The build script targets all three platforms. The tile design expects vase mode.
+evidence:
+  - label: README, installation, and slice checks
+    url: https://github.com/tommasobbianchi/interfinity-orca-plugin/blob/925b9b813f8f89fc8c871b24c38e86dd0f13df01/README.md
+  - label: Native plugin build script
+    url: https://github.com/tommasobbianchi/interfinity-orca-plugin/blob/925b9b813f8f89fc8c871b24c38e86dd0f13df01/build_orca_plugin.py
+updated_at: "2026-11-25"
+reviewed_at: "2026-11-25"

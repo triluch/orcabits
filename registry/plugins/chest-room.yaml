@@ -5,6 +5,7 @@ description: >-
   Move, rotate, and scale the front and back plates independently relative to the form.
   Cross sections, gap measurements, and optional foam pads help you inspect clearance.
   Save named fits in the library and open each fitted plate separately in OrcaSlicer.
+  Export the fitted plates and shoulder landmarks as a reference for checking armor overlap in Arm Room.
 repository: https://github.com/ChrisRollz/chest-room
 categories:
   - modeling-and-textures
@@ -21,8 +22,8 @@ compatibility:
   notes: If OrcaSlicer cannot open a fitted plate directly, the plugin shows the saved STL path.
 evidence:
   - label: README and fitting workflow
-    url: https://github.com/ChrisRollz/chest-room/blob/084063f90430843fc9ce68f81c4be45fcbb95cfb/README.md
+    url: https://github.com/ChrisRollz/chest-room/blob/57e183798616c3dc66b3bdd6725d1a5c3d74b98a/README.md
   - label: Plugin source and manifest
     url: https://github.com/ChrisRollz/chest-room/blob/084063f90430843fc9ce68f81c4be45fcbb95cfb/src/chest_room_any.py
-updated_at: "2026-11-20"
-reviewed_at: "2026-11-20"
+updated_at: "2026-11-25"
+reviewed_at: "2026-11-25"

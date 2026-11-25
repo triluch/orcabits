@@ -4,7 +4,8 @@ description: >-
   The plugin provides a printer agent for OrcaSlicer's Print and Send workflow
   and a separate tab for monitoring the Creator 5 and 5 Pro. The tab shows live
   status, temperatures, camera, printer files and previews, and print controls.
-  It connects to the printer over the local network without a cloud login.
+  It connects over the local network without a cloud login and supports multiple printers,
+  with a printer picker, fleet view, and separate print history for each machine.
   OrcaSlicer 2.5.0 or newer and a printer in LAN/offline mode are required.
 repository: https://github.com/ben0551/orca-flashforge-c5
 categories:
@@ -22,8 +23,10 @@ compatibility:
   notes: Platform support is not specified.
 evidence:
   - label: README
-    url: https://github.com/ben0551/orca-flashforge-c5/blob/46ee2498a54ae48cbacc0cb9ae4dfa9c7457c567/README.md
+    url: https://github.com/ben0551/orca-flashforge-c5/blob/3a22bb584e940b3d2f5f18e2f7b884628fd45287/README.md
   - label: Plugin source
-    url: https://github.com/ben0551/orca-flashforge-c5/blob/main/flashforge-c5_any.py
-updated_at: "2026-11-22"
-reviewed_at: "2026-11-22"
+    url: https://github.com/ben0551/orca-flashforge-c5/blob/v1.5.0/flashforge-c5_any.py
+  - label: Multi-printer and fleet-view release
+    url: https://github.com/ben0551/orca-flashforge-c5/releases/tag/v1.5.0
+updated_at: "2026-11-25"
+reviewed_at: "2026-11-25"

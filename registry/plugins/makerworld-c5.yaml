@@ -5,6 +5,7 @@ description: >-
   It retains the designer's process settings, such as layer height, walls, infill, and supports.
   Drop a local 3MF into its tab or choose one with the file dialog.
   For a MakerWorld link, sign in with a Bambu Cloud token and select the plate to convert.
+  The plugin retains the saved token when you install an update.
 repository: https://github.com/ben0551/orca-3mf-converter
 categories:
   - profiles-and-calibration
@@ -24,5 +25,7 @@ evidence:
     url: https://github.com/ben0551/orca-3mf-converter/blob/c462b3af78aeb27ce847eb9c8d0a60abf773e851/README.md
   - label: Plugin file and manifest
     url: https://github.com/ben0551/orca-3mf-converter/blob/c462b3af78aeb27ce847eb9c8d0a60abf773e851/3mf-converter_any.py
-updated_at: "2026-11-22"
-reviewed_at: "2026-11-22"
+  - label: Release notes for preserving settings on update
+    url: https://github.com/ben0551/orca-3mf-converter/releases/tag/v1.3.4
+updated_at: "2026-11-25"
+reviewed_at: "2026-11-25"

@@ -1,0 +1,31 @@
+name: P1 LAN Cameras
+summary: Shows live cameras and print status from Bambu Lab P1S and P1P printers on the local network.
+description: >-
+  A resizable window beside Device displays one camera tile per paired printer.
+  Each tile can show the current job, progress, and remaining time alongside the camera feed.
+  A separate setup assistant can import selected devices from OrcaSlicer or add them manually.
+  The assistant stores LAN access codes in a plaintext file in your home directory.
+repository: https://github.com/RJAudas/orcaslicer-lan-cameras
+categories:
+  - monitoring-and-print-farms
+status: available
+status_note: Upstream publishes a plugin wheel and setup bundle and reports testing the original viewer with two printers on Windows.
+installation:
+  method: wheel
+  url: https://github.com/RJAudas/orcaslicer-lan-cameras/releases/latest
+  notes: Install the p1s_cameras wheel through Plugins and run Camera Printer Setup from the released ZIP.
+compatibility:
+  orca_slicer: A build with local plugin installation and Script support.
+  platforms:
+    - windows
+    - macos
+    - linux
+  requires_custom_build: false
+  notes: Upstream documents setup for all three platforms; the cited physical test was on Windows.
+evidence:
+  - label: README, credential storage, and testing
+    url: https://github.com/RJAudas/orcaslicer-lan-cameras/blob/13f893626b23aa617efd5862eb08a4ba0e332405/README.md
+  - label: Plugin wheel and setup bundle
+    url: https://github.com/RJAudas/orcaslicer-lan-cameras/releases/tag/v0.2.0
+updated_at: "2026-11-25"
+reviewed_at: "2026-11-25"

@@ -1,5 +1,5 @@
-updated_at: 2026-11-22
-checked_at: 2026-11-22
+updated_at: 2026-11-25
+checked_at: 2026-11-25
 repositories:
   adilo-maker/task-multiplier:
     stars: 1
@@ -15,6 +15,9 @@ repositories:
     archived: false
   amitkuzi/orcaplugin:
     stars: 2
+    archived: false
+  bacoj913/arrange-plugin-for-orca-slicer:
+    stars: 0
     archived: false
   barismert98/orcaslicer-color-split:
     stars: 1
@@ -43,11 +46,14 @@ repositories:
   bertenvdb/webtabs-orcaslicer-plugin:
     stars: 0
     archived: false
+  bitrute/print-calculator:
+    stars: 0
+    archived: false
   bloodf/embedder:
     stars: 0
     archived: false
   bloodf/kobracontrol:
-    stars: 1
+    stars: 2
     archived: false
   bloodf/orca_organizer:
     stars: 1
@@ -56,10 +62,10 @@ repositories:
     stars: 2
     archived: false
   bloodf/spooler:
-    stars: 4
+    stars: 6
     archived: false
   bloodf/u1control:
-    stars: 4
+    stars: 6
     archived: false
   bmelton/flotilla:
     stars: 1
@@ -94,6 +100,9 @@ repositories:
   chenlei0504/orca-plate-queue:
     stars: 1
     archived: false
+  chrisrollz/arm-room:
+    stars: 1
+    archived: false
   chrisrollz/chest-room:
     stars: 1
     archived: false
@@ -101,13 +110,16 @@ repositories:
     stars: 0
     archived: false
   cichr/laserca-orcaslicer_plugin:
-    stars: 2
+    stars: 3
     archived: false
   d-carrigg/mesh-splitter:
     stars: 2
     archived: false
   danm1989/spoolio-orcaslicer:
-    stars: 4
+    stars: 9
+    archived: false
+  daum1988/orca-spoolman-profiles:
+    stars: 0
     archived: false
   deathstroke-co/chromasave:
     stars: 0
@@ -128,9 +140,12 @@ repositories:
     stars: 0
     archived: false
   dragg30000/mange-3mf:
-    stars: 0
+    stars: 1
     archived: false
   dragg30000/multiace-bridge:
+    stars: 2
+    archived: false
+  ducati1198/wm-orca-slicer-plugin:
     stars: 1
     archived: false
   edwardchamberlain/grove-control-orca-plugin:
@@ -140,7 +155,7 @@ repositories:
     stars: 0
     archived: false
   extrudiosite/extrudio-orca-plugin:
-    stars: 0
+    stars: 1
     archived: false
   fabiomsnunes/orca-claude-bridge:
     stars: 0
@@ -164,7 +179,7 @@ repositories:
     stars: 0
     archived: false
   gadonk/pipspool-orcaslicer:
-    stars: 11
+    stars: 13
     archived: false
   garth-42/fff-nut-insert-automation-plugin:
     stars: 0
@@ -173,7 +188,7 @@ repositories:
     stars: 0
     archived: false
   gittrahan/support-fins:
-    stars: 1062
+    stars: 1072
     archived: false
   gnugiminot/platepilot-orcaslicer:
     stars: 1
@@ -203,7 +218,7 @@ repositories:
     stars: 1
     archived: false
   hyiger/orcaslicer-filament-db-plugin:
-    stars: 0
+    stars: 1
     archived: false
   ianloic/anycubic-orca-plugin:
     stars: 2
@@ -217,10 +232,16 @@ repositories:
   jhjessup/orcaslicer-pause-at-weight:
     stars: 0
     archived: false
+  jonasmerrell/gridfinity-orca-plugin:
+    stars: 3
+    archived: false
   joseto1298/orca-time-calculator:
     stars: 1
     archived: false
   jwilss/spool-stock:
+    stars: 0
+    archived: false
+  kar883/ultimate-snowflake-generator:
     stars: 0
     archived: false
   krateian/sutura:
@@ -238,10 +259,19 @@ repositories:
   lpschreck1/bmcu-klipper-tool-assignment:
     stars: 0
     archived: false
+  macdat-git/orcaslicer-3dfp-plugin:
+    stars: 0
+    archived: false
   magnusperditor/3dmakergenerators:
     stars: 1
     archived: false
   marcopiazza83/print-doctor:
+    stars: 0
+    archived: false
+  maxellis/orcaslicer-mcp:
+    stars: 119
+    archived: false
+  micatlkw/waveoverhangsplugin:
     stars: 0
     archived: false
   mlugo-apx/orca-farm-send:
@@ -278,12 +308,18 @@ repositories:
     stars: 1
     archived: false
   persano/open-bambu-networking-plugin:
-    stars: 23
+    stars: 25
     archived: false
   persano/smooth-z-wall-speed-plugin:
     stars: 1
     archived: false
   peterbedorjr/orca-copilot:
+    stars: 0
+    archived: false
+  rjaudas/orcaslicer-lan-cameras:
+    stars: 0
+    archived: false
+  rkfsociety/anysharik:
     stars: 0
     archived: false
   rubberdingyrapids/bambu-multi-account:
@@ -331,6 +367,9 @@ repositories:
   thijse/orcaslicer-plugin-prusa:
     stars: 0
     archived: false
+  tommasobbianchi/interfinity-orca-plugin:
+    stars: 0
+    archived: false
   tommasobbianchi/orcaslicer-model-search-plugin:
     stars: 8
     archived: false
@@ -376,9 +415,15 @@ repositories:
   yazdannl/orcad-plugin:
     stars: 4
     archived: false
+  zacharyinserra/support_probe:
+    stars: 0
+    archived: false
   zed-0xff/orca-edit-in-blender:
     stars: 0
     archived: false
   zfdt/orca-vendor-source-plugin:
+    stars: 0
+    archived: false
+  ziboobiz/kiln-ifs-agent:
     stars: 0
     archived: false

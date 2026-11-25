@@ -1,0 +1,28 @@
+name: Wave Overhangs
+summary: Replaces selected overhang toolpaths with waves that grow out from a supported edge.
+description: >-
+  Wave Overhangs builds each wave against the previous one before the slicer's bridge closes the top.
+  Enable it in the slicing pipeline to preview which layers will receive waves.
+  The plugin applies the waves to the exported G-code and adjusts the file's print-time estimate.
+  The author tested Klipper with PLA, including prints with multiple parts, but has not verified Bambu printers.
+repository: https://github.com/micatlkw/WaveOverHangsPlugin
+categories:
+  - toolpaths-and-gcode
+status: experimental
+status_note: Upstream labels it experimental and documents the tested materials and printer setup.
+installation:
+  method: python
+  url: https://github.com/micatlkw/WaveOverHangsPlugin/releases/latest
+  notes: Install wave_overhangs_plugin.py and select Wave Overhangs in the process settings' slicing pipeline. The first load installs NumPy and pyclipper.
+compatibility:
+  orca_slicer: Stock OrcaSlicer with Python plugins and the slicing pipeline plugin selector.
+  platforms: []
+  requires_custom_build: false
+  notes: Enable Exclude objects for plates with several objects or copies, as documented upstream.
+evidence:
+  - label: README, workflow, and limitations
+    url: https://github.com/micatlkw/WaveOverHangsPlugin/blob/b752fd7772eb465195386bb038b876792cfc4e06/README.md
+  - label: Release with local plugin file
+    url: https://github.com/micatlkw/WaveOverHangsPlugin/releases/tag/v0.13.0
+updated_at: "2026-11-25"
+reviewed_at: "2026-11-25"

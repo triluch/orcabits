@@ -1,0 +1,32 @@
+name: OrcaSlicer MCP
+summary: Connects stock OrcaSlicer to an AI assistant for preset changes and slice analysis.
+description: >-
+  The plugin exposes slicer settings and presets through a local connection to the companion MCP server.
+  A panel guides you through connecting a supported AI app and shows its connection status.
+  The assistant can read the results of a slice you run, but the stock plugin cannot slice or move models itself.
+  Those additional operations require the separately distributed OrcaSlicer build, not the plugin.
+repository: https://github.com/MaxEllis/orcaslicer-mcp
+categories:
+  - ai-and-automation
+  - workflow-and-integrations
+status: available
+status_note: The author publishes a native Python plugin and documents the companion server setup for stock OrcaSlicer.
+installation:
+  method: python
+  url: https://github.com/MaxEllis/orcaslicer-mcp/releases/latest
+  notes: Install orcaslicer_mcp_plugin.py locally or through Orca Cloud, then follow the panel's MCP setup for your AI app.
+compatibility:
+  orca_slicer: Stock OrcaSlicer 2.5 with Python plugins.
+  platforms:
+    - windows
+    - macos
+    - linux
+  requires_custom_build: false
+  notes: The author documents the stock plugin workflow on Windows, macOS, and Linux.
+evidence:
+  - label: README and stock plugin comparison
+    url: https://github.com/MaxEllis/orcaslicer-mcp/blob/f01cc5af03067675a8f01e98ad72ccc8d9ff3a33/README.md
+  - label: Release with plugin and companion bundle
+    url: https://github.com/MaxEllis/orcaslicer-mcp/releases/tag/v0.1.29
+updated_at: "2026-11-25"
+reviewed_at: "2026-11-25"

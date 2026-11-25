@@ -4,6 +4,7 @@ description: >-
   Describe a defect or attach a photo or sliced file in the Print Doctor panel.
   The plugin can read the active settings and inspect model measurements, overhangs, and mesh issues on the plate.
   It explains proposed process or filament changes, applies them only when asked, and lets you undo them.
+  The beta blocks proposals that would change a supported build plate's temperature to zero.
   It connects to a configured AI service or local model; with a remote service, relevant settings and attachments are shared with that provider.
 repository: https://github.com/MarcoPiazza83/Print-Doctor
 categories:
@@ -23,6 +24,6 @@ evidence:
   - label: README, installation, and provider behavior
     url: https://github.com/MarcoPiazza83/Print-Doctor/blob/f387849a7da34b7cabeb9f3d42459fbfa7c3391e/README.md
   - label: Beta plugin artifact
-    url: https://github.com/MarcoPiazza83/Print-Doctor/releases/tag/v0.5.0
-updated_at: "2026-11-22"
-reviewed_at: "2026-11-22"
+    url: https://github.com/MarcoPiazza83/Print-Doctor/releases/tag/v0.6.1
+updated_at: "2026-11-25"
+reviewed_at: "2026-11-25"
