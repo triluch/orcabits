@@ -1,0 +1,29 @@
+name: Nube Creality y Anycubic
+summary: Adds cloud printing and Device-tab controls for Creality and Anycubic printers.
+description: >-
+  The printer agent sends jobs from OrcaSlicer through Creality Cloud.
+  The Device tab shows status and temperatures, and can display the Creality Hi camera and CFS slots.
+  The plugin stores the sign-in session using Windows' encryption.
+  The author tested a Creality Hi with CFS; the separate Anycubic Cloud integration is untested.
+repository: https://github.com/androettojuan/orca-nube-creality-anycubic
+categories:
+  - printer-connectivity
+status: experimental
+status_note: Upstream documents an installable file and one tested Creality printer, with other models and Anycubic support unverified.
+installation:
+  method: python
+  url: https://github.com/androettojuan/orca-nube-creality-anycubic/blob/HEAD/README.md
+  notes: Install dist/nube_creality_anycubic.py through Plugins and follow the instructions to set up the printer agent.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5 with Python printer-agent support.
+  platforms:
+    - windows
+  requires_custom_build: false
+  notes: Requires a cloud account for the corresponding printer service.
+evidence:
+  - label: README, setup, and hardware test matrix
+    url: https://github.com/androettojuan/orca-nube-creality-anycubic/blob/cda96c822259fa8eb728b23fe32493f97d762849/README.md
+  - label: Installable plugin and manifest
+    url: https://github.com/androettojuan/orca-nube-creality-anycubic/blob/cda96c822259fa8eb728b23fe32493f97d762849/dist/nube_creality_anycubic.py
+updated_at: "2026-11-27"
+reviewed_at: "2026-11-27"

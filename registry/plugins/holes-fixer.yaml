@@ -1,0 +1,31 @@
+name: Holes Fixer
+summary: Reshapes unsupported roofs on round holes to make them easier to print.
+description: >-
+  The plugin detects round holes that overhang in the model's current orientation.
+  Where there is clearance, it can replace the upper curve with a teardrop, capped teardrop, or flat roof.
+  It saves a new 3MF and can put fixed models on copied plates or replace them in place in that copy.
+  A report lists the holes it changed and explains why any others were skipped.
+repository: https://github.com/fich-l/holes-fixer
+categories:
+  - modeling-and-textures
+status: available
+status_note: The author documents a wheel build and tested OrcaSlicer 2.5.2 on macOS; Linux Flatpak has a working report.
+installation:
+  method: source
+  url: https://github.com/fich-l/holes-fixer#installation
+  notes: Build the wheel with Python 3.12 and install it through Plugins. OrcaSlicer installs NumPy and manifold3d on first load.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5.2 with Python plugins.
+  platforms:
+    - macos
+    - linux
+    - windows
+  requires_custom_build: false
+  notes: The release documents Windows project opening separately from the macOS test and Linux report.
+evidence:
+  - label: README and wheel build
+    url: https://github.com/fich-l/holes-fixer/blob/3ed52b3976031b85d9efe192e084ad36120ee8e7/README.md
+  - label: Output options and platform fixes
+    url: https://github.com/fich-l/holes-fixer/releases/tag/v0.4.4
+updated_at: "2026-11-27"
+reviewed_at: "2026-11-27"

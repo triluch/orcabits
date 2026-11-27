@@ -5,6 +5,7 @@ description: >-
   and adds a Kobra Control tab with status, camera, files, and ACE slot data.
   It also documents Spoolman integration and controls for the local printer.
   It can share ACE slot data with Spooler without opening a second connection to the printer.
+  On the Kobra S1 Max, the tab displays the chamber temperature when the printer reports it.
   Upstream lists Kobra X as verified and Kobra 3, S1, and 4 variants as experimental.
 repository: https://github.com/bloodf/kobracontrol
 categories:
@@ -27,5 +28,7 @@ evidence:
     url: https://cloud.orcaslicer.com/p/59c786285255
   - label: Release with shared Spooler connection support
     url: https://github.com/bloodf/kobracontrol/releases/tag/v0.12.4
-updated_at: "2026-11-25"
-reviewed_at: "2026-11-25"
+  - label: Kobra S1 Max chamber monitoring
+    url: https://github.com/bloodf/kobracontrol/releases/tag/v0.14.0
+updated_at: "2026-11-27"
+reviewed_at: "2026-11-27"

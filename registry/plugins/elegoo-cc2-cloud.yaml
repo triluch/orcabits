@@ -1,0 +1,29 @@
+name: Elegoo CC2 Cloud
+summary: Sends jobs to the Elegoo Centauri Carbon 2 through Elegoo Cloud and adds a printer dashboard.
+description: >-
+  OrcaSlicer's Print action sends the sliced file through a local bridge to Elegoo Cloud.
+  By default, the job starts after upload, but you can turn that off in the plugin.
+  The dashboard shows progress, temperatures, the camera, and Canvas filament slots, and can pause or stop a job.
+  Sign in through Elegoo's own page; the plugin stores the session using Windows' encryption.
+repository: https://github.com/0xpraet0rian/orca-elegoo-cc2-cloud
+categories:
+  - printer-connectivity
+status: experimental
+status_note: The author labels it experimental and provides a Windows x64 plugin file.
+installation:
+  method: python
+  url: https://github.com/0xpraet0rian/orca-elegoo-cc2-cloud#install
+  notes: Install elegoo_cc2_cloud_win_x86_64.py and follow the in-tab guide for cloud sign-in and print setup.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5.x with Python plugins.
+  platforms:
+    - windows
+  requires_custom_build: false
+  notes: Targets the Centauri Carbon 2, not the first-generation Centauri Carbon.
+evidence:
+  - label: README, installation, and cloud workflow
+    url: https://github.com/0xpraet0rian/orca-elegoo-cc2-cloud/blob/47a9bee83b1cc5d89f6652f1bb0a32d3c15a2034/README.md
+  - label: Installable plugin
+    url: https://github.com/0xpraet0rian/orca-elegoo-cc2-cloud/blob/47a9bee83b1cc5d89f6652f1bb0a32d3c15a2034/plugin/elegoo_cc2_cloud_win_x86_64.py
+updated_at: "2026-11-27"
+reviewed_at: "2026-11-27"

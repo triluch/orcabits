@@ -4,9 +4,10 @@ description: >-
   The plugin combines chat with current preset context, 3D geometry and
   overhang analysis, defect-photo diagnosis, and G-code auditing. It supports
   cloud providers and local model endpoints, with no fixed model vendor. Users
-  can selectively apply suggested settings to slicer presets. It requires an
-  AI provider and OrcaSlicer 2.5 or newer; it does not certify that a print
-  will succeed.
+  can selectively apply suggested settings to slicer presets. An optional
+  local MCP server lets compatible clients inspect the slicer and, if
+  permitted, change settings. The server is off by default and can be
+  enabled in read-only mode.
 repository: https://github.com/Belik1982/orca-ai-assistant
 categories:
   - ai-and-automation
@@ -15,7 +16,7 @@ status_note: The README documents Cloud and local installation and selective app
 installation:
   method: python
   url: https://github.com/Belik1982/orca-ai-assistant#-installation
-  notes: Install orca_ai_assistant_any.py from a GitHub release or the Orca Cloud listing.
+  notes: Install the repository's orca_ai_assistant_any.py file or subscribe through Orca Cloud.
 compatibility:
   orca_slicer: OrcaSlicer 2.5 or newer.
   platforms: []
@@ -23,8 +24,10 @@ compatibility:
   notes: Tested platform coverage is not specified.
 evidence:
   - label: README
-    url: https://github.com/Belik1982/orca-ai-assistant/blob/9ad06a9d019f3403b289463e083494ec286f16a7/README.md
-  - label: Releases
-    url: https://github.com/Belik1982/orca-ai-assistant/releases
-updated_at: "2026-11-19"
-reviewed_at: "2026-11-19"
+    url: https://github.com/Belik1982/orca-ai-assistant/blob/0f23f3d50c83e9cbbf59860925cd35a9f80cf21a/README.md
+  - label: Installable plugin file
+    url: https://github.com/Belik1982/orca-ai-assistant/blob/0f23f3d50c83e9cbbf59860925cd35a9f80cf21a/orca_ai_assistant_any.py
+  - label: Local MCP server release
+    url: https://github.com/Belik1982/orca-ai-assistant/releases/tag/v3.1.0
+updated_at: "2026-11-27"
+reviewed_at: "2026-11-27"

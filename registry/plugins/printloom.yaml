@@ -1,0 +1,28 @@
+name: Printloom
+summary: Checks sliced jobs against a Printloom farm and sends them to its library and queue.
+description: >-
+  After slicing, the plugin asks Printloom to check clearance for the ejector arm, rack height, and available filament.
+  It shows the results in OrcaSlicer and can send a job through the Printloom printer agent.
+  The Printloom tab shows the farm's queue, rack, printer, and AMS status.
+  The plugin needs a reachable Printloom installation; it does not replace the farm software.
+repository: https://github.com/DasKlaus00/printloom
+categories:
+  - monitoring-and-print-farms
+status: experimental
+status_note: Upstream calls Printloom a work in progress and documents the plugin download from the farm's System page.
+installation:
+  method: python
+  url: https://github.com/DasKlaus00/printloom#orcaslicer-plugin
+  notes: Download the matching plugin from your Printloom System page, then install it through Plugins.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5 or newer with Python plugins.
+  platforms: []
+  requires_custom_build: false
+  notes: The upstream farm setup targets the Bambu Lab X1 Carbon and OTTOeject.
+evidence:
+  - label: README, farm requirements, and plugin setup
+    url: https://github.com/DasKlaus00/printloom/blob/4c0105051639d9954e2dc608be0c97262196c13c/README.md
+  - label: Native plugin implementation
+    url: https://github.com/DasKlaus00/printloom/blob/4c0105051639d9954e2dc608be0c97262196c13c/orca-plugin/printloom_orca.py
+updated_at: "2026-11-27"
+reviewed_at: "2026-11-27"

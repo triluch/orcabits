@@ -1,0 +1,29 @@
+name: Delayed Start
+summary: Adds a wait to a sliced print so it starts at a chosen time or after a delay.
+description: >-
+  Set a clock time or a delay of up to 48 hours before slicing.
+  The plugin calculates the wait when you slice, so send the job right afterward.
+  The printer counts down with the heaters off before running its normal start sequence.
+  OrcaSlicer does not need to stay open after you send the job.
+repository: https://github.com/WayneBrummer/orcaslicer-delayed-start
+categories:
+  - toolpaths-and-gcode
+status: available
+status_note: Upstream documents the Plugin Hub workflow and reports testing on a Bambu Lab X1 Carbon.
+installation:
+  method: python
+  url: https://github.com/WayneBrummer/orcaslicer-delayed-start#how-to-start
+  notes: Subscribe and activate it in Plugins, then add Delayed Start Wait to the slicing pipeline. The repository also contains the single-file plugin.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5 or newer with slicing pipeline plugins.
+  platforms:
+    - linux
+  requires_custom_build: false
+  notes: The author tested OrcaSlicer 2.5.2 on Linux. Other printers are untested and must support timed waits in firmware.
+evidence:
+  - label: README, workflow, and test scope
+    url: https://github.com/WayneBrummer/orcaslicer-delayed-start/blob/3e7b9839cea58a4978b8224c235669949e92b24a/README.md
+  - label: Plugin file and manifest
+    url: https://github.com/WayneBrummer/orcaslicer-delayed-start/blob/3e7b9839cea58a4978b8224c235669949e92b24a/delayed_start.py
+updated_at: "2026-11-27"
+reviewed_at: "2026-11-27"

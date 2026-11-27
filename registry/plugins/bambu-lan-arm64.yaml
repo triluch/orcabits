@@ -1,0 +1,29 @@
+name: Bambu LAN Network Plugin (ARM64)
+summary: Adds local Bambu Lab printer connectivity to OrcaSlicer on ARM64 Linux.
+description: >-
+  The native library enables local printing and Device-tab status and controls on compatible Bambu printers.
+  Supported cameras can supply a live feed, with the documented test coverage varying by model.
+  The installer can target native or Flatpak installations and restore the original files.
+  Bambu Cloud features and browsing files on the printer's SD card are not supported.
+repository: https://github.com/cyrinux/bambu-lan-plugin-aarch64
+categories:
+  - printer-connectivity
+status: experimental
+status_note: Upstream publishes an ARM64 build and tested the OrcaSlicer interface, but its documented physical A1 test used Bambu Studio.
+installation:
+  method: native
+  url: https://github.com/cyrinux/bambu-lan-plugin-aarch64/releases/tag/v0.2.0
+  notes: Use the release archive and follow the upstream OrcaSlicer install option for your native or Flatpak build.
+compatibility:
+  orca_slicer: OrcaSlicer 2.4.x; the library was built against 2.4.2.
+  platforms:
+    - linux
+  requires_custom_build: false
+  notes: ARM64 Linux only. Recent printer firmware requires LAN-only mode with Developer Mode enabled.
+evidence:
+  - label: README, supported hosts, and test scope
+    url: https://github.com/cyrinux/bambu-lan-plugin-aarch64/blob/9f71c384efab88dfc06ff6e29f395a031497bd41/README.md
+  - label: Release with native library
+    url: https://github.com/cyrinux/bambu-lan-plugin-aarch64/releases/tag/v0.2.0
+updated_at: "2026-11-27"
+reviewed_at: "2026-11-27"

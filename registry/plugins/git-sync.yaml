@@ -5,8 +5,8 @@ description: >-
   when presets are saved, at shutdown, or on manual request. It can commit,
   pull, and push changes to a configured repository. When both copies of a
   preset have changed, it preserves a separately named conflict copy rather
-  than silently replacing either version. The README states support for
-  OrcaSlicer 2.5 or later on macOS, Windows, and Linux.
+  than silently replacing either version. The plugin stores its Git settings
+  in the local clone rather than writing your global Git configuration.
 repository: https://github.com/dhumpf/orca-git-sync
 categories:
   - profiles-and-calibration
@@ -26,6 +26,8 @@ compatibility:
   notes: These operating systems are explicitly listed as supported by the README.
 evidence:
   - label: README
-    url: https://github.com/dhumpf/orca-git-sync/blob/main/README.md
-updated_at: "2026-11-19"
-reviewed_at: "2026-11-20"
+    url: https://github.com/dhumpf/orca-git-sync/blob/7859793e7dde3b9b630a10e5dbc2d1cc52c4b82e/README.md
+  - label: Release with clone-local settings
+    url: https://github.com/dhumpf/orca-git-sync/releases/tag/v0.4.0
+updated_at: "2026-11-27"
+reviewed_at: "2026-11-27"

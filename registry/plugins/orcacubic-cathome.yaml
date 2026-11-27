@@ -4,7 +4,7 @@ description: >-
   OrcaCubic adds a printer agent for sending or starting jobs through OrcaSlicer's own controls.
   Its tab shows temperatures, progress, and ACE Pro information and can pause, resume, or stop a print.
   For supported cameras it can show live video and record local timelapses.
-  The author documents AWS KVS camera support and lists Agora support as planned.
+  The author documents both AWS KVS and Agora camera support, depending on the printer model.
 repository: https://github.com/cathome1/OrcaCubic
 categories:
   - printer-connectivity
@@ -25,8 +25,8 @@ compatibility:
   notes: The author lists all three platforms; the optional native macOS sign-in helper needs Swift to build locally.
 evidence:
   - label: README and installation
-    url: https://github.com/cathome1/OrcaCubic/blob/7668473c769f13999f0681719462565fba6e5416/README.md
+    url: https://github.com/cathome1/OrcaCubic/blob/0a32005bea2f6ac70f9be9cf39ca413955630a16/README.md
   - label: OrcaSlicer printer-agent source
     url: https://github.com/cathome1/OrcaCubic/blob/7668473c769f13999f0681719462565fba6e5416/plugin/orcacubic_plugin.py
-updated_at: "2026-11-22"
-reviewed_at: "2026-11-22"
+updated_at: "2026-11-27"
+reviewed_at: "2026-11-27"

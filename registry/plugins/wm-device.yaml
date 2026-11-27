@@ -4,6 +4,7 @@ description: >-
   WM Device connects to the printer's Moonraker service to show progress, temperatures, camera, files, and toolheads.
   The tab can pause, resume, or cancel a print and start a stored file.
   A mapping step lets you choose the toolhead for each sliced filament before sending a job.
+  An ACE Pro dryer card shows the current drying status and remaining time.
   The author verified connection and live status on factory firmware, but a full multicolor print on that firmware was still being tested.
 repository: https://github.com/ducati1198/wm-orca-slicer-plugin
 categories:
@@ -13,18 +14,19 @@ status: experimental
 status_note: Upstream documents a local plugin and factory-firmware monitoring, but not a completed factory multicolor print.
 installation:
   method: python
-  url: https://github.com/ducati1198/wm-orca-slicer-plugin#1-install
+  url: https://github.com/ducati1198/wm-orca-slicer-plugin/releases/latest
   notes: Install wm_device.py in Plugins, activate it, and add the printer's Moonraker address.
 compatibility:
   orca_slicer: OrcaSlicer 2.5.2 with Python plugins, as documented.
   platforms:
     - macos
+    - windows
   requires_custom_build: false
-  notes: Tested on macOS with the ZR Ultra-S. Windows, Linux, and the non-S Ultra model are untested.
+  notes: Tested on macOS with the ZR Ultra-S. Windows checks covered connecting and saving the printer address only; Linux and the non-S Ultra model are untested.
 evidence:
   - label: README and factory-firmware test scope
-    url: https://github.com/ducati1198/wm-orca-slicer-plugin/blob/5eb793fb9fcbc7ac2eca4512a2ccef07cc71f3c9/README.md
-  - label: Installable plugin and manifest
-    url: https://github.com/ducati1198/wm-orca-slicer-plugin/blob/5eb793fb9fcbc7ac2eca4512a2ccef07cc71f3c9/wm_device.py
-updated_at: "2026-11-25"
-reviewed_at: "2026-11-25"
+    url: https://github.com/ducati1198/wm-orca-slicer-plugin/blob/691b11549f543a717147e720abb9babdab97fcf4/README.md
+  - label: Plugin download and dryer changes
+    url: https://github.com/ducati1198/wm-orca-slicer-plugin/releases/tag/v1.6.0
+updated_at: "2026-11-27"
+reviewed_at: "2026-11-27"

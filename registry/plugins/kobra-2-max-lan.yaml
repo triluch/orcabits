@@ -1,0 +1,29 @@
+name: Kobra 2 Max LAN
+summary: Uploads G-code to a compatible modified Anycubic Kobra 2 Max and shows its touchscreen in OrcaSlicer.
+description: >-
+  The plugin adds its own tab rather than replacing OrcaSlicer's Print Plate action.
+  It uploads a job to the printer over SSH on the local network.
+  The mirrored touchscreen lets you select and start the uploaded file using the printer's own interface.
+  The workflow needs a compatible modified printer and does not work with stock firmware.
+repository: https://github.com/pkircher29/orcaslicer-kobra2max-lan
+categories:
+  - printer-connectivity
+status: experimental
+status_note: The author tested the original local version on one printer; the portable release has not been tested end to end on a second printer.
+installation:
+  method: source
+  url: https://github.com/pkircher29/orcaslicer-kobra2max-lan/releases/tag/v0.2.0
+  notes: Extract the Windows ZIP and use the documented installer and SSH setup for a printer you already administer.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5.2 with Python plugins, as documented upstream.
+  platforms:
+    - windows
+  requires_custom_build: false
+  notes: Requires Windows 11, Ubuntu 24.04 in WSL, and compatible printer firmware and touchscreen hardware.
+evidence:
+  - label: README, requirements, and usage
+    url: https://github.com/pkircher29/orcaslicer-kobra2max-lan/blob/581197063e4d4ca9af7113ea1cee5cea08da4a29/README.md
+  - label: Windows plugin ZIP and test scope
+    url: https://github.com/pkircher29/orcaslicer-kobra2max-lan/releases/tag/v0.2.0
+updated_at: "2026-11-27"
+reviewed_at: "2026-11-27"

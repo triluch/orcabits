@@ -1,0 +1,30 @@
+name: MCP Hub Bridge
+summary: Adds a Moonraker printer dashboard and post-slice G-code analysis through a local companion service.
+description: >-
+  The MCP Hub tab shows print progress, temperatures, and filament slot status.
+  It can inspect print files and show reports from automatic G-code analysis after slicing.
+  The dashboard exposes printer actions such as pause, resume, and cancel.
+  It requires the separate local orca-zmod-bridge service and a printer reachable through Moonraker.
+repository: https://github.com/copersdann/orca-zmod-bridge
+categories:
+  - monitoring-and-print-farms
+  - workflow-and-integrations
+status: experimental
+status_note: Upstream provides the plugin file and a companion setup for Windows but does not document a printer test matrix.
+installation:
+  method: python
+  url: https://github.com/copersdann/orca-zmod-bridge/blob/HEAD/README.md
+  notes: Start the documented local service, then install mcp_hub_bridge.py in OrcaSlicer's plugin folder.
+compatibility:
+  orca_slicer: An OrcaSlicer build with Python plugins and a slicing pipeline plugin API.
+  platforms:
+    - windows
+  requires_custom_build: false
+  notes: Upstream documents Windows setup and a Flashforge AD5X running Z-Mod.
+evidence:
+  - label: README and companion configuration
+    url: https://github.com/copersdann/orca-zmod-bridge/blob/5f083a3595291cff2995674a94914bb962fa266d/README.md
+  - label: Installable Python plugin
+    url: https://github.com/copersdann/orca-zmod-bridge/blob/5f083a3595291cff2995674a94914bb962fa266d/plugins/orca/mcp_hub_bridge.py
+updated_at: "2026-11-27"
+reviewed_at: "2026-11-27"

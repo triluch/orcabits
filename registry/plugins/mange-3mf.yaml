@@ -1,9 +1,9 @@
 name: Mange-3MF
 summary: Converts multicolor 3MF projects to the user's Snapmaker U1 profiles while preserving color assignments.
 description: >-
-  Drop a 3MF from MakerWorld or another slicer into the Mange-3MF tab.
+  Drop in a 3MF from MakerWorld, PrusaSlicer, or a CAD tool.
   It preserves painted colors, modifiers, layer ranges, and plate names while replacing the source printer and process settings.
-  It maps each project color to a compatible filament preset and lets you review or change the mappings.
+  Review each color's mapping and choose from your own filament presets or the system presets enabled for your U1.
   You can also add extra filament colors to paint or recolor parts after conversion.
   The converted file opens as an OrcaSlicer project for your Snapmaker U1.
 repository: https://github.com/Dragg30000/mange-3mf
@@ -20,11 +20,11 @@ compatibility:
   orca_slicer: OrcaSlicer 2.5 with Python plugin support.
   platforms: []
   requires_custom_build: false
-  notes: The conversion targets the Snapmaker U1. Already sliced G-code 3MF files and PrusaSlicer projects are not supported.
+  notes: The conversion targets the Snapmaker U1. Resin projects and already-sliced files are not supported.
 evidence:
   - label: README and setup
-    url: https://github.com/Dragg30000/mange-3mf/blob/28d6c612508835ffb785b006c736f6ab27b37016/README.md
+    url: https://github.com/Dragg30000/mange-3mf/blob/6eeec936881a9290117b1b8cf2fb63a251b17d49/README.md
   - label: Release with plugin file
-    url: https://github.com/Dragg30000/mange-3mf/releases/tag/v0.5.2
-updated_at: "2026-11-25"
-reviewed_at: "2026-11-25"
+    url: https://github.com/Dragg30000/mange-3mf/releases/tag/v0.6.1
+updated_at: "2026-11-27"
+reviewed_at: "2026-11-27"
