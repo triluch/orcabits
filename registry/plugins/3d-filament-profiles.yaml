@@ -4,6 +4,7 @@ description: >-
   The docked panel searches the filament catalogue and shows the spools in your account.
   It fetches settings for the selected printer and nozzle, applies them to a filament slot, and can also save a user preset.
   Link slots to spools to see estimated grams from the most recent slice and deduct them from inventory.
+  An optional companion service can keep Bambu AMS spool locations current for matching inside the plugin.
   The integration requires a 3D Filament Profiles API key.
 repository: https://github.com/macdat-git/orcaslicer-3dfp-plugin
 categories:
@@ -23,8 +24,8 @@ compatibility:
   notes: For printers without a detected match, the plugin requests the service's printer-neutral profile.
 evidence:
   - label: README, supported workflow, and testing
-    url: https://github.com/macdat-git/orcaslicer-3dfp-plugin/blob/406172207ad2755b4bd83f79de8e4fa2783b23c2/README.md
+    url: https://github.com/macdat-git/orcaslicer-3dfp-plugin/blob/d153e48833990ee39f8b56baba20cfa4a905518f/README.md
   - label: Installable plugin and manifest
-    url: https://github.com/macdat-git/orcaslicer-3dfp-plugin/blob/406172207ad2755b4bd83f79de8e4fa2783b23c2/threedfp_profiles.py
-updated_at: "2026-11-25"
-reviewed_at: "2026-11-25"
+    url: https://github.com/macdat-git/orcaslicer-3dfp-plugin/blob/d153e48833990ee39f8b56baba20cfa4a905518f/threedfp_profiles.py
+updated_at: "2026-11-27"
+reviewed_at: "2026-11-27"

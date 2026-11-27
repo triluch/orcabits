@@ -4,7 +4,8 @@ description: >-
   PipSpool creates one OrcaSlicer filament profile per active Spoolman spool
   and matches updates by stable spool ID. Its dashboard supports configurable
   synchronization of selected profile settings and lets users preview
-  conflicts before applying changes. It can add a configurable spool-selection
+  conflicts before applying changes. Ordinary sync preserves separate nozzle
+  temperatures for configured extruder variants. It can add a configurable spool-selection
   command to filament start G-code, while filament consumption remains the
   responsibility of a printer-side integration. The README documents an
   experimental Bambu Studio export option separately from the core workflow.
@@ -28,5 +29,7 @@ compatibility:
 evidence:
   - label: README and installation
     url: https://github.com/Gadonk/pipspool-orcaslicer/blob/main/README.md
-updated_at: "2026-11-19"
-reviewed_at: "2026-11-19"
+  - label: Extruder variant sync and temperature handling
+    url: https://github.com/Gadonk/pipspool-orcaslicer/releases/tag/v2.2.34
+updated_at: "2026-11-27"
+reviewed_at: "2026-11-27"

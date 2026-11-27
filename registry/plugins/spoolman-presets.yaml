@@ -20,9 +20,9 @@ compatibility:
   orca_slicer: OrcaSlicer 2.5 alpha or later with Python plugin support.
   platforms: []
   requires_custom_build: false
-  notes: Desktop platform support is not specified. Requires Moonraker lane_data with spool IDs and a configured Spoolman proxy.
+  notes: Requires Moonraker lane data with spool IDs and a configured Spoolman proxy. The plugin can apply lane colors directly when OrcaSlicer's API supports it; older builds need a separate color-only sync.
 evidence:
   - label: README and installation
-    url: https://github.com/DIEHARDave/orca_spoolman_presets/blob/main/README.md
-updated_at: "2026-11-19"
-reviewed_at: "2026-11-19"
+    url: https://github.com/DIEHARDave/orca_spoolman_presets/blob/6f45b96578165cccb762e665ca96fb57781e354d/README.md
+updated_at: "2026-11-27"
+reviewed_at: "2026-11-27"

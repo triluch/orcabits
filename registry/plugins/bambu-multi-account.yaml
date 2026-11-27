@@ -21,13 +21,13 @@ compatibility:
     - macos
     - windows
   requires_custom_build: false
-  notes: Check the release assets for your platform. Apple Silicon macOS has wheels in earlier releases but not in v0.3.26. The standalone Python file does not bundle the library.
+  notes: Release v0.3.28 includes wheels for Windows and Linux x86-64 and Apple Silicon macOS. The standalone Python file does not bundle the library.
 evidence:
   - label: Setup and networking library requirements
     url: https://github.com/RubberDingyRapids/bambu-multi-account/blob/8cadab4a80c4e86246eece8c6b22660f621000d9/README.md
   - label: Packaged client and library by platform
     url: https://github.com/RubberDingyRapids/bambu-multi-account/releases/tag/v0.3.23
-  - label: Release with Linux and Windows wheels only
-    url: https://github.com/RubberDingyRapids/bambu-multi-account/releases/tag/v0.3.26
-updated_at: "2026-11-25"
-reviewed_at: "2026-11-25"
+  - label: Release with Windows, Linux, and Apple Silicon wheels
+    url: https://github.com/RubberDingyRapids/bambu-multi-account/releases/tag/v0.3.28
+updated_at: "2026-11-27"
+reviewed_at: "2026-11-27"

@@ -3,9 +3,10 @@ summary: Lets Claude Code inspect and change active OrcaSlicer preset values thr
 description: >-
   The plugin exposes live preset values and plate metadata through a
   token-protected local HTTP bridge for Claude Code. It can update active
-  preset values, but those changes remain unsaved. The bridge does not load
-  models, slice, arrange objects, or export print files. The README describes
-  it as a proof of concept tested on macOS with OrcaSlicer 2.5.0.
+  preset values, but those changes remain unsaved. The bridge can export a
+  copy of the current project, including unsaved changes. An Optimise button
+  can launch an optimizer you provide; the bridge itself does not slice or
+  arrange models.
 repository: https://github.com/fabiomsnunes/orca-claude-bridge
 categories:
   - ai-and-automation
@@ -20,11 +21,11 @@ compatibility:
   platforms:
     - macos
   requires_custom_build: false
-  notes: The author reports running the plugin only on macOS.
+  notes: Upstream documents macOS. Autostart needs OrcaSlicer 2.5.2; on 2.5.0 run the plugin manually after startup.
 evidence:
   - label: README
-    url: https://github.com/fabiomsnunes/orca-claude-bridge/blob/6d86ec09d21dbf120a51b51488333b9a80e1b6ba/README.md
+    url: https://github.com/fabiomsnunes/orca-claude-bridge/blob/c1219e9031aa784ac0904980b4aace0fa0151691/README.md
   - label: Plugin source
     url: https://github.com/fabiomsnunes/orca-claude-bridge/tree/main/plugin
-updated_at: "2026-11-19"
-reviewed_at: "2026-11-19"
+updated_at: "2026-11-27"
+reviewed_at: "2026-11-27"

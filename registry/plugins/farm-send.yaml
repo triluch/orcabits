@@ -17,8 +17,8 @@ status: experimental
 status_note: The README calls this an early release and identifies untested operating systems and printer combinations.
 installation:
   method: python
-  url: https://github.com/mlugo-apx/orca-farm-send/blob/main/dist/farm_send/farm_send.py
-  notes: Install dist/farm_send/farm_send.py through OrcaSlicer's local-plugin installer.
+  url: https://github.com/mlugo-apx/orca-farm-send/releases/latest
+  notes: Install farm_send_any.py from the release through OrcaSlicer's local-plugin installer.
 compatibility:
   orca_slicer: OrcaSlicer 2.5.1 or newer with Python plugin support.
   platforms:
@@ -28,7 +28,7 @@ compatibility:
 evidence:
   - label: README and installation
     url: https://github.com/mlugo-apx/orca-farm-send/blob/cba83857ef9ccbe2ed75f2de548778f2442c5def/README.md
-  - label: Release with the updated plate library
-    url: https://github.com/mlugo-apx/orca-farm-send/releases/tag/v0.3.3
-updated_at: "2026-11-22"
-reviewed_at: "2026-11-25"
+  - label: Release with the plugin file
+    url: https://github.com/mlugo-apx/orca-farm-send/releases/tag/v0.3.21
+updated_at: "2026-11-27"
+reviewed_at: "2026-11-27"

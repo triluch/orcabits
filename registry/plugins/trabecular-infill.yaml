@@ -1,0 +1,29 @@
+name: Trabecular Infill
+summary: Replaces sparse infill with a seeded network of solid struts and ribbon-shaped voids.
+description: >-
+  Enable the plugin in the slicing pipeline for the process preset.
+  It carves aligned voids from the sparse fill regions before the slicer generates infill.
+  OrcaSlicer fills the remaining regions using its own solid infill pattern.
+  The plugin changes where infill can go, not the individual strokes.
+repository: https://github.com/minimal3dp/os-bone-plugin
+categories:
+  - toolpaths-and-gcode
+status: experimental
+status_note: Upstream targets OrcaSlicer 2.5.2 after checking its API bindings, but its measured exports come from the earlier 2.5.0 RC build.
+installation:
+  method: python
+  url: https://github.com/minimal3dp/os-bone-plugin#install
+  notes: Copy bone_infill.py into its own plugin directory and follow the documented slicing pipeline setup.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5.2 build f92a7c06, as targeted by upstream.
+  platforms:
+    - macos
+  requires_custom_build: false
+  notes: Upstream documents macOS and has not repeated runtime validation on 2.5.2.
+evidence:
+  - label: README and installation
+    url: https://github.com/minimal3dp/os-bone-plugin/blob/22c9816f07d068852f4a40c19f47a74132d04f29/README.md
+  - label: Plugin file
+    url: https://github.com/minimal3dp/os-bone-plugin/blob/22c9816f07d068852f4a40c19f47a74132d04f29/src/os_bone_plugin/bone_infill.py
+updated_at: "2026-11-27"
+reviewed_at: "2026-11-27"

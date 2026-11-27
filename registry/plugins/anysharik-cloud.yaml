@@ -2,28 +2,28 @@ name: AnySharik Cloud
 summary: Sends sliced jobs to Anycubic Cloud printers and monitors them in an OrcaSlicer tab.
 description: >-
   Sign in through the Anycubic Cloud browser window and select a printer registered to that account.
-  Set AnySharik as the printer agent to upload sliced G-code from OrcaSlicer's print action.
+  Set AnySharik as the printer agent to upload sliced G-code from OrcaSlicer, with or without starting a print immediately.
   The plugin tab can show telemetry and start, pause, resume, or stop jobs.
   This workflow uses Anycubic Cloud rather than connecting to a printer's LAN address.
 repository: https://github.com/rkfsociety/AnySharik
 categories:
   - printer-connectivity
 status: experimental
-status_note: The repository documents a source build and protocol tests but no printer test matrix.
+status_note: Upstream publishes an installable wheel and documents cloud printer discovery, but does not provide a printer test matrix.
 installation:
-  method: source
-  url: https://github.com/rkfsociety/AnySharik/blob/HEAD/README.md
-  notes: Build the wheel with the documented command, install it through Plugins, and activate the printer agent capability.
+  method: wheel
+  url: https://github.com/rkfsociety/AnySharik/releases/latest
+  notes: Download the AnySharik wheel, install it through Plugins, and activate the printer agent capability.
 compatibility:
   orca_slicer: A build with Python plugins, Pages, and printer agents; upstream recommends a compatible nightly if needed.
   platforms:
     - windows
   requires_custom_build: false
-  notes: The documented build and sign-in workflow uses Windows.
+  notes: The documented sign-in workflow uses Windows.
 evidence:
   - label: README, build, and printer setup
     url: https://github.com/rkfsociety/AnySharik/blob/2c12dfb031089f638384097d8939266509408c97/README.md
-  - label: Wheel packaging
-    url: https://github.com/rkfsociety/AnySharik/blob/2c12dfb031089f638384097d8939266509408c97/anysharik_cloud/pyproject.toml
-updated_at: "2026-11-25"
-reviewed_at: "2026-11-25"
+  - label: Downloadable wheel and upload options
+    url: https://github.com/rkfsociety/AnySharik/releases/tag/v0.3.26
+updated_at: "2026-11-27"
+reviewed_at: "2026-11-27"

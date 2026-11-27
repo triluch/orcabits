@@ -11,7 +11,7 @@ categories:
   - printer-connectivity
   - filament-and-spool-management
 status: available
-status_note: The author publishes an installable file and reports testing on a Snapmaker U1 with two ACE Pro units.
+status_note: The author publishes an installable file and reports testing with multiACE 1.27b and multiACE+ 1.90 and 1.91.
 installation:
   method: python
   url: https://github.com/Dragg30000/multiace-bridge/releases/latest
@@ -25,6 +25,6 @@ evidence:
   - label: README and multiACE requirements
     url: https://github.com/Dragg30000/multiace-bridge/blob/60a60ef2707b1c3507782b4c8fa730e27f2e0f8b/README.md
   - label: Release with native plugin
-    url: https://github.com/Dragg30000/multiace-bridge/releases/tag/v0.44.0
-updated_at: "2026-11-25"
-reviewed_at: "2026-11-25"
+    url: https://github.com/Dragg30000/multiace-bridge/releases/tag/v0.46.3
+updated_at: "2026-11-27"
+reviewed_at: "2026-11-27"

@@ -1,0 +1,29 @@
+name: OpenSend U1
+summary: Remaps sliced filaments to chosen Snapmaker U1 toolheads during export or upload.
+description: >-
+  Set the desired filament-to-toolhead assignments in the plugin's configuration.
+  Add OpenSend Toolhead Mapping to the process preset's slicing pipeline.
+  The plugin rewrites tool selections and tool-specific temperature commands in the exported G-code.
+  OrcaSlicer's preview still shows the original assignments.
+repository: https://github.com/plexi32/opensend-u1
+categories:
+  - filament-and-spool-management
+  - toolpaths-and-gcode
+status: experimental
+status_note: The repository documents a wheel build from source and tests with an OrcaSlicer stub; no release wheel or printer validation is documented.
+installation:
+  method: source
+  url: https://github.com/plexi32/opensend-u1#develop
+  notes: Build the wheel from source before installing it through Plugins and enabling the slicing pipeline step.
+compatibility:
+  orca_slicer: A build with the Python 3.12 plugin runtime and slicing pipeline support.
+  platforms: []
+  requires_custom_build: false
+  notes: The mapping targets the Snapmaker U1.
+evidence:
+  - label: README, build, and preview limitation
+    url: https://github.com/plexi32/opensend-u1/blob/159958ce641cd8ccfa17ec46509f19b32c1a4b36/README.md
+  - label: Packaged plugin entry point
+    url: https://github.com/plexi32/opensend-u1/blob/159958ce641cd8ccfa17ec46509f19b32c1a4b36/src/opensend_u1/__init__.py
+updated_at: "2026-11-27"
+reviewed_at: "2026-11-27"

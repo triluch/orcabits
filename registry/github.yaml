@@ -1,6 +1,9 @@
-updated_at: 2026-11-25
-checked_at: 2026-11-25
+updated_at: 2026-11-27
+checked_at: 2026-11-27
 repositories:
+  0xpraet0rian/orca-elegoo-cc2-cloud:
+    stars: 0
+    archived: false
   adilo-maker/task-multiplier:
     stars: 1
     archived: false
@@ -15,6 +18,9 @@ repositories:
     archived: false
   amitkuzi/orcaplugin:
     stars: 2
+    archived: false
+  androettojuan/orca-nube-creality-anycubic:
+    stars: 0
     archived: false
   bacoj913/arrange-plugin-for-orca-slicer:
     stars: 0
@@ -112,11 +118,20 @@ repositories:
   cichr/laserca-orcaslicer_plugin:
     stars: 3
     archived: false
+  copersdann/orca-zmod-bridge:
+    stars: 0
+    archived: false
+  cyrinux/bambu-lan-plugin-aarch64:
+    stars: 1
+    archived: false
   d-carrigg/mesh-splitter:
     stars: 2
     archived: false
   danm1989/spoolio-orcaslicer:
     stars: 9
+    archived: false
+  dasklaus00/printloom:
+    stars: 5
     archived: false
   daum1988/orca-spoolman-profiles:
     stars: 0
@@ -146,7 +161,7 @@ repositories:
     stars: 2
     archived: false
   ducati1198/wm-orca-slicer-plugin:
-    stars: 1
+    stars: 2
     archived: false
   edwardchamberlain/grove-control-orca-plugin:
     stars: 0
@@ -160,8 +175,11 @@ repositories:
   fabiomsnunes/orca-claude-bridge:
     stars: 0
     archived: false
+  fich-l/holes-fixer:
+    stars: 0
+    archived: false
   flashforge-c5-modding-group/opencreator-send:
-    stars: 5
+    stars: 6
     archived: false
   fleeceflames/orca_makerworld_importer:
     stars: 0
@@ -188,7 +206,7 @@ repositories:
     stars: 0
     archived: false
   gittrahan/support-fins:
-    stars: 1072
+    stars: 1086
     archived: false
   gnugiminot/platepilot-orcaslicer:
     stars: 1
@@ -269,9 +287,12 @@ repositories:
     stars: 0
     archived: false
   maxellis/orcaslicer-mcp:
-    stars: 119
+    stars: 127
     archived: false
   micatlkw/waveoverhangsplugin:
+    stars: 0
+    archived: false
+  minimal3dp/os-bone-plugin:
     stars: 0
     archived: false
   mlugo-apx/orca-farm-send:
@@ -308,18 +329,27 @@ repositories:
     stars: 1
     archived: false
   persano/open-bambu-networking-plugin:
-    stars: 25
+    stars: 26
     archived: false
   persano/smooth-z-wall-speed-plugin:
-    stars: 1
+    stars: 2
     archived: false
   peterbedorjr/orca-copilot:
+    stars: 0
+    archived: false
+  pkircher29/orcaslicer-kobra2max-lan:
+    stars: 0
+    archived: false
+  plexi32/opensend-u1:
     stars: 0
     archived: false
   rjaudas/orcaslicer-lan-cameras:
     stars: 0
     archived: false
   rkfsociety/anysharik:
+    stars: 0
+    archived: false
+  royrdan/orca-makerworld-tab:
     stars: 0
     archived: false
   rubberdingyrapids/bambu-multi-account:
@@ -403,6 +433,9 @@ repositories:
   victorfernande/orca-vase-generator:
     stars: 0
     archived: false
+  waynebrummer/orcaslicer-delayed-start:
+    stars: 0
+    archived: false
   welizard/filamenthub:
     stars: 3
     archived: false
@@ -413,7 +446,7 @@ repositories:
     stars: 0
     archived: false
   yazdannl/orcad-plugin:
-    stars: 4
+    stars: 5
     archived: false
   zacharyinserra/support_probe:
     stars: 0

@@ -1,0 +1,32 @@
+name: MakerWorld Tab
+summary: Browses MakerWorld models and downloads their print profiles from an OrcaSlicer tab.
+description: >-
+  Browse home feeds, categories, collections, contests, or search results without leaving OrcaSlicer.
+  Model pages show the licence, designer, gallery, and available print profiles.
+  Sign in to see your saved collections, likes, and download history.
+  Linux Flatpak can open downloaded models directly in Prepare; other builds require opening the file manually.
+repository: https://github.com/Royrdan/orca-makerworld-tab
+categories:
+  - modeling-and-textures
+  - workflow-and-integrations
+status: available
+status_note: Upstream provides a single-file plugin and documents which builds can open a download directly.
+installation:
+  method: python
+  url: https://github.com/Royrdan/orca-makerworld-tab#install
+  notes: Install makerworld_tab.py through Plugins and activate the tab.
+compatibility:
+  orca_slicer: OrcaSlicer 2.5 or newer with Python plugins.
+  platforms:
+    - linux
+    - windows
+    - macos
+  requires_custom_build: false
+  notes: Direct opening uses the Linux Flatpak launcher. The plugin relies on MakerWorld's undocumented web API.
+evidence:
+  - label: README, installation, and platform limits
+    url: https://github.com/Royrdan/orca-makerworld-tab/blob/9c9bd92d63b1fc6585c323fc5ebb425da4710c60/README.md
+  - label: Installable plugin file
+    url: https://github.com/Royrdan/orca-makerworld-tab/blob/9c9bd92d63b1fc6585c323fc5ebb425da4710c60/makerworld_tab.py
+updated_at: "2026-11-27"
+reviewed_at: "2026-11-27"

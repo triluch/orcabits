@@ -1,4 +1,4 @@
-updated_at: "2026-11-25"
+updated_at: "2026-11-27"
 exclusions:
   - repository: https://github.com/zaosoula/orcaslicer-plugin-spoolman
     scope: repository
@@ -264,3 +264,35 @@ exclusions:
       - label: Separate native plugin
         url: https://github.com/micatlkw/WaveOverHangsPlugin
     reviewed_at: "2026-11-25"
+  - repository: https://github.com/macdat-git/3dfp-ams-sync
+    scope: repository
+    reason: out-of-scope
+    note: Standalone spool-location sync service for Bambu AMS, not installed into OrcaSlicer. The separate 3D Filament Profiles plugin is listed.
+    evidence:
+      - label: Service setup and integration
+        url: https://github.com/macdat-git/3dfp-ams-sync/blob/94bc4e277950539b2e9f5525a39883e3609d43cc/README.md
+    reviewed_at: "2026-11-27"
+  - repository: https://github.com/meska/orca-print-queue
+    scope: repository
+    reason: not-installable
+    note: Upstream describes a design-stage queue with no installable plugin yet.
+    evidence:
+      - label: README and project status
+        url: https://github.com/meska/orca-print-queue/blob/c555f417e48b08e9813ee6e33fc2437b492fe438/README.md
+    reviewed_at: "2026-11-27"
+  - repository: https://github.com/LB-KR/openboxbridge
+    scope: repository
+    reason: out-of-scope
+    note: Standalone Windows app and slicer presets hand off exported G-code; no native OrcaSlicer plugin is installed.
+    evidence:
+      - label: README and installation
+        url: https://github.com/LB-KR/openboxbridge/blob/d24e54dfa69d9df4590bca7902b6c21ef1c6c0ca/README.md
+    reviewed_at: "2026-11-27"
+  - repository: https://github.com/machinaexmente/orcaslicer-pluginator
+    scope: repository
+    reason: out-of-scope
+    note: Standalone browser and installer for OrcaSlicer plugins, not itself an OrcaSlicer plugin.
+    evidence:
+      - label: README and standalone workflow
+        url: https://github.com/machinaexmente/orcaslicer-pluginator/blob/2128bcc3dea77e8e0f6d2ee901083e83293a62bc/README.md
+    reviewed_at: "2026-11-27"
